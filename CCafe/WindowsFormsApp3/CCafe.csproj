@@ -52,6 +52,8 @@
     <Compile Include="CFeedback.Designer.cs">
       <DependentUpon>CFeedback.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DBManager.cs" />
     <Compile Include="EFood.cs">
       <SubType>Form</SubType>
     </Compile>
