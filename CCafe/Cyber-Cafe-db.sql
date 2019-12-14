@@ -69,7 +69,7 @@ total_number int check (total_number >= 0),
 
 CREATE TABLE Tournament
 (
-name varchar(50),
+name varchar(50) unique ,
 [date] date,
 primary key(name, [date]),
 [status] varchar(20),
