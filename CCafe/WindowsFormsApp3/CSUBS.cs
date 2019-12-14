@@ -28,5 +28,10 @@ namespace WindowsFormsApp3
             WindowHandler.cfeedback.Show();
             this.Hide();
         }
+
+        private void AcceptBTN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

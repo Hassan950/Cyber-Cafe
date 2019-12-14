@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp3
 {
-    public partial class CMain : Form
+    public partial class EMain : Form
     {
-        public CMain()
+        public EMain()
         {
             InitializeComponent();
         }
@@ -27,20 +27,10 @@ namespace WindowsFormsApp3
 
         }
 
-        private void ReserveBTN_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void FeedBTN_Click(object sender, EventArgs e)
+        private void GamesBTN_Click(object sender, EventArgs e)
         {
-            WindowHandler.cfeedback.Show();
-            this.Hide();
-        }
-
-        private void SubBTN_Click(object sender, EventArgs e)
-        {
-            WindowHandler.csubs.Show();
+            WindowHandler.egames.Show();
             this.Hide();
         }
 
@@ -52,6 +42,12 @@ namespace WindowsFormsApp3
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FoodBTN_Click(object sender, EventArgs e)
+        {
+            WindowHandler.efood.Show();
+            this.Hide();
         }
     }
 }

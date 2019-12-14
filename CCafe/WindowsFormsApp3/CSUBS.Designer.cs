@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.FeedBTN = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.HomeBtn = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.UserNameLp = new System.Windows.Forms.Label();
-            this.FeedBTN = new System.Windows.Forms.Button();
             this.TDGV = new System.Windows.Forms.DataGridView();
             this.ODGV = new System.Windows.Forms.DataGridView();
             this.EnrollBTN = new System.Windows.Forms.Button();
@@ -61,6 +61,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(382, 720);
             this.panel1.TabIndex = 3;
+            // 
+            // FeedBTN
+            // 
+            this.FeedBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.FeedBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FeedBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.FeedBTN.FlatAppearance.BorderSize = 0;
+            this.FeedBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FeedBTN.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.FeedBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.FeedBTN.Location = new System.Drawing.Point(0, 490);
+            this.FeedBTN.Margin = new System.Windows.Forms.Padding(0);
+            this.FeedBTN.Name = "FeedBTN";
+            this.FeedBTN.Size = new System.Drawing.Size(382, 84);
+            this.FeedBTN.TabIndex = 24;
+            this.FeedBTN.Text = "FEEDBACK";
+            this.FeedBTN.UseVisualStyleBackColor = false;
+            this.FeedBTN.Click += new System.EventHandler(this.FeedBTN_Click);
             // 
             // panel3
             // 
@@ -121,24 +139,6 @@
             this.UserNameLp.TabIndex = 6;
             this.UserNameLp.Text = "CUSTOMER#";
             // 
-            // FeedBTN
-            // 
-            this.FeedBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.FeedBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.FeedBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.FeedBTN.FlatAppearance.BorderSize = 0;
-            this.FeedBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FeedBTN.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.FeedBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.FeedBTN.Location = new System.Drawing.Point(0, 490);
-            this.FeedBTN.Margin = new System.Windows.Forms.Padding(0);
-            this.FeedBTN.Name = "FeedBTN";
-            this.FeedBTN.Size = new System.Drawing.Size(382, 84);
-            this.FeedBTN.TabIndex = 24;
-            this.FeedBTN.Text = "FEEDBACK";
-            this.FeedBTN.UseVisualStyleBackColor = false;
-            this.FeedBTN.Click += new System.EventHandler(this.FeedBTN_Click);
-            // 
             // TDGV
             // 
             this.TDGV.AllowUserToAddRows = false;
@@ -198,6 +198,7 @@
             this.AcceptBTN.TabIndex = 9;
             this.AcceptBTN.Text = "ACCEPT";
             this.AcceptBTN.UseVisualStyleBackColor = false;
+            this.AcceptBTN.Click += new System.EventHandler(this.AcceptBTN_Click);
             // 
             // label1
             // 

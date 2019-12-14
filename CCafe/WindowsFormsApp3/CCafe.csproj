@@ -52,6 +52,24 @@
     <Compile Include="CFeedback.Designer.cs">
       <DependentUpon>CFeedback.cs</DependentUpon>
     </Compile>
+    <Compile Include="EFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFood.Designer.cs">
+      <DependentUpon>EFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EGames.Designer.cs">
+      <DependentUpon>EGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMain.Designer.cs">
+      <DependentUpon>EMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="CMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +87,15 @@
     <Compile Include="WindowHandler.cs" />
     <EmbeddedResource Include="CFeedback.resx">
       <DependentUpon>CFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EFood.resx">
+      <DependentUpon>EFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EGames.resx">
+      <DependentUpon>EGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMain.resx">
+      <DependentUpon>EMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CMain.resx">
       <DependentUpon>CMain.cs</DependentUpon>
