@@ -1,5 +1,4 @@
 
-
 -----------------Database Creation---------------------
 CREATE DATABASE Cyber_Cafe
 GO
@@ -8,6 +7,7 @@ USE Cyber_Cafe
 CREATE TABLE [User]
 (
 ID int check (ID >= 10000 and ID <= 99999),
+isadmin bit not null,
 [password] varchar(20) not null,
 primary key(ID),
 )
@@ -64,7 +64,7 @@ primary key (number),
 CREATE TABLE Game
 (
 name varchar(20) primary key,
-available bit,
+available int,
 total_number int check (total_number >= 0),
 )
 
@@ -167,12 +167,13 @@ constraint chk_date1 check (reg_date >= t_date),
 
 insert into [User]
 values 
-(11111,'user1'),
-(22222,'user2'),
-(33333,'user3'),
-(44444,'user4'),
-(55555,'user5'),
-(66666,'user6')
+(10000,1,'user0'),
+(11111,0,'user1'),
+(22222,0,'user2'),
+(33333,0,'user3'),
+(44444,0,'user4'),
+(55555,0,'user5'),
+(66666,0,'user6')
 
 insert into Employee
 values
