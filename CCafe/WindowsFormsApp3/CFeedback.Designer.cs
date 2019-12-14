@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.HomeBtn = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.UserNameLp = new System.Windows.Forms.Label();
             this.SubBTN = new System.Windows.Forms.Button();
-            this.HomeBtn = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.FeedTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,8 +42,8 @@
             this.SendFBBTN = new System.Windows.Forms.Button();
             this.SendRGBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,62 +60,6 @@
             this.panel1.Size = new System.Drawing.Size(382, 720);
             this.panel1.TabIndex = 2;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(336, 205);
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            // 
-            // UserNameLp
-            // 
-            this.UserNameLp.AutoSize = true;
-            this.UserNameLp.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.UserNameLp.Location = new System.Drawing.Point(68, 244);
-            this.UserNameLp.Name = "UserNameLp";
-            this.UserNameLp.Size = new System.Drawing.Size(240, 46);
-            this.UserNameLp.TabIndex = 6;
-            this.UserNameLp.Text = "CUSTOMER#";
-            // 
-            // SubBTN
-            // 
-            this.SubBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SubBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SubBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.SubBTN.FlatAppearance.BorderSize = 0;
-            this.SubBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SubBTN.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.SubBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.SubBTN.Location = new System.Drawing.Point(0, 406);
-            this.SubBTN.Margin = new System.Windows.Forms.Padding(0);
-            this.SubBTN.Name = "SubBTN";
-            this.SubBTN.Size = new System.Drawing.Size(382, 84);
-            this.SubBTN.TabIndex = 4;
-            this.SubBTN.Text = "SUBSCRIPTIONS";
-            this.SubBTN.UseVisualStyleBackColor = false;
-            this.SubBTN.Click += new System.EventHandler(this.SubBTN_Click);
-            // 
-            // HomeBtn
-            // 
-            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.HomeBtn.FlatAppearance.BorderSize = 0;
-            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeBtn.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.HomeBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HomeBtn.Location = new System.Drawing.Point(0, 322);
-            this.HomeBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(382, 84);
-            this.HomeBtn.TabIndex = 22;
-            this.HomeBtn.Text = "HOME";
-            this.HomeBtn.UseVisualStyleBackColor = false;
-            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -131,7 +75,7 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
@@ -139,6 +83,62 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "FEEDBACK";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.HomeBtn.FlatAppearance.BorderSize = 0;
+            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.HomeBtn.Location = new System.Drawing.Point(0, 322);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(382, 84);
+            this.HomeBtn.TabIndex = 22;
+            this.HomeBtn.Text = "HOME";
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(26, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(336, 205);
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            // 
+            // UserNameLp
+            // 
+            this.UserNameLp.AutoSize = true;
+            this.UserNameLp.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
+            this.UserNameLp.Location = new System.Drawing.Point(68, 244);
+            this.UserNameLp.Name = "UserNameLp";
+            this.UserNameLp.Size = new System.Drawing.Size(251, 45);
+            this.UserNameLp.TabIndex = 6;
+            this.UserNameLp.Text = "CUSTOMER#";
+            // 
+            // SubBTN
+            // 
+            this.SubBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SubBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SubBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.SubBTN.FlatAppearance.BorderSize = 0;
+            this.SubBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubBTN.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.SubBTN.Location = new System.Drawing.Point(0, 406);
+            this.SubBTN.Margin = new System.Windows.Forms.Padding(0);
+            this.SubBTN.Name = "SubBTN";
+            this.SubBTN.Size = new System.Drawing.Size(382, 84);
+            this.SubBTN.TabIndex = 4;
+            this.SubBTN.Text = "SUBSCRIPTIONS";
+            this.SubBTN.UseVisualStyleBackColor = false;
+            this.SubBTN.Click += new System.EventHandler(this.SubBTN_Click);
             // 
             // FeedTB
             // 
@@ -150,7 +150,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
             this.label1.Location = new System.Drawing.Point(437, 22);
             this.label1.Name = "label1";
@@ -161,7 +161,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
             this.label2.Location = new System.Drawing.Point(437, 409);
             this.label2.Name = "label2";
@@ -185,7 +185,7 @@
             this.SendFBBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.SendFBBTN.FlatAppearance.BorderSize = 0;
             this.SendFBBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SendFBBTN.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.SendFBBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SendFBBTN.ForeColor = System.Drawing.Color.White;
             this.SendFBBTN.Location = new System.Drawing.Point(959, 206);
             this.SendFBBTN.Name = "SendFBBTN";
@@ -201,7 +201,7 @@
             this.SendRGBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.SendRGBTN.FlatAppearance.BorderSize = 0;
             this.SendRGBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SendRGBTN.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.SendRGBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SendRGBTN.ForeColor = System.Drawing.Color.White;
             this.SendRGBTN.Location = new System.Drawing.Point(959, 593);
             this.SendRGBTN.Name = "SendRGBTN";
@@ -228,8 +228,8 @@
             this.Text = "CFeedback";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
