@@ -64,7 +64,6 @@ primary key (number),
 CREATE TABLE Game
 (
 name varchar(20) primary key,
-available int,
 total_number int check (total_number >= 0),
 )
 
@@ -122,13 +121,11 @@ room_no int foreign key references Room on update cascade  ,
 primary key(t_name, t_date, g_name, room_no)
 )
 
-CREATE TABLE Shift_Customer_Complaint
+CREATE TABLE Feedback
 (
-EID int,
 [Date] date,
-foreign key(EID, [Date]) references Shift_Logs on update cascade  ,
 CID int foreign key references Customer on update no action ,
-primary key(EID, [Date],CID),
+primary key([Date],CID),
 [description] varchar(500)
 )
 
@@ -207,8 +204,8 @@ values
 
 insert into Game
 values
-('Fifa',1,4),
-('Pes',1,4)
+('Fifa',4),
+('Pes',4)
 
 insert into Tournament
 values
