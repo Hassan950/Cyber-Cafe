@@ -69,7 +69,7 @@
             this.FeedBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.FeedBTN.FlatAppearance.BorderSize = 0;
             this.FeedBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FeedBTN.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.FeedBTN.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FeedBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.FeedBTN.Location = new System.Drawing.Point(0, 490);
             this.FeedBTN.Margin = new System.Windows.Forms.Padding(0);
@@ -92,7 +92,7 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
@@ -108,7 +108,7 @@
             this.HomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.HomeBtn.FlatAppearance.BorderSize = 0;
             this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeBtn.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.HomeBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.HomeBtn.Location = new System.Drawing.Point(0, 322);
             this.HomeBtn.Margin = new System.Windows.Forms.Padding(0);
@@ -131,11 +131,11 @@
             // UserNameLp
             // 
             this.UserNameLp.AutoSize = true;
-            this.UserNameLp.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameLp.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
             this.UserNameLp.Location = new System.Drawing.Point(68, 244);
             this.UserNameLp.Name = "UserNameLp";
-            this.UserNameLp.Size = new System.Drawing.Size(240, 46);
+            this.UserNameLp.Size = new System.Drawing.Size(251, 45);
             this.UserNameLp.TabIndex = 6;
             this.UserNameLp.Text = "CUSTOMER#";
             // 
@@ -174,7 +174,7 @@
             this.EnrollBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.EnrollBTN.FlatAppearance.BorderSize = 0;
             this.EnrollBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EnrollBTN.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.EnrollBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EnrollBTN.ForeColor = System.Drawing.Color.White;
             this.EnrollBTN.Location = new System.Drawing.Point(969, 206);
             this.EnrollBTN.Name = "EnrollBTN";
@@ -190,7 +190,7 @@
             this.AcceptBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.AcceptBTN.FlatAppearance.BorderSize = 0;
             this.AcceptBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AcceptBTN.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.AcceptBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcceptBTN.ForeColor = System.Drawing.Color.White;
             this.AcceptBTN.Location = new System.Drawing.Point(969, 596);
             this.AcceptBTN.Name = "AcceptBTN";
@@ -202,7 +202,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
             this.label1.Location = new System.Drawing.Point(969, 43);
             this.label1.Name = "label1";
@@ -213,7 +213,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
             this.label2.Location = new System.Drawing.Point(969, 433);
             this.label2.Name = "label2";
