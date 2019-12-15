@@ -66,6 +66,24 @@
     <Compile Include="EGames.Designer.cs">
       <DependentUpon>EGames.cs</DependentUpon>
     </Compile>
+    <Compile Include="MManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MManage.Designer.cs">
+      <DependentUpon>MManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MFood.Designer.cs">
+      <DependentUpon>MFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMain.Designer.cs">
+      <DependentUpon>MMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="EMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +113,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EGames.resx">
       <DependentUpon>EGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MManage.resx">
+      <DependentUpon>MManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFood.resx">
+      <DependentUpon>MFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMain.resx">
+      <DependentUpon>MMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EMain.resx">
       <DependentUpon>EMain.cs</DependentUpon>

@@ -15,6 +15,9 @@ namespace WindowsFormsApp3
         public static EMain emain;
         public static EGames egames;
         public static EFood efood;
+        public static MMain mmain;
+        public static MFood mfood;
+        public static MManage mManage;
 
         public static void Intialaize()
         {
@@ -24,6 +27,9 @@ namespace WindowsFormsApp3
             emain = new EMain();
             egames = new EGames();
             efood = new EFood();
+            mmain = new MMain();
+            mfood = new MFood();
+            mManage = new MManage();
         }
     }
 }
