@@ -19,7 +19,7 @@ namespace WindowsFormsApp3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             WindowHandler.Intialaize();
-            Application.Run(WindowHandler.login);
+            Application.Run(WindowHandler.mcyper);
         }
     }
 }

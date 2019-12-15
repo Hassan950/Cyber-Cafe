@@ -20,6 +20,8 @@ namespace WindowsFormsApp3
         public static MMain mmain;
         public static MFood mfood;
         public static MManage mManage;
+        public static MCyper mcyper;
+        public static MOT mot;
 
         public static void Intialaize()
         {
@@ -34,6 +36,8 @@ namespace WindowsFormsApp3
             mmain = new MMain();
             mfood = new MFood();
             mManage = new MManage();
+            mcyper = new MCyper();
+            mot = new MOT();
         }
     }
 }
