@@ -7,7 +7,7 @@ USE Cyber_Cafe
 CREATE TABLE [User]
 (
 ID int check (ID >= 10000 and ID <= 99999),
-isadmin bit not null,
+Usertype int not null, --1 is manager --2 is emplyee --3 is customer
 [password] binary(64) not null,
 primary key(ID),
 )
@@ -165,12 +165,12 @@ constraint chk_date1 check (reg_date >= t_date),
 insert into [User]
 values 
 (10000,1,HASHBYTES('SHA2_512', 'user0'+'P@ssw0rd')),
-(11111,0,HASHBYTES('SHA2_512', 'user1'+'P@ssw0rd')),
-(22222,0,HASHBYTES('SHA2_512', 'user2'+'P@ssw0rd')),
-(33333,0,HASHBYTES('SHA2_512', 'user3'+'P@ssw0rd')),
-(44444,0,HASHBYTES('SHA2_512', 'user4'+'P@ssw0rd')),
-(55555,0,HASHBYTES('SHA2_512', 'user5'+'P@ssw0rd')),
-(66666,0,HASHBYTES('SHA2_512', 'user6'+'P@ssw0rd'))
+(11111,2,HASHBYTES('SHA2_512', 'user1'+'P@ssw0rd')),
+(22222,2,HASHBYTES('SHA2_512', 'user2'+'P@ssw0rd')),
+(33333,3,HASHBYTES('SHA2_512', 'user3'+'P@ssw0rd')),
+(44444,3,HASHBYTES('SHA2_512', 'user4'+'P@ssw0rd')),
+(55555,3,HASHBYTES('SHA2_512', 'user5'+'P@ssw0rd')),
+(66666,3,HASHBYTES('SHA2_512', 'user6'+'P@ssw0rd'))
 
 insert into Employee
 values
