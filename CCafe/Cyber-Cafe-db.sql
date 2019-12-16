@@ -125,7 +125,7 @@ CREATE TABLE Feedback
 (
 [Date] date,
 CID int foreign key references Customer on update no action ,
-primary key([Date],CID),
+primary key([Date],CID,[description]),
 [description] varchar(500)
 )
 
