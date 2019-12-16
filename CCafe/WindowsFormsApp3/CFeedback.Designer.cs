@@ -194,6 +194,7 @@
             this.SendFBBTN.TabIndex = 29;
             this.SendFBBTN.Text = "SEND";
             this.SendFBBTN.UseVisualStyleBackColor = false;
+            this.SendFBBTN.Click += new System.EventHandler(this.SendFBBTN_Click);
             // 
             // SendRGBTN
             // 
@@ -210,6 +211,7 @@
             this.SendRGBTN.TabIndex = 30;
             this.SendRGBTN.Text = "SEND";
             this.SendRGBTN.UseVisualStyleBackColor = false;
+            this.SendRGBTN.Click += new System.EventHandler(this.SendRGBTN_Click);
             // 
             // CFeedback
             // 

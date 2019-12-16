@@ -8,7 +8,7 @@ namespace WindowsFormsApp3
 {
     static public class WindowHandler
     {
-
+        public static Controller controllerObj;
         public static Login login;
         public static Register register;
         public static CMain cmain;
@@ -25,6 +25,7 @@ namespace WindowsFormsApp3
 
         public static void Intialaize()
         {
+            controllerObj = new Controller();
             login = new Login();
             register = new Register();
             cmain = new CMain();

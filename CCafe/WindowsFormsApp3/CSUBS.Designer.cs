@@ -146,6 +146,7 @@
             this.TDGV.AllowUserToDeleteRows = false;
             this.TDGV.AllowUserToOrderColumns = true;
             this.TDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TDGV.GridColor = System.Drawing.Color.White;
             this.TDGV.Location = new System.Drawing.Point(425, 43);
             this.TDGV.Name = "TDGV";
             this.TDGV.ReadOnly = true;
@@ -160,6 +161,7 @@
             this.ODGV.AllowUserToDeleteRows = false;
             this.ODGV.AllowUserToOrderColumns = true;
             this.ODGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ODGV.GridColor = System.Drawing.Color.White;
             this.ODGV.Location = new System.Drawing.Point(425, 433);
             this.ODGV.Name = "ODGV";
             this.ODGV.ReadOnly = true;

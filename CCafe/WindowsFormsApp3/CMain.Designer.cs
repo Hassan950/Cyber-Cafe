@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GameCB = new System.Windows.Forms.ComboBox();
             this.ReserveBTN = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.Date = new System.Windows.Forms.DateTimePicker();
             this.StartTime = new System.Windows.Forms.DateTimePicker();
             this.EndTime = new System.Windows.Forms.DateTimePicker();
@@ -48,24 +46,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.FeedBTN = new System.Windows.Forms.Button();
             this.SubBTN = new System.Windows.Forms.Button();
+            this.GameCB = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // GameCB
-            // 
-            this.GameCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.GameCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GameCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.GameCB.FormattingEnabled = true;
-            this.GameCB.Location = new System.Drawing.Point(406, 467);
-            this.GameCB.Name = "GameCB";
-            this.GameCB.Size = new System.Drawing.Size(400, 25);
-            this.GameCB.TabIndex = 0;
-            this.GameCB.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ReserveBTN
             // 
@@ -101,17 +89,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(400, 400);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(845, 467);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(400, 25);
-            this.comboBox2.TabIndex = 12;
             // 
             // Date
             // 
@@ -293,12 +270,32 @@
             this.SubBTN.UseVisualStyleBackColor = false;
             this.SubBTN.Click += new System.EventHandler(this.SubBTN_Click);
             // 
+            // GameCB
+            // 
+            this.GameCB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameCB.FormattingEnabled = true;
+            this.GameCB.Location = new System.Drawing.Point(406, 466);
+            this.GameCB.Name = "GameCB";
+            this.GameCB.Size = new System.Drawing.Size(400, 31);
+            this.GameCB.TabIndex = 20;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(845, 466);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(400, 31);
+            this.comboBox1.TabIndex = 21;
+            // 
             // CMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.GameCB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -307,12 +304,10 @@
             this.Controls.Add(this.EndTime);
             this.Controls.Add(this.StartTime);
             this.Controls.Add(this.Date);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ReserveBTN);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.GameCB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -330,12 +325,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox GameCB;
         private System.Windows.Forms.Button ReserveBTN;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.DateTimePicker StartTime;
         private System.Windows.Forms.DateTimePicker EndTime;
@@ -351,6 +343,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button FeedBTN;
         private System.Windows.Forms.Button SubBTN;
+        private System.Windows.Forms.ComboBox GameCB;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

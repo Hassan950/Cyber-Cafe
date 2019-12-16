@@ -14,7 +14,11 @@ namespace WindowsFormsApp3
     {
         public CMain()
         {
+           
             InitializeComponent();
+            DataTable dt = WindowHandler.controllerObj.ViewGames();
+            GameCB.DataSource = dt;
+            GameCB.DisplayMember = "name";
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

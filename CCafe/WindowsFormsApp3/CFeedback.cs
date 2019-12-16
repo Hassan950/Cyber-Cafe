@@ -33,5 +33,25 @@ namespace WindowsFormsApp3
             WindowHandler.csubs.Show();
             this.Hide();
         }
+
+        private void SendFBBTN_Click(object sender, EventArgs e)
+        {
+            if(FeedTB.Text=="")
+                MessageBox.Show("Please, insert a Feedback");
+            if(WindowHandler.controllerObj.SendFeedback(FeedTB.Text) !=0)
+                MessageBox.Show("Feedback Sent Successfully");
+            else
+                MessageBox.Show("Feedback Couldn't be Sent");
+        }
+
+        private void SendRGBTN_Click(object sender, EventArgs e)
+        {
+            if(ReqGameTB.Text == "")
+                MessageBox.Show("Please, insert a Request");
+            if (WindowHandler.controllerObj.SendFeedback(FeedTB.Text) != 0)
+                MessageBox.Show("Request Sent Successfully");
+            else
+                MessageBox.Show("Request Couldn't be Sent");
+        }
     }
 }
