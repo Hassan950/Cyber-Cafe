@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace CCafe
 {
     public partial class Login : Form
     {
+        Controller ctrl;
         public Login()
         {
             InitializeComponent();
@@ -19,6 +20,7 @@ namespace WindowsFormsApp3
 
         private void SignInBTN_Click(object sender, EventArgs e)
         {
+            //execute query here then the output with if conditions goes to the one who signed in if correct if 0 dont
 
         }
 
