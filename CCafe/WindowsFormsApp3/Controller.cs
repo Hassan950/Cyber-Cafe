@@ -15,6 +15,18 @@ namespace CCafe
             dbMan = new DBManager();
         }
 
+        public int CheckForUser(int ID, string password)
+        {
+
+            string StoredProcedureName = StoredProcedures.UserLogin;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@password", password);
+            int returnvalue = Convert.ToInt32( dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters) );
+            return returnvalue;
+        }
+
+
 
         public void TerminateConnection()
         {

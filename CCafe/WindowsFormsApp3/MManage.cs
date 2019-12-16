@@ -60,5 +60,17 @@ namespace CCafe
             WindowHandler.mfood.Show();
             this.Hide();
         }
+
+        private void EditCyberBTN_Click(object sender, EventArgs e)
+        {
+            WindowHandler.mcyper.Show();
+            this.Hide();
+        }
+
+        private void TournmentsBTN_Click(object sender, EventArgs e)
+        {
+            WindowHandler.mot.Show();
+            this.Hide();
+        }
     }
 }
