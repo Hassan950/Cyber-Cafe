@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace CCafe
 {
     public class DBManager
     {
@@ -107,6 +107,36 @@ namespace WindowsFormsApp3
                 }
 
                 return myCommand.ExecuteScalar();            
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public object ExecuteReturnScalar(string storedProcedureName, Dictionary<string, object> parameters)
+        {
+            try
+            {
+                SqlCommand myCommand = new SqlCommand(storedProcedureName, myConnection);
+
+                myCommand.CommandType = CommandType.StoredProcedure;
+
+                if (parameters != null)
+                {
+                    foreach (KeyValuePair<string, object> Param in parameters)
+                    {
+                        myCommand.Parameters.Add(new SqlParameter(Param.Key, Param.Value));
+                    }
+                    myCommand.Parameters.Add("@retValue", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.ReturnValue;
+
+                }
+
+                myCommand.ExecuteScalar();
+                int retval = (int)myCommand.Parameters["@retValue"].Value;
+                return retval;
 
             }
             catch (Exception ex)

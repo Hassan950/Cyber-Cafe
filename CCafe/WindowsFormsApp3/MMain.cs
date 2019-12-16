@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace CCafe
 {
     public partial class MMain : Form
     {
@@ -58,6 +58,18 @@ namespace WindowsFormsApp3
         private void ManageBTN_Click(object sender, EventArgs e)
         {
             WindowHandler.mManage.Show();
+            this.Hide();
+        }
+
+        private void EditCyberBTN_Click(object sender, EventArgs e)
+        {
+            WindowHandler.mcyper.Show();
+            this.Hide();
+        }
+
+        private void TournmentsBTN_Click(object sender, EventArgs e)
+        {
+            WindowHandler.mot.Show();
             this.Hide();
         }
     }

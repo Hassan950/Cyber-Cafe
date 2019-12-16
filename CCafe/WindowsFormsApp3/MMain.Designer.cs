@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace CCafe
 {
     partial class MMain
     {
@@ -58,7 +58,7 @@
             this.FoodBTN.Location = new System.Drawing.Point(0, 406);
             this.FoodBTN.Margin = new System.Windows.Forms.Padding(0);
             this.FoodBTN.Name = "FoodBTN";
-            this.FoodBTN.Size = new System.Drawing.Size(382, 74);
+            this.FoodBTN.Size = new System.Drawing.Size(437, 74);
             this.FoodBTN.TabIndex = 4;
             this.FoodBTN.Text = "EDIT FOOD AND DRINKS";
             this.FoodBTN.UseVisualStyleBackColor = false;
@@ -69,7 +69,7 @@
             this.UserNameLp.AutoSize = true;
             this.UserNameLp.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.UserNameLp.Location = new System.Drawing.Point(97, 249);
+            this.UserNameLp.Location = new System.Drawing.Point(111, 249);
             this.UserNameLp.Name = "UserNameLp";
             this.UserNameLp.Size = new System.Drawing.Size(193, 46);
             this.UserNameLp.TabIndex = 6;
@@ -78,9 +78,9 @@
             // pictureBox3
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 16);
+            this.pictureBox3.Location = new System.Drawing.Point(30, 16);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(336, 205);
+            this.pictureBox3.Size = new System.Drawing.Size(384, 205);
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
@@ -97,7 +97,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(382, 720);
+            this.panel1.Size = new System.Drawing.Size(437, 720);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -113,10 +113,11 @@
             this.TournmentsBTN.Location = new System.Drawing.Point(0, 628);
             this.TournmentsBTN.Margin = new System.Windows.Forms.Padding(0);
             this.TournmentsBTN.Name = "TournmentsBTN";
-            this.TournmentsBTN.Size = new System.Drawing.Size(382, 74);
+            this.TournmentsBTN.Size = new System.Drawing.Size(437, 74);
             this.TournmentsBTN.TabIndex = 23;
             this.TournmentsBTN.Text = "TOURNMENTS";
             this.TournmentsBTN.UseVisualStyleBackColor = false;
+            this.TournmentsBTN.Click += new System.EventHandler(this.TournmentsBTN_Click);
             // 
             // EditCyberBTN
             // 
@@ -130,10 +131,11 @@
             this.EditCyberBTN.Location = new System.Drawing.Point(0, 554);
             this.EditCyberBTN.Margin = new System.Windows.Forms.Padding(0);
             this.EditCyberBTN.Name = "EditCyberBTN";
-            this.EditCyberBTN.Size = new System.Drawing.Size(382, 74);
+            this.EditCyberBTN.Size = new System.Drawing.Size(437, 74);
             this.EditCyberBTN.TabIndex = 22;
             this.EditCyberBTN.Text = "EDIT CYBER";
             this.EditCyberBTN.UseVisualStyleBackColor = false;
+            this.EditCyberBTN.Click += new System.EventHandler(this.EditCyberBTN_Click);
             // 
             // ManageBTN
             // 
@@ -147,7 +149,7 @@
             this.ManageBTN.Location = new System.Drawing.Point(0, 480);
             this.ManageBTN.Margin = new System.Windows.Forms.Padding(0);
             this.ManageBTN.Name = "ManageBTN";
-            this.ManageBTN.Size = new System.Drawing.Size(382, 74);
+            this.ManageBTN.Size = new System.Drawing.Size(437, 74);
             this.ManageBTN.TabIndex = 21;
             this.ManageBTN.Text = "MANAGE";
             this.ManageBTN.UseVisualStyleBackColor = false;
@@ -160,7 +162,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 322);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(382, 84);
+            this.panel2.Size = new System.Drawing.Size(437, 84);
             this.panel2.TabIndex = 14;
             // 
             // label2
@@ -172,7 +174,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(382, 84);
+            this.label2.Size = new System.Drawing.Size(437, 84);
             this.label2.TabIndex = 15;
             this.label2.Text = "HOME";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -181,11 +183,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1028, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(1175, 55);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 635);
+            this.dataGridView1.Size = new System.Drawing.Size(274, 635);
             this.dataGridView1.TabIndex = 18;
             // 
             // label1
@@ -193,7 +195,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(1005, 14);
+            this.label1.Location = new System.Drawing.Point(1149, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 29);
             this.label1.TabIndex = 19;
@@ -204,7 +206,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label3.Location = new System.Drawing.Point(578, 9);
+            this.label3.Location = new System.Drawing.Point(661, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 29);
             this.label3.TabIndex = 20;
@@ -212,9 +214,9 @@
             // 
             // MMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1463, 720);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace CCafe
 {
     partial class MManage
     {
@@ -32,9 +32,9 @@
             this.UserNameLp = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.FoodBTN = new System.Windows.Forms.Button();
             this.TournmentsBTN = new System.Windows.Forms.Button();
             this.EditCyberBTN = new System.Windows.Forms.Button();
-            this.FoodBTN = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -61,7 +61,7 @@
             this.HomeBTN.Location = new System.Drawing.Point(0, 322);
             this.HomeBTN.Margin = new System.Windows.Forms.Padding(0);
             this.HomeBTN.Name = "HomeBTN";
-            this.HomeBTN.Size = new System.Drawing.Size(382, 84);
+            this.HomeBTN.Size = new System.Drawing.Size(437, 84);
             this.HomeBTN.TabIndex = 4;
             this.HomeBTN.Text = "HOME";
             this.HomeBTN.UseVisualStyleBackColor = false;
@@ -72,7 +72,7 @@
             this.UserNameLp.AutoSize = true;
             this.UserNameLp.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.UserNameLp.Location = new System.Drawing.Point(97, 249);
+            this.UserNameLp.Location = new System.Drawing.Point(111, 249);
             this.UserNameLp.Name = "UserNameLp";
             this.UserNameLp.Size = new System.Drawing.Size(193, 46);
             this.UserNameLp.TabIndex = 6;
@@ -81,9 +81,9 @@
             // pictureBox3
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 16);
+            this.pictureBox3.Location = new System.Drawing.Point(30, 16);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(336, 205);
+            this.pictureBox3.Size = new System.Drawing.Size(384, 205);
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
@@ -100,43 +100,9 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(382, 720);
+            this.panel1.Size = new System.Drawing.Size(437, 720);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // TournmentsBTN
-            // 
-            this.TournmentsBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TournmentsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.TournmentsBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.TournmentsBTN.FlatAppearance.BorderSize = 0;
-            this.TournmentsBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TournmentsBTN.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.TournmentsBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.TournmentsBTN.Location = new System.Drawing.Point(0, 628);
-            this.TournmentsBTN.Margin = new System.Windows.Forms.Padding(0);
-            this.TournmentsBTN.Name = "TournmentsBTN";
-            this.TournmentsBTN.Size = new System.Drawing.Size(382, 74);
-            this.TournmentsBTN.TabIndex = 23;
-            this.TournmentsBTN.Text = "TOURNMENTS";
-            this.TournmentsBTN.UseVisualStyleBackColor = false;
-            // 
-            // EditCyberBTN
-            // 
-            this.EditCyberBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.EditCyberBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.EditCyberBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.EditCyberBTN.FlatAppearance.BorderSize = 0;
-            this.EditCyberBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditCyberBTN.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.EditCyberBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.EditCyberBTN.Location = new System.Drawing.Point(0, 554);
-            this.EditCyberBTN.Margin = new System.Windows.Forms.Padding(0);
-            this.EditCyberBTN.Name = "EditCyberBTN";
-            this.EditCyberBTN.Size = new System.Drawing.Size(382, 74);
-            this.EditCyberBTN.TabIndex = 22;
-            this.EditCyberBTN.Text = "EDIT CYBER";
-            this.EditCyberBTN.UseVisualStyleBackColor = false;
             // 
             // FoodBTN
             // 
@@ -150,11 +116,47 @@
             this.FoodBTN.Location = new System.Drawing.Point(0, 396);
             this.FoodBTN.Margin = new System.Windows.Forms.Padding(0);
             this.FoodBTN.Name = "FoodBTN";
-            this.FoodBTN.Size = new System.Drawing.Size(382, 74);
+            this.FoodBTN.Size = new System.Drawing.Size(437, 74);
             this.FoodBTN.TabIndex = 21;
             this.FoodBTN.Text = "EDIT FOOD AND DRINKS";
             this.FoodBTN.UseVisualStyleBackColor = false;
             this.FoodBTN.Click += new System.EventHandler(this.FoodBTN_Click);
+            // 
+            // TournmentsBTN
+            // 
+            this.TournmentsBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TournmentsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.TournmentsBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.TournmentsBTN.FlatAppearance.BorderSize = 0;
+            this.TournmentsBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TournmentsBTN.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.TournmentsBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.TournmentsBTN.Location = new System.Drawing.Point(0, 628);
+            this.TournmentsBTN.Margin = new System.Windows.Forms.Padding(0);
+            this.TournmentsBTN.Name = "TournmentsBTN";
+            this.TournmentsBTN.Size = new System.Drawing.Size(437, 74);
+            this.TournmentsBTN.TabIndex = 23;
+            this.TournmentsBTN.Text = "TOURNMENTS";
+            this.TournmentsBTN.UseVisualStyleBackColor = false;
+            this.TournmentsBTN.Click += new System.EventHandler(this.TournmentsBTN_Click);
+            // 
+            // EditCyberBTN
+            // 
+            this.EditCyberBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EditCyberBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EditCyberBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.EditCyberBTN.FlatAppearance.BorderSize = 0;
+            this.EditCyberBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditCyberBTN.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.EditCyberBTN.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.EditCyberBTN.Location = new System.Drawing.Point(0, 554);
+            this.EditCyberBTN.Margin = new System.Windows.Forms.Padding(0);
+            this.EditCyberBTN.Name = "EditCyberBTN";
+            this.EditCyberBTN.Size = new System.Drawing.Size(437, 74);
+            this.EditCyberBTN.TabIndex = 22;
+            this.EditCyberBTN.Text = "EDIT CYBER";
+            this.EditCyberBTN.UseVisualStyleBackColor = false;
+            this.EditCyberBTN.Click += new System.EventHandler(this.EditCyberBTN_Click);
             // 
             // panel2
             // 
@@ -163,7 +165,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 470);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(382, 84);
+            this.panel2.Size = new System.Drawing.Size(437, 84);
             this.panel2.TabIndex = 14;
             // 
             // label2
@@ -175,7 +177,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(382, 84);
+            this.label2.Size = new System.Drawing.Size(437, 84);
             this.label2.TabIndex = 15;
             this.label2.Text = "MANAGE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,10 +186,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(419, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(479, 55);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(408, 529);
+            this.dataGridView1.Size = new System.Drawing.Size(466, 529);
             this.dataGridView1.TabIndex = 18;
             // 
             // label1
@@ -195,7 +197,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(1039, 16);
+            this.label1.Location = new System.Drawing.Point(1187, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 29);
             this.label1.TabIndex = 19;
@@ -206,7 +208,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label3.Location = new System.Drawing.Point(565, 16);
+            this.label3.Location = new System.Drawing.Point(646, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 29);
             this.label3.TabIndex = 20;
@@ -215,10 +217,10 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(860, 55);
+            this.dataGridView2.Location = new System.Drawing.Point(983, 55);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 26;
-            this.dataGridView2.Size = new System.Drawing.Size(408, 529);
+            this.dataGridView2.Size = new System.Drawing.Size(466, 529);
             this.dataGridView2.TabIndex = 21;
             // 
             // AddFoodBTN
@@ -230,18 +232,18 @@
             this.AddFoodBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddFoodBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddFoodBTN.ForeColor = System.Drawing.Color.White;
-            this.AddFoodBTN.Location = new System.Drawing.Point(1143, 628);
+            this.AddFoodBTN.Location = new System.Drawing.Point(1306, 628);
             this.AddFoodBTN.Name = "AddFoodBTN";
-            this.AddFoodBTN.Size = new System.Drawing.Size(125, 64);
+            this.AddFoodBTN.Size = new System.Drawing.Size(143, 64);
             this.AddFoodBTN.TabIndex = 22;
             this.AddFoodBTN.Text = "ADD NEW USER";
             this.AddFoodBTN.UseVisualStyleBackColor = false;
             // 
             // MManage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1463, 720);
             this.Controls.Add(this.AddFoodBTN);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label3);
