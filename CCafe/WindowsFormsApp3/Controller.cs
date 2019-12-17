@@ -45,7 +45,7 @@ namespace CCafe
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@ID", ID);
             Parameters.Add("@password", password);
-            int returnvalue = Convert.ToInt32( dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters) );
+            int returnvalue = Convert.ToInt32(dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters));
             return returnvalue;
         }
 
@@ -55,7 +55,7 @@ namespace CCafe
             return dbMan.ExecuteReader(StoredProcedureName, null);
         }
 
-        public int UpdateConsoles(int roomNum , string consoleName , string condition)
+        public int UpdateConsoles(int roomNum, string consoleName, string condition)
         {
             string StoredProcedureName = StoredProcedures.EditConsoles;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
@@ -63,7 +63,9 @@ namespace CCafe
             Parameters.Add("@name", consoleName);
             Parameters.Add("@condition", condition);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
-        public int CreateUser(int ID, string password,int UserType = 3) //default is customer 3
+
+        }
+        public int CreateUser(int ID, string password, int UserType = 3) //default is customer 3
         {
             string StoredProcedureName = StoredProcedures.InsertNewUser;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
@@ -78,6 +80,5 @@ namespace CCafe
         {
             dbMan.CloseConnection();
         }
-
     }
 }
