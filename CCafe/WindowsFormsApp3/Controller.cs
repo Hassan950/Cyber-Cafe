@@ -49,7 +49,16 @@ namespace CCafe
             return returnvalue;
         }
 
-
+        public int CreateUser(int ID, string password,int UserType = 3) //default is customer 3
+        {
+            string StoredProcedureName = StoredProcedures.InsertNewUser;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@Password", password);
+            Parameters.Add("@Usertype", UserType);
+            int returnvalue = Convert.ToInt32(dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters));
+            return returnvalue;
+        }
 
         public void TerminateConnection()
         {
