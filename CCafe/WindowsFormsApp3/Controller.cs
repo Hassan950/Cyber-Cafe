@@ -49,7 +49,21 @@ namespace CCafe
             return returnvalue;
         }
 
+        public DataTable ViewAvailibleConsoles()
+        {
+            string StoredProcedureName = StoredProcedures.AvailableConsoles;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
 
+        public int UpdateConsoles(int roomNum , string consoleName , string condition)
+        {
+            string StoredProcedureName = StoredProcedures.EditConsoles;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@room_no", roomNum);
+            Parameters.Add("@name", consoleName);
+            Parameters.Add("@condition", condition);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
 
         public void TerminateConnection()
         {
