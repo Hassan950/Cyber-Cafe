@@ -49,6 +49,19 @@ namespace CCafe
             return returnvalue;
         }
 
+        public int InsertCustomer(int ID, string name, string email, string phone_num)
+        {
+
+            string StoredProcedureName = StoredProcedures.InsertIntoCustomer;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@name" ,name);
+            Parameters.Add("@email",email);
+            Parameters.Add("@phone_no", phone_num);
+
+            return dbMan.ExecuteNonQuery(StoredProcedureName,Parameters);
+        }
+
         public DataTable ViewAvailibleConsoles()
         {
             string StoredProcedureName = StoredProcedures.AvailableConsoles;
