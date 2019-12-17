@@ -62,6 +62,18 @@ namespace CCafe
             return dbMan.ExecuteNonQuery(StoredProcedureName,Parameters);
         }
 
+        public DataTable ViewAllTournaments()
+        {
+            string StoredProcedureName = StoredProcedures.View_All_Tournaments;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
+
+        public DataTable ViewAllOffers()
+        {
+            string StoredProcedureName = StoredProcedures.View_All_Offers;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
+
         public DataTable ViewAvailibleConsoles()
         {
             string StoredProcedureName = StoredProcedures.AvailableConsoles;

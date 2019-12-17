@@ -30,7 +30,7 @@ namespace CCafe
         public static string View_Available_offers = "View_Available_offers";
         public static string View_Available_Tournaments = "View_Available_Tournaments";
         public static string InsertIntoCustomer = "InsertIntoCustomer";
-
-
+        public static string View_All_Offers = "View_All_Offers";
+        public static string View_All_Tournaments = "View_All_Tournaments";
     }
 }
