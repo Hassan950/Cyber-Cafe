@@ -27,5 +27,50 @@ namespace CCafe
             WindowHandler.login.Show();
             this.Hide();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void SignUPBTN_Click(object sender, EventArgs e)
+        {
+            if (UserNameTB.Text == "" || PasswordTB.Text == "" || RePasswordTB.Text == "")
+                return;
+            if (Convert.ToInt32(UserNameTB.Text) < 10000 || Convert.ToInt32(UserNameTB.Text) > 99999)
+            {
+                UserNameTB.Text = "";
+                MessageBox.Show("ID Must be Between 10000 and 99999");
+            }
+            else if (PasswordTB.Text.ToString().Length < 6)
+            {
+                PasswordTB.Text = "";
+                RePasswordTB.Text = "";
+                MessageBox.Show("Password Length Must be at Least 6");
+            }
+            else if (PasswordTB.Text.ToString() != RePasswordTB.Text.ToString())
+            {
+                PasswordTB.Text = "";
+                RePasswordTB.Text = "";
+                MessageBox.Show("Please Check That The Password Is The Same");
+            }
+            else
+            {
+                int IDcheck = Program.ctrl.CreateUser(Convert.ToInt32(UserNameTB.Text), PasswordTB.Text.ToString(), 3);
+
+                if (IDcheck == 0)
+                {
+                    MessageBox.Show("ID is Already Taken");
+                    UserNameTB.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Registration Complete");
+                    this.Hide();
+                    WindowHandler.login.Show();
+                }
+
+            }
+        }
     }
 }
