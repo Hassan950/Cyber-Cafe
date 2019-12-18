@@ -20,38 +20,41 @@ namespace CCafe
 
         private void SignInBTN_Click(object sender, EventArgs e)
         {
-
-            if (UserNameTB.Text == "" || PasswordTB.Text == "" )
-                return;
-            int ID = Convert.ToInt32(UserNameTB.Text);
-            string password = PasswordTB.Text.ToString();
-            int Usertype = Program.ctrl.CheckForUser(ID, password);
-            if(Usertype == 0)
+            try
             {
-                MessageBox.Show("Please Enter The Correct ID and Password");
-                UserNameTB.Text = "" ;
-                PasswordTB.Text = "" ;
+                int ID = Convert.ToInt32(UserNameTB.Text);
+                string password = PasswordTB.Text.ToString();
+                int Usertype = WindowHandler.controllerObj.CheckForUser(ID, password);
+                if (Usertype == 0)
+                {
+                    throw new Exception("Please Enter The Correct ID and Password");
+                }
+
+                else if (Usertype == 1)
+                {
+                    WindowHandler.mmain.Show();
+                    this.Hide();
+                }
+
+                else if (Usertype == 2)
+                {
+                    WindowHandler.emain.Show();
+                    this.Hide();
+                }
+
+                else if (Usertype == 3)
+                {
+                    WindowHandler.cmain.Show();
+                    this.Hide();
+                }
             }
-
-            else if(Usertype == 1)
+            catch (FormatException)
             {
-                Program.UserID = ID;
-                WindowHandler.mmain.Show();
-                this.Hide();
+                MessageBox.Show("Please enter a valid ID that consists of Digits.");
             }
-
-            else if (Usertype == 2)
+            catch (Exception ex)
             {
-                Program.UserID = ID;
-                WindowHandler.emain.Show();
-                this.Hide();
-            }
-
-            else if (Usertype == 3)
-            {
-                Program.UserID = ID;
-                WindowHandler.cmain.Show();
-                this.Hide();
+                MessageBox.Show(ex.Message);
             }
         }
 
