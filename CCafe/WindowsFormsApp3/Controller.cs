@@ -185,6 +185,26 @@ namespace CCafe
         {
             dbMan.CloseConnection();
         }
-        
+
+
+        public DataTable ViewAccounts(int type)
+        {
+            string StoredProcedureName = StoredProcedures.ViewAccounts;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@type", type);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+
+        public int InsertEmployee(int ID, string name, int salary, string start_time, string end_time)
+        {
+            string StoredProcedureName = StoredProcedures.HireEmp;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@name", name);
+            Parameters.Add("@salary", salary);
+            Parameters.Add("@start_time", start_time);
+            Parameters.Add("@end_time", end_time);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
     }
 }

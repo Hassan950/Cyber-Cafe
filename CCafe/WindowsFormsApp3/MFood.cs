@@ -157,5 +157,20 @@ namespace CCafe
         {
             PriceBox.Enabled = !checkBox2.Checked;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InsertGroup_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
