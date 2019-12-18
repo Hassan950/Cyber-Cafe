@@ -66,11 +66,27 @@ namespace CCafe
                 else
                 {
                     MessageBox.Show("Registration Complete");
+                    Program.ctrl.InsertCustomer(Convert.ToInt32(UserNameTB.Text), NameTB.Text.ToString(), EmailTB.Text.ToString(), PhoneTB.Text.ToString());
                     this.Hide();
                     WindowHandler.login.Show();
                 }
 
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NameTB_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

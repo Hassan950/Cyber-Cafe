@@ -125,8 +125,9 @@ CREATE TABLE Feedback
 (
 [Date] date,
 CID int foreign key references Customer on update no action ,
-primary key([Date],CID,[description]),
-[description] varchar(500)
+[description] varchar(500),
+[type] varchar(10) check ([type] ='feedback' OR [type] ='request') ,
+primary key([Date],CID,[description],[type])
 )
 
 CREATE TABLE Customer_Offer

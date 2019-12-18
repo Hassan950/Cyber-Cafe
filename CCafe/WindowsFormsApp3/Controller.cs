@@ -32,7 +32,39 @@ namespace CCafe
             return dbMan.ExecuteReader(SPN, null);
         }
 
-        public int SendFeedback(string msg)
+        public DataTable ViewOffers()
+        {
+            string SPN = StoredProcedures.View_Available_offers;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@reg_date", System.DateTime.Today.ToString("yyyy-MM-dd"));
+            return dbMan.ExecuteReader(SPN, Parameters);
+        }
+        public DataTable ViewTournaments()
+        {
+            string SPN = StoredProcedures.View_Available_Tournaments;
+            return dbMan.ExecuteReader(SPN, null);
+        }
+        public int SendFeedback(string msg, string type)
+        {
+            string SPN = StoredProcedures.InsertintoFeedback;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@description", msg);
+            Parameters.Add("@cid", 44444);
+            Parameters.Add("@date", System.DateTime.Today.ToString("MM-dd-yy"));
+            Parameters.Add("@type", type);
+            return dbMan.ExecuteNonQuery(SPN, Parameters);
+        }
+
+        public int AcceptOffer(string name)
+        {
+            string SPN = StoredProcedures.Insert_Offer_Customer;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@name", name);
+            Parameters.Add("@cid", 44444);
+            return dbMan.ExecuteNonQuery(SPN, Parameters);
+        }
+
+        public int SendRequest(string msg)
         {
             string SPN = StoredProcedures.InsertintoFeedback;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
@@ -41,13 +73,15 @@ namespace CCafe
             Parameters.Add("@date", System.DateTime.Today.ToString("MM-dd-yy"));
             return dbMan.ExecuteNonQuery(SPN, Parameters);
         }
-        public int SendRequest(string msg)
+        public int TournamentEnroll(string name)
         {
-            string SPN = StoredProcedures.InsertintoFeedback;
+            string SPN = StoredProcedures.Insert_Tournament_participant;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
-            Parameters.Add("@description", msg);
+            Parameters.Add("@name", name);
             Parameters.Add("@cid", 44444);
-            Parameters.Add("@date", System.DateTime.Today.ToString("MM-dd-yy"));
+            Parameters.Add("@reg_date", System.DateTime.Today.ToString("yyyy-MM-dd"));
+            Console.WriteLine(name);
+            Console.WriteLine(System.DateTime.Today.ToString("yyyy-MM-dd"));
             return dbMan.ExecuteNonQuery(SPN, Parameters);
         }
 
@@ -60,6 +94,31 @@ namespace CCafe
             Parameters.Add("@password", password);
             int returnvalue = Convert.ToInt32(dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters));
             return returnvalue;
+        }
+
+        public int InsertCustomer(int ID, string name, string email, string phone_num)
+        {
+
+            string StoredProcedureName = StoredProcedures.InsertIntoCustomer;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@name" ,name);
+            Parameters.Add("@email",email);
+            Parameters.Add("@phone_no", phone_num);
+
+            return dbMan.ExecuteNonQuery(StoredProcedureName,Parameters);
+        }
+
+        public DataTable ViewAllTournaments()
+        {
+            string StoredProcedureName = StoredProcedures.View_All_Tournaments;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
+
+        public DataTable ViewAllOffers()
+        {
+            string StoredProcedureName = StoredProcedures.View_All_Offers;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
         }
 
         public DataTable ViewAvailibleConsoles()
@@ -92,5 +151,6 @@ namespace CCafe
         {
             dbMan.CloseConnection();
         }
+        
     }
 }
