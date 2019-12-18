@@ -15,6 +15,9 @@ namespace CCafe
         public EMain()
         {
             InitializeComponent();
+            DataTable dt = WindowHandler.controllerObj.ViewAvailibleConsoles();
+            dataGridView1.DataSource = dt;
+            dataGridView1.Refresh();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -36,6 +39,8 @@ namespace CCafe
 
         private void CMain_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'cyber_CafeDataSet.Console' table. You can move, or remove it, as needed.
+            this.consoleTableAdapter.Fill(this.cyber_CafeDataSet.Console);
 
         }
 
@@ -49,5 +54,46 @@ namespace CCafe
             WindowHandler.efood.Show();
             this.Hide();
         }
+
+        private void ViewBTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateBTN_Click(object sender, EventArgs e)
+        {
+            if (comboBoxConsoleName.SelectedValue == null || comboBoxRoomNumber.SelectedValue == null || ((radioButtonWorking.Checked == false && radioButtonNotWorking.Checked == false)))
+            {
+                MessageBox.Show("Please Select All Fields To Update");
+                return;
+
+            }
+            else
+            {
+                int roomNumber = Convert.ToInt16(comboBoxRoomNumber.SelectedValue);
+                string consoleName = comboBoxConsoleName.SelectedValue.ToString();
+                string condition;
+
+                if (radioButtonWorking.Checked)
+                {
+                    condition = "okay";
+                }
+                else
+                {
+                    condition = "not okay";
+                }
+
+                WindowHandler.controllerObj.UpdateConsoles(roomNumber, consoleName, condition);
+                dataGridView1.Refresh();
+                MessageBox.Show("Console Updated Successfuly");
+
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }

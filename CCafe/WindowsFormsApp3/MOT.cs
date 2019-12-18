@@ -40,5 +40,28 @@ namespace CCafe
             WindowHandler.mcyper.Show();
             this.Hide();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TournamentSelect_Click(object sender, EventArgs e)
+        {
+            DataTable dt = Program.ctrl.ViewAllTournaments();
+            DataGrid.DataSource = null;
+            DataGrid.Refresh();
+            DataGrid.DataSource = dt;
+            DataGrid.Refresh();
+        }
+
+        private void OfferSelect_Click(object sender, EventArgs e)
+        {
+            DataTable dt = Program.ctrl.ViewAllOffers();
+            DataGrid.DataSource = null;
+            DataGrid.Refresh();
+            DataGrid.DataSource = dt;
+            DataGrid.Refresh();
+        }
     }
 }

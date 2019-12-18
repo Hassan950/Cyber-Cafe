@@ -45,26 +45,26 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(318, 600);
+            this.panel1.Size = new System.Drawing.Size(363, 600);
             this.panel1.TabIndex = 0;
             // 
             // UserNameTB
             // 
             this.UserNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UserNameTB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameTB.Location = new System.Drawing.Point(380, 216);
+            this.UserNameTB.Location = new System.Drawing.Point(434, 216);
             this.UserNameTB.Name = "UserNameTB";
-            this.UserNameTB.Size = new System.Drawing.Size(361, 32);
+            this.UserNameTB.Size = new System.Drawing.Size(412, 32);
             this.UserNameTB.TabIndex = 1;
             // 
             // PasswordTB
             // 
             this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PasswordTB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTB.Location = new System.Drawing.Point(380, 329);
+            this.PasswordTB.Location = new System.Drawing.Point(434, 329);
             this.PasswordTB.Name = "PasswordTB";
             this.PasswordTB.PasswordChar = '*';
-            this.PasswordTB.Size = new System.Drawing.Size(361, 32);
+            this.PasswordTB.Size = new System.Drawing.Size(412, 32);
             this.PasswordTB.TabIndex = 2;
             // 
             // SignInBTN
@@ -74,10 +74,10 @@
             this.SignInBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInBTN.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInBTN.ForeColor = System.Drawing.Color.White;
-            this.SignInBTN.Location = new System.Drawing.Point(380, 425);
+            this.SignInBTN.Location = new System.Drawing.Point(434, 425);
             this.SignInBTN.Margin = new System.Windows.Forms.Padding(0);
             this.SignInBTN.Name = "SignInBTN";
-            this.SignInBTN.Size = new System.Drawing.Size(361, 71);
+            this.SignInBTN.Size = new System.Drawing.Size(413, 71);
             this.SignInBTN.TabIndex = 5;
             this.SignInBTN.Text = "SIGN IN";
             this.SignInBTN.UseVisualStyleBackColor = false;
@@ -87,7 +87,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(375, 296);
+            this.label1.Location = new System.Drawing.Point(429, 296);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 30);
             this.label1.TabIndex = 4;
@@ -97,11 +97,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(375, 183);
+            this.label2.Location = new System.Drawing.Point(429, 183);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 30);
+            this.label2.Size = new System.Drawing.Size(93, 30);
             this.label2.TabIndex = 5;
-            this.label2.Text = "User Name";
+            this.label2.Text = "User ID";
             // 
             // SignUpBTN
             // 
@@ -112,10 +112,10 @@
             this.SignUpBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignUpBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpBTN.ForeColor = System.Drawing.Color.White;
-            this.SignUpBTN.Location = new System.Drawing.Point(600, 0);
+            this.SignUpBTN.Location = new System.Drawing.Point(686, 0);
             this.SignUpBTN.Margin = new System.Windows.Forms.Padding(0);
             this.SignUpBTN.Name = "SignUpBTN";
-            this.SignUpBTN.Size = new System.Drawing.Size(118, 48);
+            this.SignUpBTN.Size = new System.Drawing.Size(135, 48);
             this.SignUpBTN.TabIndex = 5;
             this.SignUpBTN.Text = "SIGN UP";
             this.SignUpBTN.UseVisualStyleBackColor = false;
@@ -123,10 +123,10 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.SignUpBTN);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

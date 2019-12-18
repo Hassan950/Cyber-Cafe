@@ -11,7 +11,7 @@ namespace CCafe
     public class DBManager
     {
         //EVERYONE NEEDS TO CHANGE THIS 
-        static string DB_Connection_String = @"Data Source=.\SQLEXPRESS;Initial Catalog=Cyber_Cafe;Integrated Security=True"; 
+        static string DB_Connection_String = @"Data Source=DESKTOP-DEBLE5N\SQLEXPRESS;Initial Catalog=Cyber_Cafe;Integrated Security=True"; 
         SqlConnection myConnection;
 
     public DBManager()
