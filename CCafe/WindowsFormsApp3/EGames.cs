@@ -15,6 +15,10 @@ namespace CCafe
         public EGames()
         {
             InitializeComponent();
+
+            DataTable dt = WindowHandler.controllerObj.ViewGameDetails();
+            dataGridView1.DataSource = dt;
+            dataGridView1.Refresh();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -58,6 +62,17 @@ namespace CCafe
         {
             WindowHandler.emain.Show();
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void RefreshBTN_Click(object sender, EventArgs e)
+        {
+            DataTable dt = WindowHandler.controllerObj.ViewGameDetails();
+            dataGridView1.DataSource = dt;
         }
     }
 }

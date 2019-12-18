@@ -15,6 +15,8 @@ namespace CCafe
         public EFood()
         {
             InitializeComponent();
+            DataTable dt = WindowHandler.controllerObj.ViewFoodAndDrinks();
+            dataGridView1.DataSource = dt;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -64,6 +66,12 @@ namespace CCafe
         {
             WindowHandler.emain.Show();
             this.Hide();
+        }
+
+        private void RefreshBTN_Click(object sender, EventArgs e)
+        {
+            DataTable dt = WindowHandler.controllerObj.ViewFoodAndDrinks();
+            dataGridView1.DataSource = dt;
         }
     }
 }

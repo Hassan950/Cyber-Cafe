@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.HomeBtn = new System.Windows.Forms.Button();
+            this.RefreshBTN = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -134,22 +136,53 @@
             this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
+            // RefreshBTN
+            // 
+            this.RefreshBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.RefreshBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.RefreshBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.RefreshBTN.FlatAppearance.BorderSize = 0;
+            this.RefreshBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RefreshBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RefreshBTN.ForeColor = System.Drawing.Color.White;
+            this.RefreshBTN.Location = new System.Drawing.Point(1043, 597);
+            this.RefreshBTN.Name = "RefreshBTN";
+            this.RefreshBTN.Size = new System.Drawing.Size(163, 47);
+            this.RefreshBTN.TabIndex = 26;
+            this.RefreshBTN.Text = "Refresh";
+            this.RefreshBTN.UseVisualStyleBackColor = false;
+            this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.label3.Location = new System.Drawing.Point(402, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(263, 36);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Food And Drinks";
+            // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(436, 16);
+            this.dataGridView1.Location = new System.Drawing.Point(408, 100);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(798, 648);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.Size = new System.Drawing.Size(798, 474);
+            this.dataGridView1.TabIndex = 24;
             // 
             // EFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.RefreshBTN);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EFood";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -161,6 +194,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -168,11 +202,13 @@
         private System.Windows.Forms.Label UserNameLp;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Button GamesBTN;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button RefreshBTN;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

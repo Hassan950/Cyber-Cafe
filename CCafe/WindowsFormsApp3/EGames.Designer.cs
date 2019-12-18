@@ -31,15 +31,17 @@
             this.UserNameLp = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.FoodBTN = new System.Windows.Forms.Button();
-            this.HomeBtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.HomeBtn = new System.Windows.Forms.Button();
+            this.FoodBTN = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.RefreshBTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // UserNameLp
@@ -76,32 +78,28 @@
             this.panel1.Size = new System.Drawing.Size(382, 720);
             this.panel1.TabIndex = 1;
             // 
-            // dataGridView1
+            // label7
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(431, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(798, 648);
-            this.dataGridView1.TabIndex = 2;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.label7.Location = new System.Drawing.Point(0, 406);
+            this.label7.Margin = new System.Windows.Forms.Padding(0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(382, 84);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "GAMES";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // FoodBTN
+            // panel2
             // 
-            this.FoodBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.FoodBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.FoodBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.FoodBTN.FlatAppearance.BorderSize = 0;
-            this.FoodBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FoodBTN.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.FoodBTN.ForeColor = System.Drawing.Color.White;
-            this.FoodBTN.Location = new System.Drawing.Point(0, 490);
-            this.FoodBTN.Margin = new System.Windows.Forms.Padding(0);
-            this.FoodBTN.Name = "FoodBTN";
-            this.FoodBTN.Size = new System.Drawing.Size(382, 84);
-            this.FoodBTN.TabIndex = 5;
-            this.FoodBTN.Text = "FOOD AND DRINKS";
-            this.FoodBTN.UseVisualStyleBackColor = false;
-            this.FoodBTN.Click += new System.EventHandler(this.FoodBTN_Click);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.HomeBtn);
+            this.panel2.Location = new System.Drawing.Point(0, 322);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(382, 84);
+            this.panel2.TabIndex = 14;
             // 
             // HomeBtn
             // 
@@ -121,34 +119,70 @@
             this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
-            // panel2
+            // FoodBTN
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.HomeBtn);
-            this.panel2.Location = new System.Drawing.Point(0, 322);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(382, 84);
-            this.panel2.TabIndex = 14;
+            this.FoodBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.FoodBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FoodBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.FoodBTN.FlatAppearance.BorderSize = 0;
+            this.FoodBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FoodBTN.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.FoodBTN.ForeColor = System.Drawing.Color.White;
+            this.FoodBTN.Location = new System.Drawing.Point(0, 490);
+            this.FoodBTN.Margin = new System.Windows.Forms.Padding(0);
+            this.FoodBTN.Name = "FoodBTN";
+            this.FoodBTN.Size = new System.Drawing.Size(382, 84);
+            this.FoodBTN.TabIndex = 5;
+            this.FoodBTN.Text = "FOOD AND DRINKS";
+            this.FoodBTN.UseVisualStyleBackColor = false;
+            this.FoodBTN.Click += new System.EventHandler(this.FoodBTN_Click);
             // 
-            // label7
+            // dataGridView1
             // 
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.label7.Location = new System.Drawing.Point(0, 406);
-            this.label7.Margin = new System.Windows.Forms.Padding(0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(382, 84);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "GAMES";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(435, 100);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 26;
+            this.dataGridView1.Size = new System.Drawing.Size(798, 474);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.label3.Location = new System.Drawing.Point(429, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 36);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Games";
+            // 
+            // RefreshBTN
+            // 
+            this.RefreshBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.RefreshBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.RefreshBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.RefreshBTN.FlatAppearance.BorderSize = 0;
+            this.RefreshBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RefreshBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RefreshBTN.ForeColor = System.Drawing.Color.White;
+            this.RefreshBTN.Location = new System.Drawing.Point(1070, 597);
+            this.RefreshBTN.Name = "RefreshBTN";
+            this.RefreshBTN.Size = new System.Drawing.Size(163, 47);
+            this.RefreshBTN.TabIndex = 18;
+            this.RefreshBTN.Text = "Refresh";
+            this.RefreshBTN.UseVisualStyleBackColor = false;
+            this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
             // 
             // EGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.RefreshBTN);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -159,9 +193,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -174,6 +209,8 @@
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Button FoodBTN;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button RefreshBTN;
     }
 }
 

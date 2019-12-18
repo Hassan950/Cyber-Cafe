@@ -34,5 +34,7 @@ namespace CCafe
         public static string InsertIntoCustomer = "InsertIntoCustomer";
         public static string View_All_Offers = "View_All_Offers";
         public static string View_All_Tournaments = "View_All_Tournaments";
+        public static string ViewGameDetails = "ViewGameDetails";
+        public static string ViewFoodAndDrinks = "ViewFoodAndDrinks";
     }
 }

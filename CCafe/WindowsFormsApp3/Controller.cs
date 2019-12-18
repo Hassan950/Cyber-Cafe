@@ -20,6 +20,18 @@ namespace CCafe
             return dbMan.ExecuteReader(SPN, null);
         }
 
+        public DataTable ViewGameDetails()
+        {
+            string SPN = StoredProcedures.ViewGameDetails;
+            return dbMan.ExecuteReader(SPN, null);
+        }
+
+        public DataTable ViewFoodAndDrinks()
+        {
+            string SPN = StoredProcedures.ViewFoodAndDrinks;
+            return dbMan.ExecuteReader(SPN, null);
+        }
+
         public DataTable ViewConsoleName()
         {
             string SPN = StoredProcedures.ViewConsoleName;
@@ -39,6 +51,8 @@ namespace CCafe
             Parameters.Add("@reg_date", System.DateTime.Today.ToString("yyyy-MM-dd"));
             return dbMan.ExecuteReader(SPN, Parameters);
         }
+
+
         public DataTable ViewTournaments()
         {
             string SPN = StoredProcedures.View_Available_Tournaments;
