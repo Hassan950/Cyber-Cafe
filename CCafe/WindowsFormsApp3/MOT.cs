@@ -90,6 +90,8 @@ namespace CCafe
 
         private void MOT_Load(object sender, EventArgs e)
         {
+            DataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
             IDLabel.Text = Program.UserID.ToString();
             TournNameCB.DataSource = Program.ctrl.ViewAllTournaments();
             TournNameCB.DisplayMember = "name";
