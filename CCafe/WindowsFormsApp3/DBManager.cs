@@ -10,8 +10,8 @@ namespace CCafe
 {
     public class DBManager
     {
-        //EVERYONE NEEDS TO CHANGE THIS 
-        static string DB_Connection_String = @"Data Source= DESKTOP-DEBLE5N\SQLEXPRESS;Initial Catalog=Cyber_Cafe;Integrated Security=True"; 
+        //EVERYONE NEEDS TO CHANGE THIS
+        static string DB_Connection_String = @"Data Source=.\SQLEXPRESS;Initial Catalog=Cyber_Cafe;Integrated Security=True";
         SqlConnection myConnection;
 
     public DBManager()
@@ -43,7 +43,7 @@ namespace CCafe
                 }
 
                 return myCommand.ExecuteNonQuery();
-               
+
             }
             catch (Exception ex)
             {
@@ -81,7 +81,7 @@ namespace CCafe
                     reader.Close();
                     return null;
                 }
-               
+
             }
             catch (Exception ex)
             {
@@ -106,7 +106,7 @@ namespace CCafe
                     }
                 }
 
-                return myCommand.ExecuteScalar();            
+                return myCommand.ExecuteScalar();
 
             }
             catch (Exception ex)
@@ -159,4 +159,3 @@ namespace CCafe
         }
     }
     }
-

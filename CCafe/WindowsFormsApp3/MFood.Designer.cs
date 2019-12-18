@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.HomeBTN = new System.Windows.Forms.Button();
             this.UserNameLp = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -38,16 +39,28 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.AddFoodBTN = new System.Windows.Forms.Button();
             this.AddDrinksBTN = new System.Windows.Forms.Button();
+            this.TypeBox = new System.Windows.Forms.ComboBox();
+            this.foodNDrinksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.InsertGroup = new System.Windows.Forms.GroupBox();
+            this.NameBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.StockBox = new System.Windows.Forms.NumericUpDown();
+            this.PriceBox = new System.Windows.Forms.NumericUpDown();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.NameCombo = new System.Windows.Forms.ComboBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodNDrinksBindingSource)).BeginInit();
+            this.InsertGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StockBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PriceBox)).BeginInit();
             this.SuspendLayout();
             // 
             // HomeBTN
@@ -187,58 +200,22 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(479, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(479, 64);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(466, 529);
+            this.dataGridView1.Size = new System.Drawing.Size(466, 638);
             this.dataGridView1.TabIndex = 18;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(1187, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 29);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Food";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label3.Location = new System.Drawing.Point(670, 16);
+            this.label3.Location = new System.Drawing.Point(474, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 29);
+            this.label3.Size = new System.Drawing.Size(65, 29);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Drinks";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(983, 55);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 26;
-            this.dataGridView2.Size = new System.Drawing.Size(466, 529);
-            this.dataGridView2.TabIndex = 21;
-            // 
-            // AddFoodBTN
-            // 
-            this.AddFoodBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.AddFoodBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.AddFoodBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.AddFoodBTN.FlatAppearance.BorderSize = 0;
-            this.AddFoodBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddFoodBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddFoodBTN.ForeColor = System.Drawing.Color.White;
-            this.AddFoodBTN.Location = new System.Drawing.Point(1306, 628);
-            this.AddFoodBTN.Name = "AddFoodBTN";
-            this.AddFoodBTN.Size = new System.Drawing.Size(143, 64);
-            this.AddFoodBTN.TabIndex = 22;
-            this.AddFoodBTN.Text = "ADD FOOD";
-            this.AddFoodBTN.UseVisualStyleBackColor = false;
+            this.label3.Text = "Type";
             // 
             // AddDrinksBTN
             // 
@@ -249,23 +226,181 @@
             this.AddDrinksBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddDrinksBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddDrinksBTN.ForeColor = System.Drawing.Color.White;
-            this.AddDrinksBTN.Location = new System.Drawing.Point(802, 628);
+            this.AddDrinksBTN.Location = new System.Drawing.Point(252, 564);
             this.AddDrinksBTN.Name = "AddDrinksBTN";
             this.AddDrinksBTN.Size = new System.Drawing.Size(143, 64);
             this.AddDrinksBTN.TabIndex = 23;
-            this.AddDrinksBTN.Text = "ADD DRINKS";
+            this.AddDrinksBTN.Text = "ADD";
             this.AddDrinksBTN.UseVisualStyleBackColor = false;
+            this.AddDrinksBTN.Click += new System.EventHandler(this.AddDrinksBTN_Click);
+            // 
+            // TypeBox
+            // 
+            this.TypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TypeBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TypeBox.FormattingEnabled = true;
+            this.TypeBox.Items.AddRange(new object[] {
+            "Drink",
+            "Food",
+            "ALL"});
+            this.TypeBox.Location = new System.Drawing.Point(545, 18);
+            this.TypeBox.Name = "TypeBox";
+            this.TypeBox.Size = new System.Drawing.Size(400, 31);
+            this.TypeBox.TabIndex = 24;
+            this.TypeBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
+            // cyber_CafeDataSet
+            // 
+            // 
+            // foodNDrinksBindingSource
+            // 
+            // 
+            // foodNDrinksTableAdapter
+            // 
+            // 
+            // InsertGroup
+            // 
+            this.InsertGroup.Controls.Add(this.checkBox2);
+            this.InsertGroup.Controls.Add(this.NameCombo);
+            this.InsertGroup.Controls.Add(this.checkBox1);
+            this.InsertGroup.Controls.Add(this.PriceBox);
+            this.InsertGroup.Controls.Add(this.StockBox);
+            this.InsertGroup.Controls.Add(this.label5);
+            this.InsertGroup.Controls.Add(this.label4);
+            this.InsertGroup.Controls.Add(this.label1);
+            this.InsertGroup.Controls.Add(this.NameBox);
+            this.InsertGroup.Controls.Add(this.AddDrinksBTN);
+            this.InsertGroup.Location = new System.Drawing.Point(1035, 64);
+            this.InsertGroup.Name = "InsertGroup";
+            this.InsertGroup.Size = new System.Drawing.Size(416, 638);
+            this.InsertGroup.TabIndex = 25;
+            this.InsertGroup.TabStop = false;
+            this.InsertGroup.Text = "groupBox1";
+            // 
+            // NameBox
+            // 
+            this.NameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NameBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameBox.Location = new System.Drawing.Point(96, 65);
+            this.NameBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.NameBox.Name = "NameBox";
+            this.NameBox.Size = new System.Drawing.Size(192, 32);
+            this.NameBox.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
+            this.label1.Location = new System.Drawing.Point(6, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 29);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Name";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
+            this.label4.Location = new System.Drawing.Point(6, 128);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 29);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Price";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
+            this.label5.Location = new System.Drawing.Point(6, 188);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 29);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Stock";
+            // 
+            // StockBox
+            // 
+            this.StockBox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.StockBox.Location = new System.Drawing.Point(96, 185);
+            this.StockBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.StockBox.Name = "StockBox";
+            this.StockBox.Size = new System.Drawing.Size(192, 32);
+            this.StockBox.TabIndex = 31;
+            this.StockBox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // PriceBox
+            // 
+            this.PriceBox.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.PriceBox.Location = new System.Drawing.Point(96, 125);
+            this.PriceBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.PriceBox.Name = "PriceBox";
+            this.PriceBox.Size = new System.Drawing.Size(192, 32);
+            this.PriceBox.TabIndex = 32;
+            this.PriceBox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.checkBox1.Location = new System.Drawing.Point(294, 73);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(116, 23);
+            this.checkBox1.TabIndex = 33;
+            this.checkBox1.Text = "Already Exits";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // NameCombo
+            // 
+            this.NameCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.NameCombo.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.NameCombo.FormattingEnabled = true;
+            this.NameCombo.Location = new System.Drawing.Point(96, 65);
+            this.NameCombo.Name = "NameCombo";
+            this.NameCombo.Size = new System.Drawing.Size(192, 31);
+            this.NameCombo.TabIndex = 34;
+            this.NameCombo.Visible = false;
+            this.NameCombo.SelectedIndexChanged += new System.EventHandler(this.NameCombo_SelectedIndexChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.checkBox2.Location = new System.Drawing.Point(294, 131);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(107, 23);
+            this.checkBox2.TabIndex = 35;
+            this.checkBox2.Text = "Same Price";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Visible = false;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // MFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1463, 720);
-            this.Controls.Add(this.AddDrinksBTN);
-            this.Controls.Add(this.AddFoodBTN);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.InsertGroup);
+            this.Controls.Add(this.TypeBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -278,7 +413,11 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodNDrinksBindingSource)).EndInit();
+            this.InsertGroup.ResumeLayout(false);
+            this.InsertGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StockBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PriceBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,11 +434,20 @@
         private System.Windows.Forms.Button EditCyberBTN;
         private System.Windows.Forms.Button ManageBTN;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button AddFoodBTN;
         private System.Windows.Forms.Button AddDrinksBTN;
+        private System.Windows.Forms.ComboBox TypeBox;
+        private System.Windows.Forms.BindingSource foodNDrinksBindingSource;
+        private System.Windows.Forms.GroupBox InsertGroup;
+        private System.Windows.Forms.TextBox NameBox;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.NumericUpDown PriceBox;
+        private System.Windows.Forms.NumericUpDown StockBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox NameCombo;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 

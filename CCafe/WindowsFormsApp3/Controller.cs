@@ -185,6 +185,26 @@ namespace CCafe
             return returnvalue;
         }
 
+        public DataTable ViewSupply(string type)
+        {
+            string StoredProcedureName = StoredProcedures.ViewSupply;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@type", type);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+
+
+        public int BuySupplies(string name, string type, int price, int stock)
+        {
+            string StoredProcedureName = StoredProcedures.BuySupplies;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@name", name);
+            Parameters.Add("@type", type);
+            Parameters.Add("@price", price);
+            Parameters.Add("@stock", stock);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
         public void TerminateConnection()
         {
             dbMan.CloseConnection();
