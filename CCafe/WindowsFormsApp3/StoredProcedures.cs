@@ -36,5 +36,6 @@ namespace CCafe
         public static string View_All_Tournaments = "View_All_Tournaments";
         public static string ViewGameDetails = "ViewGameDetails";
         public static string ViewFoodAndDrinks = "ViewFoodAndDrinks";
+	public static string ViewSupply = "ViewSupply";
     }
 }
