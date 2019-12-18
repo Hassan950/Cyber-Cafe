@@ -15,6 +15,8 @@ namespace CCafe
         public CSUBS()
         {
             InitializeComponent();
+            TDGV.DataSource = WindowHandler.controllerObj.ViewTournaments();
+            ODGV.DataSource = WindowHandler.controllerObj.ViewOffers();
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)
@@ -31,7 +33,39 @@ namespace CCafe
 
         private void AcceptBTN_Click(object sender, EventArgs e)
         {
+            if (ODGV.SelectedRows.Count > 0)
+            {
+                if (WindowHandler.controllerObj.AcceptOffer(ODGV.SelectedRows[0].Cells[0].Value.ToString()) !=0) 
+                    MessageBox.Show("Offer Accepted");
+                else
+                    MessageBox.Show("Offer Already Accepted");
+            }
+            else
+                MessageBox.Show("Please, Select an Offer");
 
+
+        }
+
+        private void EnrollBTN_Click(object sender, EventArgs e)
+        {
+       
+
+            if(TDGV.SelectedRows.Count > 0)
+            { 
+                if (WindowHandler.controllerObj.TournamentEnroll(TDGV.SelectedRows[0].Cells[0].Value.ToString()) != 0)
+                    MessageBox.Show("Enrolled Succesfully");
+                else
+                    MessageBox.Show("Already Enrolled");
+            }
+            else
+                MessageBox.Show("Please, Select a Tournament");
+
+
+        }
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            WindowHandler.controllerObj.TerminateConnection();
+            Application.Exit();
         }
     }
 }

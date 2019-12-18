@@ -38,7 +38,7 @@ namespace CCafe
         {
             if(FeedTB.Text=="")
                 MessageBox.Show("Please, insert a Feedback");
-            if(WindowHandler.controllerObj.SendFeedback(FeedTB.Text) !=0)
+            if (WindowHandler.controllerObj.SendFeedback(FeedTB.Text, "feedback") != 0)
                 MessageBox.Show("Feedback Sent Successfully");
             else
                 MessageBox.Show("Feedback Couldn't be Sent");
@@ -48,10 +48,16 @@ namespace CCafe
         {
             if(ReqGameTB.Text == "")
                 MessageBox.Show("Please, insert a Request");
-            if (WindowHandler.controllerObj.SendFeedback(FeedTB.Text) != 0)
+            if (WindowHandler.controllerObj.SendFeedback(FeedTB.Text,"request") != 0) 
                 MessageBox.Show("Request Sent Successfully");
             else
                 MessageBox.Show("Request Couldn't be Sent");
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            WindowHandler.controllerObj.TerminateConnection();
+            Application.Exit();
         }
     }
 }

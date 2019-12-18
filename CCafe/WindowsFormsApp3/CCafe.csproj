@@ -128,10 +128,7 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-
-    <Compile Include="SP.cs" />
     <Compile Include="StoredProcedures.cs" />
-
     <Compile Include="WindowHandler.cs" />
     <EmbeddedResource Include="CFeedback.resx">
       <DependentUpon>CFeedback.cs</DependentUpon>

@@ -41,9 +41,12 @@
             this.ReqGameTB = new System.Windows.Forms.TextBox();
             this.SendFBBTN = new System.Windows.Forms.Button();
             this.SendRGBTN = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Exit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,9 +109,9 @@
             // pictureBox3
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 16);
+            this.pictureBox3.Location = new System.Drawing.Point(26, 27);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(336, 205);
+            this.pictureBox3.Size = new System.Drawing.Size(336, 194);
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
@@ -213,11 +216,45 @@
             this.SendRGBTN.UseVisualStyleBackColor = false;
             this.SendRGBTN.Click += new System.EventHandler(this.SendRGBTN_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.Exit);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1280, 24);
+            this.panel2.TabIndex = 31;
+            // 
+            // Exit
+            // 
+            this.Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Exit.FlatAppearance.BorderSize = 0;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.ForeColor = System.Drawing.Color.White;
+            this.Exit.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.Exit.Location = new System.Drawing.Point(1256, 0);
+            this.Exit.Margin = new System.Windows.Forms.Padding(0);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(24, 24);
+            this.Exit.TabIndex = 24;
+            this.Exit.Text = "X";
+            this.Exit.UseVisualStyleBackColor = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // CFeedback
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.SendRGBTN);
             this.Controls.Add(this.SendFBBTN);
             this.Controls.Add(this.label2);
@@ -233,6 +270,7 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +291,7 @@
         private System.Windows.Forms.TextBox ReqGameTB;
         private System.Windows.Forms.Button SendFBBTN;
         private System.Windows.Forms.Button SendRGBTN;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button Exit;
     }
 }
