@@ -19,6 +19,19 @@ namespace CCafe
             string SPN = StoredProcedures.ViewGames;
             return dbMan.ExecuteReader(SPN, null);
         }
+
+        public DataTable ViewConsoleName()
+        {
+            string SPN = StoredProcedures.ViewConsoleName;
+            return dbMan.ExecuteReader(SPN, null);
+        }
+
+        public DataTable ViewRoomNumber()
+        {
+            string SPN = StoredProcedures.ViewRoomNumber;
+            return dbMan.ExecuteReader(SPN, null);
+        }
+
         public int SendFeedback(string msg)
         {
             string SPN = StoredProcedures.InsertintoFeedback;
@@ -55,12 +68,11 @@ namespace CCafe
             return dbMan.ExecuteReader(StoredProcedureName, null);
         }
 
-        public int UpdateConsoles(int roomNum, string consoleName, string condition)
+        public int UpdateConsoles(int roomNum,string condition)
         {
             string StoredProcedureName = StoredProcedures.EditConsoles;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@room_no", roomNum);
-            Parameters.Add("@name", consoleName);
             Parameters.Add("@condition", condition);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
 

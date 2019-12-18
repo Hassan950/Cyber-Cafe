@@ -288,3 +288,5 @@ values
 ('Tournamnet1','2019-12-06',55555,'2019-12-07'),
 ('Tournamnet1','2019-12-06',66666,'2019-12-07')
 
+alter table Console
+ALTER COLUMN condition bool;

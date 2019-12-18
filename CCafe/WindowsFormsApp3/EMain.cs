@@ -15,9 +15,14 @@ namespace CCafe
         public EMain()
         {
             InitializeComponent();
-            DataTable dt = WindowHandler.controllerObj.ViewAvailibleConsoles();
-            dataGridView1.DataSource = dt;
+            DataTable dt1 = WindowHandler.controllerObj.ViewAvailibleConsoles();
+            dataGridView1.DataSource = dt1;
             dataGridView1.Refresh();
+
+            DataTable dt2 = WindowHandler.controllerObj.ViewRoomNumber();
+            comboBoxRoomNumber.DataSource = dt2;
+            comboBoxRoomNumber.DisplayMember = "number";
+            comboBoxRoomNumber.ValueMember = "number";
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -40,7 +45,7 @@ namespace CCafe
         private void CMain_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'cyber_CafeDataSet.Console' table. You can move, or remove it, as needed.
-            this.consoleTableAdapter.Fill(this.cyber_CafeDataSet.Console);
+            //this.consoleTableAdapter.Fill(this.cyber_CafeDataSet.Console);
 
         }
 
@@ -62,7 +67,7 @@ namespace CCafe
 
         private void UpdateBTN_Click(object sender, EventArgs e)
         {
-            if (comboBoxConsoleName.SelectedValue == null || comboBoxRoomNumber.SelectedValue == null || ((radioButtonWorking.Checked == false && radioButtonNotWorking.Checked == false)))
+            if ( comboBoxRoomNumber.SelectedValue == null || ((radioButtonWorking.Checked == false && radioButtonNotWorking.Checked == false)))
             {
                 MessageBox.Show("Please Select All Fields To Update");
                 return;
@@ -71,7 +76,6 @@ namespace CCafe
             else
             {
                 int roomNumber = Convert.ToInt16(comboBoxRoomNumber.SelectedValue);
-                string consoleName = comboBoxConsoleName.SelectedValue.ToString();
                 string condition;
 
                 if (radioButtonWorking.Checked)
@@ -83,7 +87,7 @@ namespace CCafe
                     condition = "not okay";
                 }
 
-                WindowHandler.controllerObj.UpdateConsoles(roomNumber, consoleName, condition);
+                WindowHandler.controllerObj.UpdateConsoles(roomNumber, condition);
                 dataGridView1.Refresh();
                 MessageBox.Show("Console Updated Successfuly");
 

@@ -52,17 +52,7 @@
     <Compile Include="CFeedback.Designer.cs">
       <DependentUpon>CFeedback.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompanyDBLab5DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CompanyDBLab5DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Controller.cs" />
-    <Compile Include="Cyber_CafeDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Cyber_CafeDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DBManager.cs" />
     <Compile Include="EFood.cs">
       <SubType>Form</SubType>
@@ -189,28 +179,6 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="CompanyDBLab5DataSet.xsc">
-      <DependentUpon>CompanyDBLab5DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CompanyDBLab5DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CompanyDBLab5DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CompanyDBLab5DataSet.xss">
-      <DependentUpon>CompanyDBLab5DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Cyber_CafeDataSet.xsc">
-      <DependentUpon>Cyber_CafeDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Cyber_CafeDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Cyber_CafeDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Cyber_CafeDataSet.xss">
-      <DependentUpon>Cyber_CafeDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

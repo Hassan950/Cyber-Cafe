@@ -41,26 +41,21 @@
             this.UpdateBTN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBoxRoomNumber = new System.Windows.Forms.ComboBox();
             this.consoleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cyberCafeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cyber_CafeDataSet = new CCafe.Cyber_CafeDataSet();
-            this.comboBoxConsoleName = new System.Windows.Forms.ComboBox();
             this.consoleBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.consoleTableAdapter = new CCafe.Cyber_CafeDataSetTableAdapters.ConsoleTableAdapter();
             this.consoleBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.consoleBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.radioButtonWorking = new System.Windows.Forms.RadioButton();
             this.radioButtonNotWorking = new System.Windows.Forms.RadioButton();
+            this.comboBoxRoomNumber = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consoleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cyberCafeDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cyber_CafeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consoleBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consoleBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consoleBindingSource3)).BeginInit();
@@ -192,7 +187,7 @@
             this.UpdateBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateBTN.ForeColor = System.Drawing.Color.White;
-            this.UpdateBTN.Location = new System.Drawing.Point(406, 626);
+            this.UpdateBTN.Location = new System.Drawing.Point(406, 587);
             this.UpdateBTN.Name = "UpdateBTN";
             this.UpdateBTN.Size = new System.Drawing.Size(163, 47);
             this.UpdateBTN.TabIndex = 17;
@@ -222,73 +217,26 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Room Number";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
-            this.label5.Location = new System.Drawing.Point(401, 521);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 29);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Name";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
-            this.label6.Location = new System.Drawing.Point(401, 564);
+            this.label6.Location = new System.Drawing.Point(401, 525);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 29);
             this.label6.TabIndex = 22;
             this.label6.Text = "Condition";
-            // 
-            // comboBoxRoomNumber
-            // 
-            this.comboBoxRoomNumber.DataSource = this.consoleBindingSource;
-            this.comboBoxRoomNumber.DisplayMember = "room_no";
-            this.comboBoxRoomNumber.FormattingEnabled = true;
-            this.comboBoxRoomNumber.Location = new System.Drawing.Point(573, 485);
-            this.comboBoxRoomNumber.Name = "comboBoxRoomNumber";
-            this.comboBoxRoomNumber.Size = new System.Drawing.Size(247, 24);
-            this.comboBoxRoomNumber.TabIndex = 23;
-            this.comboBoxRoomNumber.ValueMember = "room_no";
             // 
             // consoleBindingSource
             // 
             this.consoleBindingSource.DataMember = "Console";
             this.consoleBindingSource.DataSource = this.cyberCafeDataSetBindingSource;
             // 
-            // cyberCafeDataSetBindingSource
-            // 
-            this.cyberCafeDataSetBindingSource.DataSource = this.cyber_CafeDataSet;
-            this.cyberCafeDataSetBindingSource.Position = 0;
-            // 
-            // cyber_CafeDataSet
-            // 
-            this.cyber_CafeDataSet.DataSetName = "Cyber_CafeDataSet";
-            this.cyber_CafeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // comboBoxConsoleName
-            // 
-            this.comboBoxConsoleName.DataSource = this.consoleBindingSource1;
-            this.comboBoxConsoleName.DisplayMember = "name";
-            this.comboBoxConsoleName.FormattingEnabled = true;
-            this.comboBoxConsoleName.Location = new System.Drawing.Point(573, 528);
-            this.comboBoxConsoleName.Name = "comboBoxConsoleName";
-            this.comboBoxConsoleName.Size = new System.Drawing.Size(247, 24);
-            this.comboBoxConsoleName.TabIndex = 24;
-            this.comboBoxConsoleName.ValueMember = "name";
-            // 
             // consoleBindingSource1
             // 
             this.consoleBindingSource1.DataMember = "Console";
             this.consoleBindingSource1.DataSource = this.cyberCafeDataSetBindingSource;
-            // 
-            // consoleTableAdapter
-            // 
-            this.consoleTableAdapter.ClearBeforeFill = true;
             // 
             // consoleBindingSource2
             // 
@@ -305,7 +253,7 @@
             this.radioButtonWorking.AutoSize = true;
             this.radioButtonWorking.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonWorking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radioButtonWorking.Location = new System.Drawing.Point(573, 572);
+            this.radioButtonWorking.Location = new System.Drawing.Point(573, 533);
             this.radioButtonWorking.Name = "radioButtonWorking";
             this.radioButtonWorking.Size = new System.Drawing.Size(92, 22);
             this.radioButtonWorking.TabIndex = 26;
@@ -318,7 +266,7 @@
             this.radioButtonNotWorking.AutoSize = true;
             this.radioButtonNotWorking.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonNotWorking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radioButtonNotWorking.Location = new System.Drawing.Point(697, 572);
+            this.radioButtonNotWorking.Location = new System.Drawing.Point(697, 533);
             this.radioButtonNotWorking.Name = "radioButtonNotWorking";
             this.radioButtonNotWorking.Size = new System.Drawing.Size(123, 22);
             this.radioButtonNotWorking.TabIndex = 27;
@@ -326,17 +274,23 @@
             this.radioButtonNotWorking.Text = "Not Working";
             this.radioButtonNotWorking.UseVisualStyleBackColor = true;
             // 
+            // comboBoxRoomNumber
+            // 
+            this.comboBoxRoomNumber.FormattingEnabled = true;
+            this.comboBoxRoomNumber.Location = new System.Drawing.Point(574, 483);
+            this.comboBoxRoomNumber.Name = "comboBoxRoomNumber";
+            this.comboBoxRoomNumber.Size = new System.Drawing.Size(246, 24);
+            this.comboBoxRoomNumber.TabIndex = 28;
+            // 
             // EMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.comboBoxRoomNumber);
             this.Controls.Add(this.radioButtonNotWorking);
             this.Controls.Add(this.radioButtonWorking);
-            this.Controls.Add(this.comboBoxConsoleName);
-            this.Controls.Add(this.comboBoxRoomNumber);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.UpdateBTN);
@@ -354,8 +308,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consoleBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cyberCafeDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cyber_CafeDataSet)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.cyberCafeDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consoleBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consoleBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consoleBindingSource3)).EndInit();
@@ -377,19 +330,17 @@
         private System.Windows.Forms.Button UpdateBTN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBoxRoomNumber;
-        private System.Windows.Forms.ComboBox comboBoxConsoleName;
         private System.Windows.Forms.BindingSource cyberCafeDataSetBindingSource;
-        private Cyber_CafeDataSet cyber_CafeDataSet;
+        //private Cyber_CafeDataSet cyber_CafeDataSet;
         private System.Windows.Forms.BindingSource consoleBindingSource;
-        private Cyber_CafeDataSetTableAdapters.ConsoleTableAdapter consoleTableAdapter;
+        //private Cyber_CafeDataSetTableAdapters.ConsoleTableAdapter consoleTableAdapter;
         private System.Windows.Forms.BindingSource consoleBindingSource1;
         private System.Windows.Forms.BindingSource consoleBindingSource3;
         private System.Windows.Forms.BindingSource consoleBindingSource2;
         private System.Windows.Forms.RadioButton radioButtonWorking;
         private System.Windows.Forms.RadioButton radioButtonNotWorking;
+        private System.Windows.Forms.ComboBox comboBoxRoomNumber;
     }
 }
 
