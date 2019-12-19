@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.HomeBTN = new System.Windows.Forms.Button();
             this.UserNameLp = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -42,7 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.AddDrinksBTN = new System.Windows.Forms.Button();
             this.TypeBox = new System.Windows.Forms.ComboBox();
-            this.foodNDrinksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.InsertGroup = new System.Windows.Forms.GroupBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.NameCombo = new System.Windows.Forms.ComboBox();
@@ -57,7 +55,6 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foodNDrinksBindingSource)).BeginInit();
             this.InsertGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PriceBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StockBox)).BeginInit();
@@ -407,7 +404,6 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foodNDrinksBindingSource)).EndInit();
             this.InsertGroup.ResumeLayout(false);
             this.InsertGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PriceBox)).EndInit();
@@ -431,7 +427,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button AddDrinksBTN;
         private System.Windows.Forms.ComboBox TypeBox;
-        private System.Windows.Forms.BindingSource foodNDrinksBindingSource;
         private System.Windows.Forms.GroupBox InsertGroup;
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.CheckBox checkBox1;

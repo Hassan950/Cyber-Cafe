@@ -40,20 +40,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.TypeBox = new System.Windows.Forms.ComboBox();
             this.InsertGroup = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.PasswordBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.IDBox = new System.Windows.Forms.TextBox();
+            this.AddDrinksBTN = new System.Windows.Forms.Button();
             this.SalaryBox = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NameBox = new System.Windows.Forms.TextBox();
-            this.AddDrinksBTN = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.IDBox = new System.Windows.Forms.TextBox();
             this.StartTime = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.EndTime = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.PasswordBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -238,6 +238,66 @@
             this.InsertGroup.TabStop = false;
             this.InsertGroup.Text = "groupBox1";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
+            this.label8.Location = new System.Drawing.Point(6, 77);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(114, 29);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "Password";
+            // 
+            // PasswordBox
+            // 
+            this.PasswordBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PasswordBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordBox.Location = new System.Drawing.Point(160, 79);
+            this.PasswordBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.PasswordBox.Name = "PasswordBox";
+            this.PasswordBox.Size = new System.Drawing.Size(218, 32);
+            this.PasswordBox.TabIndex = 39;
+            this.PasswordBox.UseSystemPasswordChar = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
+            this.label5.Location = new System.Drawing.Point(6, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 29);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "ID";
+            // 
+            // IDBox
+            // 
+            this.IDBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IDBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDBox.Location = new System.Drawing.Point(160, 29);
+            this.IDBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.IDBox.Name = "IDBox";
+            this.IDBox.Size = new System.Drawing.Size(218, 32);
+            this.IDBox.TabIndex = 33;
+            // 
+            // AddDrinksBTN
+            // 
+            this.AddDrinksBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
+            this.AddDrinksBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.AddDrinksBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.AddDrinksBTN.FlatAppearance.BorderSize = 0;
+            this.AddDrinksBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddDrinksBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddDrinksBTN.ForeColor = System.Drawing.Color.White;
+            this.AddDrinksBTN.Location = new System.Drawing.Point(252, 564);
+            this.AddDrinksBTN.Name = "AddDrinksBTN";
+            this.AddDrinksBTN.Size = new System.Drawing.Size(143, 64);
+            this.AddDrinksBTN.TabIndex = 23;
+            this.AddDrinksBTN.Text = "ADD";
+            this.AddDrinksBTN.UseVisualStyleBackColor = false;
+            this.AddDrinksBTN.Click += new System.EventHandler(this.AddDrinksBTN_Click);
+            // 
             // SalaryBox
             // 
             this.SalaryBox.Font = new System.Drawing.Font("Century Gothic", 12F);
@@ -288,23 +348,6 @@
             this.NameBox.Size = new System.Drawing.Size(218, 32);
             this.NameBox.TabIndex = 24;
             // 
-            // AddDrinksBTN
-            // 
-            this.AddDrinksBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.AddDrinksBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.AddDrinksBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.AddDrinksBTN.FlatAppearance.BorderSize = 0;
-            this.AddDrinksBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddDrinksBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddDrinksBTN.ForeColor = System.Drawing.Color.White;
-            this.AddDrinksBTN.Location = new System.Drawing.Point(252, 564);
-            this.AddDrinksBTN.Name = "AddDrinksBTN";
-            this.AddDrinksBTN.Size = new System.Drawing.Size(143, 64);
-            this.AddDrinksBTN.TabIndex = 23;
-            this.AddDrinksBTN.Text = "ADD";
-            this.AddDrinksBTN.UseVisualStyleBackColor = false;
-            this.AddDrinksBTN.Click += new System.EventHandler(this.AddDrinksBTN_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -314,31 +357,10 @@
             this.dataGridView1.Size = new System.Drawing.Size(466, 638);
             this.dataGridView1.TabIndex = 26;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label5.Location = new System.Drawing.Point(6, 27);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 29);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "ID";
-            // 
-            // IDBox
-            // 
-            this.IDBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IDBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IDBox.Location = new System.Drawing.Point(160, 29);
-            this.IDBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.IDBox.Name = "IDBox";
-            this.IDBox.Size = new System.Drawing.Size(218, 32);
-            this.IDBox.TabIndex = 33;
-            // 
             // StartTime
             // 
             this.StartTime.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.StartTime.CustomFormat = "mm:HH";
+            this.StartTime.CustomFormat = "tt mm:hh";
             this.StartTime.Font = new System.Drawing.Font("Tahoma", 12F);
             this.StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.StartTime.Location = new System.Drawing.Point(157, 118);
@@ -371,35 +393,13 @@
             // EndTime
             // 
             this.EndTime.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.EndTime.CustomFormat = "mm:HH";
+            this.EndTime.CustomFormat = "tt mm:hh";
             this.EndTime.Font = new System.Drawing.Font("Tahoma", 12F);
             this.EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.EndTime.Location = new System.Drawing.Point(157, 173);
             this.EndTime.Name = "EndTime";
             this.EndTime.Size = new System.Drawing.Size(218, 32);
             this.EndTime.TabIndex = 36;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label8.Location = new System.Drawing.Point(6, 77);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(114, 29);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Password";
-            // 
-            // PasswordBox
-            // 
-            this.PasswordBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordBox.Location = new System.Drawing.Point(160, 79);
-            this.PasswordBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(218, 32);
-            this.PasswordBox.TabIndex = 39;
-            this.PasswordBox.UseSystemPasswordChar = true;
             // 
             // panel3
             // 
