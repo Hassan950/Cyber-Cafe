@@ -52,7 +52,6 @@ namespace CCafe
             return dbMan.ExecuteReader(SPN, Parameters);
         }
 
-
         public DataTable ViewTournaments()
         {
             string SPN = StoredProcedures.View_Available_Tournaments;
@@ -230,5 +229,24 @@ namespace CCafe
             Parameters.Add("@end_time", end_time);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
+
+        public int ModifyFoodStock(string name , int stockNum)
+        {
+            string StoredProcedureName = StoredProcedures.ModifyFoodStock;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@name", name);
+            Parameters.Add("@stock", stockNum);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
+        public int ModifyGameStock(string name , int stockNum)
+        {
+            string StoredProcedureName = StoredProcedures.ModifyGameStock;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@name", name);
+            Parameters.Add("@total_number", stockNum);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
     }
 }

@@ -38,5 +38,7 @@ namespace CCafe
         public static string ViewFoodAndDrinks = "ViewFoodAndDrinks";
 	    public static string ViewSupply = "ViewSupply";
         public static string ViewAccounts = "ViewAccounts";
+        public static string ModifyFoodStock = "ModifyFoodStock";
+        public static string ModifyGameStock = "ModifyGameStock";
     }
 }
