@@ -58,6 +58,32 @@ namespace CCafe
             string SPN = StoredProcedures.View_Available_Tournaments;
             return dbMan.ExecuteReader(SPN, null);
         }
+
+        public int AddTournaments(string name, string date, string status, int participants)
+        {
+            string StoredProcedureName = StoredProcedures.EditTourn;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@name", name);
+            Parameters.Add("@date", date);
+            Parameters.Add("@status", status);
+            Parameters.Add("@comp_no", participants);
+
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
+        public int AddOffers(string name, string type, int discount, string startdate,string enddate)
+        {
+            string StoredProcedureName = StoredProcedures.MakeOffer;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@name",name);
+            Parameters.Add("@type", type);
+            Parameters.Add("@discount",discount);
+            Parameters.Add("@start_date",startdate);
+            Parameters.Add("@end_date", enddate);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
+
         public int SendFeedback(string msg, string type)
         {
             string SPN = StoredProcedures.InsertintoFeedback;
@@ -101,7 +127,6 @@ namespace CCafe
 
         public int CheckForUser(int ID, string password)
         {
-
             string StoredProcedureName = StoredProcedures.UserLogin;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@ID", ID);
@@ -112,7 +137,6 @@ namespace CCafe
 
         public int InsertCustomer(int ID, string name, string email, string phone_num)
         {
-
             string StoredProcedureName = StoredProcedures.InsertIntoCustomer;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@ID", ID);
@@ -185,6 +209,26 @@ namespace CCafe
         {
             dbMan.CloseConnection();
         }
-        
+
+
+        public DataTable ViewAccounts(int type)
+        {
+            string StoredProcedureName = StoredProcedures.ViewAccounts;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@type", type);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+
+        public int InsertEmployee(int ID, string name, int salary, string start_time, string end_time)
+        {
+            string StoredProcedureName = StoredProcedures.HireEmp;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@name", name);
+            Parameters.Add("@salary", salary);
+            Parameters.Add("@start_time", start_time);
+            Parameters.Add("@end_time", end_time);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace CCafe
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             WindowHandler.Intialaize();
-            Application.Run(WindowHandler.emain);
+            Application.Run(WindowHandler.login);
         }
     }
 }

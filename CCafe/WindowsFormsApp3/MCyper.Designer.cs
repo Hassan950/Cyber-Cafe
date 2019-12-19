@@ -58,7 +58,7 @@
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
             this.UserNameLp.Location = new System.Drawing.Point(0, 200);
             this.UserNameLp.Name = "UserNameLp";
-            this.UserNameLp.Size = new System.Drawing.Size(382, 45);
+            this.UserNameLp.Size = new System.Drawing.Size(437, 45);
             this.UserNameLp.TabIndex = 6;
             this.UserNameLp.Text = "MANAGER";
             this.UserNameLp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,7 +75,7 @@
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(382, 720);
+            this.panel1.Size = new System.Drawing.Size(437, 720);
             this.panel1.TabIndex = 21;
             // 
             // panel3
@@ -85,7 +85,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 552);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(382, 84);
+            this.panel3.Size = new System.Drawing.Size(437, 84);
             this.panel3.TabIndex = 29;
             // 
             // label2
@@ -98,7 +98,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(382, 84);
+            this.label2.Size = new System.Drawing.Size(437, 84);
             this.label2.TabIndex = 26;
             this.label2.Text = "EDIT CYBER";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -115,7 +115,7 @@
             this.OTBTN.Location = new System.Drawing.Point(0, 636);
             this.OTBTN.Margin = new System.Windows.Forms.Padding(0);
             this.OTBTN.Name = "OTBTN";
-            this.OTBTN.Size = new System.Drawing.Size(382, 84);
+            this.OTBTN.Size = new System.Drawing.Size(437, 84);
             this.OTBTN.TabIndex = 28;
             this.OTBTN.Text = "OFFERS/TOURNMENTS";
             this.OTBTN.UseVisualStyleBackColor = false;
@@ -133,7 +133,7 @@
             this.HomeBTN.Location = new System.Drawing.Point(0, 300);
             this.HomeBTN.Margin = new System.Windows.Forms.Padding(0);
             this.HomeBTN.Name = "HomeBTN";
-            this.HomeBTN.Size = new System.Drawing.Size(382, 84);
+            this.HomeBTN.Size = new System.Drawing.Size(437, 84);
             this.HomeBTN.TabIndex = 27;
             this.HomeBTN.Text = "HOME";
             this.HomeBTN.UseVisualStyleBackColor = false;
@@ -151,7 +151,7 @@
             this.ManageBTN.Location = new System.Drawing.Point(0, 468);
             this.ManageBTN.Margin = new System.Windows.Forms.Padding(0);
             this.ManageBTN.Name = "ManageBTN";
-            this.ManageBTN.Size = new System.Drawing.Size(382, 84);
+            this.ManageBTN.Size = new System.Drawing.Size(437, 84);
             this.ManageBTN.TabIndex = 25;
             this.ManageBTN.Text = "MANAGE";
             this.ManageBTN.UseVisualStyleBackColor = false;
@@ -169,7 +169,7 @@
             this.EditFDBTN.Location = new System.Drawing.Point(0, 384);
             this.EditFDBTN.Margin = new System.Windows.Forms.Padding(0);
             this.EditFDBTN.Name = "EditFDBTN";
-            this.EditFDBTN.Size = new System.Drawing.Size(382, 84);
+            this.EditFDBTN.Size = new System.Drawing.Size(437, 84);
             this.EditFDBTN.TabIndex = 24;
             this.EditFDBTN.Text = "EDIT FOOD AND DRINKS";
             this.EditFDBTN.UseVisualStyleBackColor = false;
@@ -180,7 +180,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(408, 36);
+            this.label1.Location = new System.Drawing.Point(466, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 30);
             this.label1.TabIndex = 23;
@@ -190,11 +190,11 @@
             // 
             this.ConsolesDGV.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ConsolesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsolesDGV.Location = new System.Drawing.Point(413, 76);
+            this.ConsolesDGV.Location = new System.Drawing.Point(472, 76);
             this.ConsolesDGV.Name = "ConsolesDGV";
             this.ConsolesDGV.RowHeadersWidth = 51;
             this.ConsolesDGV.RowTemplate.Height = 26;
-            this.ConsolesDGV.Size = new System.Drawing.Size(614, 170);
+            this.ConsolesDGV.Size = new System.Drawing.Size(702, 170);
             this.ConsolesDGV.TabIndex = 22;
             // 
             // label3
@@ -202,7 +202,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label3.Location = new System.Drawing.Point(408, 251);
+            this.label3.Location = new System.Drawing.Point(466, 251);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 30);
             this.label3.TabIndex = 25;
@@ -212,11 +212,11 @@
             // 
             this.GamesDGV.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.GamesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GamesDGV.Location = new System.Drawing.Point(413, 291);
+            this.GamesDGV.Location = new System.Drawing.Point(472, 291);
             this.GamesDGV.Name = "GamesDGV";
             this.GamesDGV.RowHeadersWidth = 51;
             this.GamesDGV.RowTemplate.Height = 26;
-            this.GamesDGV.Size = new System.Drawing.Size(614, 170);
+            this.GamesDGV.Size = new System.Drawing.Size(702, 170);
             this.GamesDGV.TabIndex = 24;
             // 
             // label4
@@ -224,7 +224,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label4.Location = new System.Drawing.Point(408, 467);
+            this.label4.Location = new System.Drawing.Point(466, 467);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 30);
             this.label4.TabIndex = 27;
@@ -234,11 +234,11 @@
             // 
             this.RoomsDGV.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.RoomsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RoomsDGV.Location = new System.Drawing.Point(413, 507);
+            this.RoomsDGV.Location = new System.Drawing.Point(472, 507);
             this.RoomsDGV.Name = "RoomsDGV";
             this.RoomsDGV.RowHeadersWidth = 51;
             this.RoomsDGV.RowTemplate.Height = 26;
-            this.RoomsDGV.Size = new System.Drawing.Size(614, 170);
+            this.RoomsDGV.Size = new System.Drawing.Size(702, 170);
             this.RoomsDGV.TabIndex = 26;
             // 
             // AddCBTN
@@ -250,9 +250,9 @@
             this.AddCBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddCBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddCBTN.ForeColor = System.Drawing.Color.White;
-            this.AddCBTN.Location = new System.Drawing.Point(1051, 196);
+            this.AddCBTN.Location = new System.Drawing.Point(1201, 204);
             this.AddCBTN.Name = "AddCBTN";
-            this.AddCBTN.Size = new System.Drawing.Size(203, 50);
+            this.AddCBTN.Size = new System.Drawing.Size(232, 41);
             this.AddCBTN.TabIndex = 30;
             this.AddCBTN.Text = "ADD";
             this.AddCBTN.UseVisualStyleBackColor = false;
@@ -266,9 +266,9 @@
             this.AddGBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddGBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddGBTN.ForeColor = System.Drawing.Color.White;
-            this.AddGBTN.Location = new System.Drawing.Point(1051, 411);
+            this.AddGBTN.Location = new System.Drawing.Point(1201, 420);
             this.AddGBTN.Name = "AddGBTN";
-            this.AddGBTN.Size = new System.Drawing.Size(203, 50);
+            this.AddGBTN.Size = new System.Drawing.Size(232, 41);
             this.AddGBTN.TabIndex = 31;
             this.AddGBTN.Text = "ADD";
             this.AddGBTN.UseVisualStyleBackColor = false;
@@ -282,18 +282,18 @@
             this.AddRBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddRBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddRBTN.ForeColor = System.Drawing.Color.White;
-            this.AddRBTN.Location = new System.Drawing.Point(1051, 627);
+            this.AddRBTN.Location = new System.Drawing.Point(1201, 636);
             this.AddRBTN.Name = "AddRBTN";
-            this.AddRBTN.Size = new System.Drawing.Size(203, 50);
+            this.AddRBTN.Size = new System.Drawing.Size(232, 41);
             this.AddRBTN.TabIndex = 32;
             this.AddRBTN.Text = "ADD";
             this.AddRBTN.UseVisualStyleBackColor = false;
             // 
             // MCyper
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1463, 720);
             this.Controls.Add(this.AddRBTN);
             this.Controls.Add(this.AddGBTN);
             this.Controls.Add(this.AddCBTN);
