@@ -74,5 +74,11 @@ namespace CCafe
             DataTable dt = WindowHandler.controllerObj.ViewGameDetails();
             dataGridView1.DataSource = dt;
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            WindowHandler.controllerObj.TerminateConnection();
+            Application.Exit();
+        }
     }
 }
