@@ -19,6 +19,9 @@ namespace CCafe
             DataTable dt = WindowHandler.controllerObj.ViewGameDetails();
             dataGridView1.DataSource = dt;
             dataGridView1.Refresh();
+            comboBox1.DataSource = dt;
+            comboBox1.DisplayMember = "name";
+            comboBox1.ValueMember = "name";
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -79,6 +82,21 @@ namespace CCafe
         {
             WindowHandler.controllerObj.TerminateConnection();
             Application.Exit();
+        }
+
+        private void UpdateBTN_Click(object sender, EventArgs e)
+        {
+            string name = comboBox1.SelectedValue.ToString();
+            int number = Convert.ToInt16( numericUpDown1.Value );
+
+            if (comboBox1.SelectedValue == null)
+            {
+                MessageBox.Show("Please Select All Fields To Update");
+                return;
+            }
+
+            WindowHandler.controllerObj.ModifyGameStock(name, number);
+            MessageBox.Show("Updated Successfuly");
         }
     }
 }

@@ -17,6 +17,10 @@ namespace CCafe
             InitializeComponent();
             DataTable dt = WindowHandler.controllerObj.ViewFoodAndDrinks();
             dataGridView1.DataSource = dt;
+
+            comboBox1.DataSource = dt;
+            comboBox1.DisplayMember = "name";
+            comboBox1.ValueMember = "name";
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -78,6 +82,22 @@ namespace CCafe
         {
             WindowHandler.controllerObj.TerminateConnection();
             Application.Exit();
+        }
+
+        private void UpdateBTN_Click(object sender, EventArgs e)
+        {
+
+            string name = comboBox1.SelectedValue.ToString();
+            int value = Convert.ToInt16( numericUpDown1.Value );
+
+            if(comboBox1.SelectedValue == null)
+            {
+                MessageBox.Show("Please Select All Fields To Update");
+                return;
+            }
+
+            WindowHandler.controllerObj.ModifyFoodStock(name, value);
+            MessageBox.Show("Updated Successfuly");
         }
     }
 }
