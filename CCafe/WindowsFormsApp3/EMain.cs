@@ -46,6 +46,20 @@ namespace CCafe
         {
             // TODO: This line of code loads data into the 'cyber_CafeDataSet.Console' table. You can move, or remove it, as needed.
             //this.consoleTableAdapter.Fill(this.cyber_CafeDataSet.Console);
+            try
+            {
+                int returnval = Program.ctrl.InsertShiftLog(Program.UserID);
+                if (returnval == 1)
+                    MessageBox.Show("Shift Inserted");
+                else
+                {
+                    MessageBox.Show("You Have Logged Before Today");
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+
             label5.Hide();
             label8.Hide();
             label7.Hide();

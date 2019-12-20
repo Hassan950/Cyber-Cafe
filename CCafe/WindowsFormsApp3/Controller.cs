@@ -151,6 +151,14 @@ namespace CCafe
             return dbMan.ExecuteNonQuery(StoredProcedureName,Parameters);
         }
 
+        public int InsertShiftLog(int ID)
+        {
+            string StoredProcedureName = StoredProcedures.InsertShiftLog;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            return (int)dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters);
+        }
+
         public DataTable ViewAllTournaments()
         {
             string StoredProcedureName = StoredProcedures.View_All_Tournaments;
