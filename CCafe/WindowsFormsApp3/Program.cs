@@ -9,6 +9,8 @@ namespace CCafe
     static class Program
     {
         public static int UserID;
+        public static int UserType;
+        public static string UserName;
         public static Controller ctrl;
         /// <summary>
         /// The main entry point for the application.

@@ -12,13 +12,24 @@ namespace CCafe
 {
     public partial class CMain : Form
     {
+        bool changePass = false;
+        Point Loc;
         public CMain()
         {
-           
+
             InitializeComponent();
+
+            Update();
+        }
+
+        public new void Update()
+        {
+            Console.WriteLine(Program.UserName);
+            Loc = UserNameLp.Location;
             DataTable dt = WindowHandler.controllerObj.ViewGames();
             GameCB.DataSource = dt;
             GameCB.DisplayMember = "name";
+            UserNameLp.Text = Program.UserName;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -38,13 +49,16 @@ namespace CCafe
 
         private void FeedBTN_Click(object sender, EventArgs e)
         {
+            WindowHandler.cfeedback.Update();
             WindowHandler.cfeedback.Show();
             this.Hide();
         }
 
         private void SubBTN_Click(object sender, EventArgs e)
         {
+            WindowHandler.csubs.Update();
             WindowHandler.csubs.Show();
+            
             this.Hide();
         }
 
@@ -76,17 +90,33 @@ namespace CCafe
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            WindowHandler.login.Update();
             WindowHandler.login.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
-            label9.Show();
-            label8.Show();
-            label7.Show();
-            PasswordTB.Show();
-            RePasswordTB.Show();
+        { if(!changePass)
+            {
+                label9.Show();
+                label8.Show();
+                label7.Show();
+                PasswordTB.Show();
+                RePasswordTB.Show();
+                changePass = !changePass;
+               
+                UserNameLp.Location = new Point(0,74);
+            }
+            else
+            {
+                label9.Hide();
+                label8.Hide();
+                label7.Hide();
+                PasswordTB.Hide();
+                RePasswordTB.Hide();
+                changePass = !changePass;
+                UserNameLp.Location = Loc;
+            }
         }
 
         private void label7_Click(object sender, EventArgs e)
