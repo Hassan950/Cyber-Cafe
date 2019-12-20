@@ -133,5 +133,19 @@ namespace CCafe
             DataTable dt = WindowHandler.controllerObj.ViewAvailibleConsoles();
             dataGridView1.DataSource = dt;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (comboBoxRoomNumber2.SelectedValue == null || ((radioButtonAvailable.Checked == false && radioButtonNotAvailable.Checked == false)))
+            {
+                MessageBox.Show("Please Select All Fields To Update");
+                return;
+            }
+            else
+            {
+
+            }
+
+        }
     }
 }
