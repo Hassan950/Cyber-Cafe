@@ -68,5 +68,11 @@ namespace CCafe
             WindowHandler.register.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            WindowHandler.controllerObj.TerminateConnection();
+            Application.Exit();
+        }
     }
 }
