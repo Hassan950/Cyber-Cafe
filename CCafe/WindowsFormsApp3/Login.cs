@@ -17,6 +17,11 @@ namespace CCafe
             InitializeComponent();
             
         }
+        public new void Update()
+        {
+            PasswordTB.Text = "";
+            UserNameTB.Text = "";
+        }
 
         private void SignInBTN_Click(object sender, EventArgs e)
         {
@@ -25,6 +30,8 @@ namespace CCafe
                 int ID = Convert.ToInt32(UserNameTB.Text);
                 string password = PasswordTB.Text.ToString();
                 int Usertype = WindowHandler.controllerObj.CheckForUser(ID, password);
+                if (Usertype > 0)
+                    Program.UserType = Usertype;
                 if (Usertype == 0)
                 {
                     throw new Exception("Please Enter The Correct ID and Password");
@@ -41,6 +48,8 @@ namespace CCafe
                 else if (Usertype == 2)
                 {
                     Program.UserID = ID;
+                    DataTable dt = WindowHandler.controllerObj.ViewAccounts(Usertype);
+                    Program.UserName = dt.Select($"ID = {ID}")[0].Field<string>("name");
                     WindowHandler.emain.Show();
                     this.Hide();
                     
@@ -49,6 +58,10 @@ namespace CCafe
                 else if (Usertype == 3)
                 {
                     Program.UserID = ID;
+                    DataTable dt = WindowHandler.controllerObj.ViewAccounts(Usertype);
+                    Program.UserName = dt.Select($"ID = {ID}")[0].Field<string>("name");
+                    Console.WriteLine(Program.UserName);
+                    WindowHandler.cmain.Update();
                     WindowHandler.cmain.Show();
                     this.Hide();
                 }
@@ -62,7 +75,7 @@ namespace CCafe
                 MessageBox.Show(ex.Message);
             }
         }
-
+        
         private void SignUpBTN_Click(object sender, EventArgs e)
         {
             WindowHandler.register.Show();

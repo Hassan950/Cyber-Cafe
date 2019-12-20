@@ -303,6 +303,3 @@ values
 ('2019-12-06',55555,'Test','request'),
 ('2019-12-08',55555,'Test','request'),
 ('2019-12-09',55555,'Test','request')
-
-alter table Console
-ALTER COLUMN condition bool;

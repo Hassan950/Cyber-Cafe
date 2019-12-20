@@ -60,7 +60,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(437, 720);
+            this.panel1.Size = new System.Drawing.Size(382, 720);
             this.panel1.TabIndex = 3;
             // 
             // FeedBTN
@@ -75,7 +75,7 @@
             this.FeedBTN.Location = new System.Drawing.Point(0, 490);
             this.FeedBTN.Margin = new System.Windows.Forms.Padding(0);
             this.FeedBTN.Name = "FeedBTN";
-            this.FeedBTN.Size = new System.Drawing.Size(437, 84);
+            this.FeedBTN.Size = new System.Drawing.Size(382, 84);
             this.FeedBTN.TabIndex = 24;
             this.FeedBTN.Text = "FEEDBACK";
             this.FeedBTN.UseVisualStyleBackColor = false;
@@ -89,7 +89,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 406);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(437, 84);
+            this.panel3.Size = new System.Drawing.Size(382, 84);
             this.panel3.TabIndex = 23;
             // 
             // label7
@@ -98,7 +98,7 @@
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(437, 84);
+            this.label7.Size = new System.Drawing.Size(382, 84);
             this.label7.TabIndex = 15;
             this.label7.Text = "SUBSCRIPTIONS";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -115,7 +115,7 @@
             this.HomeBtn.Location = new System.Drawing.Point(0, 322);
             this.HomeBtn.Margin = new System.Windows.Forms.Padding(0);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(437, 84);
+            this.HomeBtn.Size = new System.Drawing.Size(382, 84);
             this.HomeBtn.TabIndex = 22;
             this.HomeBtn.Text = "HOME";
             this.HomeBtn.UseVisualStyleBackColor = false;
@@ -123,14 +123,17 @@
             // 
             // UserNameLp
             // 
-            this.UserNameLp.AutoSize = true;
+            this.UserNameLp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.UserNameLp.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.UserNameLp.Location = new System.Drawing.Point(78, 244);
+            this.UserNameLp.Location = new System.Drawing.Point(0, 244);
             this.UserNameLp.Name = "UserNameLp";
-            this.UserNameLp.Size = new System.Drawing.Size(251, 45);
+            this.UserNameLp.Size = new System.Drawing.Size(382, 45);
             this.UserNameLp.TabIndex = 6;
             this.UserNameLp.Text = "CUSTOMER#";
+            this.UserNameLp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TDGV
             // 
@@ -140,12 +143,12 @@
             this.TDGV.BackgroundColor = System.Drawing.Color.White;
             this.TDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TDGV.GridColor = System.Drawing.Color.White;
-            this.TDGV.Location = new System.Drawing.Point(486, 43);
+            this.TDGV.Location = new System.Drawing.Point(425, 43);
             this.TDGV.Name = "TDGV";
             this.TDGV.ReadOnly = true;
             this.TDGV.RowHeadersWidth = 51;
             this.TDGV.RowTemplate.Height = 26;
-            this.TDGV.Size = new System.Drawing.Size(594, 247);
+            this.TDGV.Size = new System.Drawing.Size(520, 247);
             this.TDGV.TabIndex = 4;
             // 
             // ODGV
@@ -156,12 +159,12 @@
             this.ODGV.BackgroundColor = System.Drawing.Color.White;
             this.ODGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ODGV.GridColor = System.Drawing.Color.White;
-            this.ODGV.Location = new System.Drawing.Point(486, 433);
+            this.ODGV.Location = new System.Drawing.Point(425, 433);
             this.ODGV.Name = "ODGV";
             this.ODGV.ReadOnly = true;
             this.ODGV.RowHeadersWidth = 51;
             this.ODGV.RowTemplate.Height = 26;
-            this.ODGV.Size = new System.Drawing.Size(594, 247);
+            this.ODGV.Size = new System.Drawing.Size(520, 247);
             this.ODGV.TabIndex = 5;
             // 
             // EnrollBTN
@@ -173,9 +176,9 @@
             this.EnrollBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EnrollBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EnrollBTN.ForeColor = System.Drawing.Color.White;
-            this.EnrollBTN.Location = new System.Drawing.Point(1107, 206);
+            this.EnrollBTN.Location = new System.Drawing.Point(969, 206);
             this.EnrollBTN.Name = "EnrollBTN";
-            this.EnrollBTN.Size = new System.Drawing.Size(342, 84);
+            this.EnrollBTN.Size = new System.Drawing.Size(299, 84);
             this.EnrollBTN.TabIndex = 8;
             this.EnrollBTN.Text = "ENROLL";
             this.EnrollBTN.UseVisualStyleBackColor = false;
@@ -190,9 +193,9 @@
             this.AcceptBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AcceptBTN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcceptBTN.ForeColor = System.Drawing.Color.White;
-            this.AcceptBTN.Location = new System.Drawing.Point(1107, 596);
+            this.AcceptBTN.Location = new System.Drawing.Point(969, 596);
             this.AcceptBTN.Name = "AcceptBTN";
-            this.AcceptBTN.Size = new System.Drawing.Size(342, 84);
+            this.AcceptBTN.Size = new System.Drawing.Size(299, 84);
             this.AcceptBTN.TabIndex = 9;
             this.AcceptBTN.Text = "ACCEPT";
             this.AcceptBTN.UseVisualStyleBackColor = false;
@@ -202,9 +205,9 @@
             // 
             this.label1.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.label1.Location = new System.Drawing.Point(1107, 43);
+            this.label1.Location = new System.Drawing.Point(969, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(342, 46);
+            this.label1.Size = new System.Drawing.Size(299, 46);
             this.label1.TabIndex = 25;
             this.label1.Text = "TOURNAMENT";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,9 +216,9 @@
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.label2.Location = new System.Drawing.Point(1107, 433);
+            this.label2.Location = new System.Drawing.Point(969, 433);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(342, 46);
+            this.label2.Size = new System.Drawing.Size(299, 46);
             this.label2.TabIndex = 26;
             this.label2.Text = "OFFER";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -229,7 +232,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1463, 35);
+            this.panel2.Size = new System.Drawing.Size(1280, 35);
             this.panel2.TabIndex = 41;
             // 
             // button2
@@ -245,10 +248,10 @@
             this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button2.Location = new System.Drawing.Point(1265, 0);
+            this.button2.Location = new System.Drawing.Point(1107, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 35);
+            this.button2.Size = new System.Drawing.Size(104, 35);
             this.button2.TabIndex = 25;
             this.button2.Text = "Sign Out";
             this.button2.UseVisualStyleBackColor = false;
@@ -267,20 +270,19 @@
             this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button1.Location = new System.Drawing.Point(1435, 0);
+            this.button1.Location = new System.Drawing.Point(1256, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(27, 35);
+            this.button1.Size = new System.Drawing.Size(24, 35);
             this.button1.TabIndex = 24;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CSUBS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1463, 720);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -294,7 +296,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CSUBS";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ODGV)).EndInit();

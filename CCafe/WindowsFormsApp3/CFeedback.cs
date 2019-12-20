@@ -15,8 +15,13 @@ namespace CCafe
         public CFeedback()
         {
             InitializeComponent();
+            Update();
         }
 
+        public new void Update()
+        {
+            UserNameLp.Text = Program.UserName;
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -24,12 +29,14 @@ namespace CCafe
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
+            WindowHandler.cmain.Update();
             WindowHandler.cmain.Show();
             this.Hide();
         }
 
         private void SubBTN_Click(object sender, EventArgs e)
         {
+            WindowHandler.csubs.Update();
             WindowHandler.csubs.Show();
             this.Hide();
         }
@@ -62,6 +69,7 @@ namespace CCafe
 
         private void button2_Click(object sender, EventArgs e)
         {
+            WindowHandler.login.Update();
             WindowHandler.login.Show();
             this.Hide();
         }

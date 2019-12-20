@@ -15,19 +15,28 @@ namespace CCafe
         public CSUBS()
         {
             InitializeComponent();
+            Update();
+            
+        }
+        public new void Update()
+        {
+            UserNameLp.Text = Program.UserName;
             TDGV.DataSource = WindowHandler.controllerObj.ViewTournaments();
             ODGV.DataSource = WindowHandler.controllerObj.ViewOffers();
         }
-
         private void HomeBtn_Click(object sender, EventArgs e)
         {
+            WindowHandler.cmain.Update();
             WindowHandler.cmain.Show();
+            
             this.Hide();
         }
 
         private void FeedBTN_Click(object sender, EventArgs e)
         {
+            WindowHandler.cfeedback.Update();
             WindowHandler.cfeedback.Show();
+           
             this.Hide();
         }
 
@@ -45,7 +54,6 @@ namespace CCafe
 
 
         }
-
         private void EnrollBTN_Click(object sender, EventArgs e)
         {
        
@@ -68,15 +76,13 @@ namespace CCafe
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            WindowHandler.controllerObj.TerminateConnection();
-            Application.Exit();
-        }
+
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            WindowHandler.login.Update();
             WindowHandler.login.Show();
+            
             this.Hide();
         }
     }
