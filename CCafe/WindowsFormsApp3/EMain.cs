@@ -63,6 +63,24 @@ namespace CCafe
         {
             // TODO: This line of code loads data into the 'cyber_CafeDataSet.Console' table. You can move, or remove it, as needed.
             //this.consoleTableAdapter.Fill(this.cyber_CafeDataSet.Console);
+            label15.Hide();
+            label16.Hide();
+            label17.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
+            try
+            {
+                int returnval = Program.ctrl.InsertShiftLog(Program.UserID);
+                if (returnval == 1)
+                    MessageBox.Show("Shift Inserted");
+                else
+                {
+                    MessageBox.Show("You Have Logged Before Today");
+                }
+            }
+            catch (Exception ex)
+            {
+            }
 
         }
 
@@ -162,6 +180,48 @@ namespace CCafe
 
             WindowHandler.controllerObj.MakeReservationEmployee(date, roomNumber, gameName, customerID, startTime, endTime);
             MessageBox.Show("Room Reserved Successfuly");
+        }
+        
+        private void button5_Click(object sender, EventArgs e)
+        {
+            label15.Show();
+            label16.Show();
+            label17.Show();
+            PasswordTB.Show();
+            RePasswordTB.Show();
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (PasswordTB.Text.ToString() == RePasswordTB.Text.ToString())
+                {
+                    Program.ctrl.ChangePassword(Program.UserID, 2, PasswordTB.Text.ToString());
+                    MessageBox.Show("Password Changed Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Please Check that the Passwords are the same");
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please Enter a Correct Password");
+            }
+            label15.Hide();
+            label16.Hide();
+            label17.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            WindowHandler.login.Show();
+            this.Hide();
         }
     }
 }

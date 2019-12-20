@@ -313,6 +313,23 @@ namespace CCafe
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
 
+        public int InsertShiftLog(int ID)
+        {
+            string StoredProcedureName = StoredProcedures.InsertShiftLog;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            return (int)dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters);
+        }
+
+        public int ChangePassword(int ID, int type, string password)
+        {
+            string StoredProcedureName = StoredProcedures.ChangePassword;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@type", type);
+            Parameters.Add("@password", password);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
 
     }
 }

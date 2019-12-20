@@ -71,7 +71,11 @@ namespace CCafe
 
         private void CMain_Load(object sender, EventArgs e)
         {
-
+            label9.Hide();
+            label8.Hide();
+            label7.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -98,29 +102,6 @@ namespace CCafe
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        { if(!changePass)
-            {
-                label9.Show();
-                label8.Show();
-                label7.Show();
-                PasswordTB.Show();
-                RePasswordTB.Show();
-                changePass = !changePass;
-               
-                UserNameLp.Location = new Point(0,74);
-            }
-            else
-            {
-                label9.Hide();
-                label8.Hide();
-                label7.Hide();
-                PasswordTB.Hide();
-                RePasswordTB.Hide();
-                changePass = !changePass;
-                UserNameLp.Location = Loc;
-            }
-        }
 
         private void label7_Click(object sender, EventArgs e)
         {
@@ -147,6 +128,31 @@ namespace CCafe
             label7.Hide();
             PasswordTB.Hide();
             RePasswordTB.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (!changePass)
+            {
+                label9.Show();
+                label8.Show();
+                label7.Show();
+                PasswordTB.Show();
+                RePasswordTB.Show();
+                changePass = !changePass;
+
+                UserNameLp.Location = new Point(0, 74);
+            }
+            else
+            {
+                label9.Hide();
+                label8.Hide();
+                label7.Hide();
+                PasswordTB.Hide();
+                RePasswordTB.Hide();
+                changePass = !changePass;
+                UserNameLp.Location = Loc;
+            }
         }
         
     }
