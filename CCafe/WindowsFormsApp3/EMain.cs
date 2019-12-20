@@ -104,5 +104,17 @@ namespace CCafe
             WindowHandler.controllerObj.TerminateConnection();
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            WindowHandler.login.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            WindowHandler.controllerObj.TerminateConnection();
+            Application.Exit();
+        }
     }
 }

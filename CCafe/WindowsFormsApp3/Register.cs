@@ -88,5 +88,32 @@ namespace CCafe
         {
 
         }
+
+        private void EmailTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RePasswordTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserNameTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            WindowHandler.controllerObj.TerminateConnection();
+            Application.Exit();
+        }
     }
 }

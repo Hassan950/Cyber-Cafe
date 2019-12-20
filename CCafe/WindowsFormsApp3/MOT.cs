@@ -209,5 +209,23 @@ namespace CCafe
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WindowHandler.controllerObj.TerminateConnection();
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            WindowHandler.login.Show();
+            this.Hide();
+        }
+
+       
     }
 }
