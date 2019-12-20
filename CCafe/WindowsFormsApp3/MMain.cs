@@ -43,7 +43,11 @@ namespace CCafe
             dataGridView1.Refresh();
             dataGridView1.DataSource = dt;
             dataGridView1.Refresh();
- 
+            label5.Hide();
+            label6.Hide();
+            label7.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -95,6 +99,36 @@ namespace CCafe
         {
             WindowHandler.login.Show();
             this.Hide();
+        }
+
+        private void UserNameLp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label5.Show();
+            label6.Show();
+            label7.Show();
+            PasswordTB.Show();
+            RePasswordTB.Show();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+
+            label5.Hide();
+            label6.Hide();
+            label7.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
         }
     }
 }
