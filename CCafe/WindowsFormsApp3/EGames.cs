@@ -22,6 +22,9 @@ namespace CCafe
             comboBox1.DataSource = dt;
             comboBox1.DisplayMember = "name";
             comboBox1.ValueMember = "name";
+
+            numericUpDown1.Maximum = int.MaxValue;
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -97,6 +100,11 @@ namespace CCafe
 
             WindowHandler.controllerObj.ModifyGameStock(name, number);
             MessageBox.Show("Updated Successfuly");
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

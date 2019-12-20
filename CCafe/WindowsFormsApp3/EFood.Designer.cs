@@ -254,10 +254,11 @@
             // numericUpDown1
             // 
             this.numericUpDown1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.numericUpDown1.Location = new System.Drawing.Point(630, 558);
+            this.numericUpDown1.Location = new System.Drawing.Point(616, 559);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(47, 24);
+            this.numericUpDown1.Size = new System.Drawing.Size(74, 24);
             this.numericUpDown1.TabIndex = 31;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // EFood
             // 
