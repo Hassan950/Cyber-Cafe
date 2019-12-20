@@ -23,6 +23,11 @@ namespace CCafe
             comboBoxRoomNumber.DataSource = dt2;
             comboBoxRoomNumber.DisplayMember = "number";
             comboBoxRoomNumber.ValueMember = "number";
+
+            DataTable dt3 = WindowHandler.controllerObj.ViewRoomNumber();
+            comboBoxRoomNumber2.DataSource = dt3;
+            comboBoxRoomNumber2.DisplayMember = "number";
+            comboBoxRoomNumber2.ValueMember = "number";
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -115,6 +120,18 @@ namespace CCafe
         {
             WindowHandler.controllerObj.TerminateConnection();
             Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            WindowHandler.controllerObj.TerminateConnection();
+            Application.Exit();
+        }
+
+        private void RefreshBTN_Click(object sender, EventArgs e)
+        {
+            DataTable dt = WindowHandler.controllerObj.ViewAvailibleConsoles();
+            dataGridView1.DataSource = dt;
         }
     }
 }

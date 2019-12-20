@@ -40,12 +40,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.radioButtonWorking = new System.Windows.Forms.RadioButton();
-            this.radioButtonNotWorking = new System.Windows.Forms.RadioButton();
-            this.comboBoxRoomNumber = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBoxRoomNumber = new System.Windows.Forms.ComboBox();
+            this.radioButtonWorking = new System.Windows.Forms.RadioButton();
+            this.radioButtonNotWorking = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.RefreshBTN = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxRoomNumber2 = new System.Windows.Forms.ComboBox();
+            this.radioButtonAvailable = new System.Windows.Forms.RadioButton();
+            this.radioButtonNotAvailable = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,7 +78,7 @@
             this.GamesBTN.Location = new System.Drawing.Point(0, 417);
             this.GamesBTN.Margin = new System.Windows.Forms.Padding(0);
             this.GamesBTN.Name = "GamesBTN";
-            this.GamesBTN.Size = new System.Drawing.Size(437, 84);
+            this.GamesBTN.Size = new System.Drawing.Size(382, 84);
             this.GamesBTN.TabIndex = 4;
             this.GamesBTN.Text = "GAMES";
             this.GamesBTN.UseVisualStyleBackColor = false;
@@ -84,7 +96,7 @@
             this.FoodBTN.Location = new System.Drawing.Point(0, 501);
             this.FoodBTN.Margin = new System.Windows.Forms.Padding(0);
             this.FoodBTN.Name = "FoodBTN";
-            this.FoodBTN.Size = new System.Drawing.Size(437, 84);
+            this.FoodBTN.Size = new System.Drawing.Size(382, 84);
             this.FoodBTN.TabIndex = 5;
             this.FoodBTN.Text = "FOOD AND DRINKS";
             this.FoodBTN.UseVisualStyleBackColor = false;
@@ -95,7 +107,7 @@
             this.UserNameLp.AutoSize = true;
             this.UserNameLp.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
-            this.UserNameLp.Location = new System.Drawing.Point(78, 255);
+            this.UserNameLp.Location = new System.Drawing.Point(68, 255);
             this.UserNameLp.Name = "UserNameLp";
             this.UserNameLp.Size = new System.Drawing.Size(229, 46);
             this.UserNameLp.TabIndex = 6;
@@ -111,7 +123,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(437, 720);
+            this.panel1.Size = new System.Drawing.Size(382, 720);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -121,7 +133,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 333);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(437, 84);
+            this.panel2.Size = new System.Drawing.Size(382, 84);
             this.panel2.TabIndex = 14;
             // 
             // label2
@@ -133,7 +145,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(437, 84);
+            this.label2.Size = new System.Drawing.Size(382, 84);
             this.label2.TabIndex = 15;
             this.label2.Text = "HOME";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,10 +155,10 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(471, 118);
+            this.dataGridView1.Location = new System.Drawing.Point(411, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(473, 339);
+            this.dataGridView1.Size = new System.Drawing.Size(856, 339);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -170,9 +182,9 @@
             this.UpdateBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateBTN.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateBTN.ForeColor = System.Drawing.Color.White;
-            this.UpdateBTN.Location = new System.Drawing.Point(471, 638);
+            this.UpdateBTN.Location = new System.Drawing.Point(126, 171);
             this.UpdateBTN.Name = "UpdateBTN";
-            this.UpdateBTN.Size = new System.Drawing.Size(186, 47);
+            this.UpdateBTN.Size = new System.Drawing.Size(163, 37);
             this.UpdateBTN.TabIndex = 17;
             this.UpdateBTN.Text = "Update Console";
             this.UpdateBTN.UseVisualStyleBackColor = false;
@@ -183,7 +195,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
-            this.label1.Location = new System.Drawing.Point(464, 67);
+            this.label1.Location = new System.Drawing.Point(405, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(296, 36);
             this.label1.TabIndex = 19;
@@ -211,51 +223,40 @@
             this.label6.TabIndex = 22;
             this.label6.Text = "Condition";
             // 
-            // radioButtonWorking
-            // 
-            this.radioButtonWorking.AutoSize = true;
-            this.radioButtonWorking.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonWorking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radioButtonWorking.Location = new System.Drawing.Point(662, 584);
-            this.radioButtonWorking.Name = "radioButtonWorking";
-            this.radioButtonWorking.Size = new System.Drawing.Size(92, 22);
-            this.radioButtonWorking.TabIndex = 26;
-            this.radioButtonWorking.TabStop = true;
-            this.radioButtonWorking.Text = "Working";
-            this.radioButtonWorking.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonNotWorking
-            // 
-            this.radioButtonNotWorking.AutoSize = true;
-            this.radioButtonNotWorking.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonNotWorking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radioButtonNotWorking.Location = new System.Drawing.Point(803, 584);
-            this.radioButtonNotWorking.Name = "radioButtonNotWorking";
-            this.radioButtonNotWorking.Size = new System.Drawing.Size(123, 22);
-            this.radioButtonNotWorking.TabIndex = 27;
-            this.radioButtonNotWorking.TabStop = true;
-            this.radioButtonNotWorking.Text = "Not Working";
-            this.radioButtonNotWorking.UseVisualStyleBackColor = true;
-            // 
-            // comboBoxRoomNumber
-            // 
-            this.comboBoxRoomNumber.FormattingEnabled = true;
-            this.comboBoxRoomNumber.Location = new System.Drawing.Point(663, 534);
-            this.comboBoxRoomNumber.Name = "comboBoxRoomNumber";
-            this.comboBoxRoomNumber.Size = new System.Drawing.Size(281, 24);
-            this.comboBoxRoomNumber.TabIndex = 28;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1463, 35);
+            this.panel3.Size = new System.Drawing.Size(1280, 35);
             this.panel3.TabIndex = 41;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button3.Location = new System.Drawing.Point(1256, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(24, 35);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "X";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -270,10 +271,10 @@
             this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button2.Location = new System.Drawing.Point(1265, 0);
+            this.button2.Location = new System.Drawing.Point(1107, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 35);
+            this.button2.Size = new System.Drawing.Size(104, 35);
             this.button2.TabIndex = 25;
             this.button2.Text = "Sign Out";
             this.button2.UseVisualStyleBackColor = false;
@@ -284,120 +285,6 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button1.Location = new System.Drawing.Point(1435, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(27, 35);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
-            this.label5.Location = new System.Drawing.Point(17, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(397, 36);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Update Room Availability";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
-            this.label7.Location = new System.Drawing.Point(18, 66);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(166, 29);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Room Number";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(199, 70);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(246, 24);
-            this.comboBox1.TabIndex = 32;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
-            this.label8.Location = new System.Drawing.Point(18, 109);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 29);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "Condition";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radioButton2.Location = new System.Drawing.Point(198, 116);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(99, 22);
-            this.radioButton2.TabIndex = 34;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Available";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radioButton1.Location = new System.Drawing.Point(315, 116);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(130, 22);
-            this.radioButton1.TabIndex = 35;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Not Available";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(392, 473);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(451, 182);
-            this.groupBox1.TabIndex = 36;
-            this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.comboBoxRoomNumber);
-            this.groupBox2.Controls.Add(this.radioButtonNotWorking);
-            this.groupBox2.Controls.Add(this.radioButtonWorking);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(848, 473);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(420, 182);
-            this.groupBox2.TabIndex = 37;
-            this.groupBox2.TabStop = false;
-            // 
-            // button1
-            // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -405,21 +292,195 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(680, 661);
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button1.Location = new System.Drawing.Point(595, 661);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 47);
+            this.button1.Size = new System.Drawing.Size(143, 47);
             this.button1.TabIndex = 38;
             this.button1.Text = "Update Room";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.comboBoxRoomNumber);
+            this.groupBox1.Controls.Add(this.radioButtonWorking);
+            this.groupBox1.Controls.Add(this.radioButtonNotWorking);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.UpdateBTN);
+            this.groupBox1.Location = new System.Drawing.Point(853, 479);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(415, 214);
+            this.groupBox1.TabIndex = 42;
+            this.groupBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.label7.Location = new System.Drawing.Point(6, 82);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 24);
+            this.label7.TabIndex = 47;
+            this.label7.Text = "Room Number";
+            // 
+            // comboBoxRoomNumber
+            // 
+            this.comboBoxRoomNumber.FormattingEnabled = true;
+            this.comboBoxRoomNumber.Location = new System.Drawing.Point(167, 86);
+            this.comboBoxRoomNumber.Name = "comboBoxRoomNumber";
+            this.comboBoxRoomNumber.Size = new System.Drawing.Size(182, 24);
+            this.comboBoxRoomNumber.TabIndex = 46;
+            // 
+            // radioButtonWorking
+            // 
+            this.radioButtonWorking.AutoSize = true;
+            this.radioButtonWorking.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonWorking.Location = new System.Drawing.Point(97, 137);
+            this.radioButtonWorking.Name = "radioButtonWorking";
+            this.radioButtonWorking.Size = new System.Drawing.Size(87, 21);
+            this.radioButtonWorking.TabIndex = 45;
+            this.radioButtonWorking.TabStop = true;
+            this.radioButtonWorking.Text = "Working";
+            this.radioButtonWorking.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonNotWorking
+            // 
+            this.radioButtonNotWorking.AutoSize = true;
+            this.radioButtonNotWorking.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonNotWorking.Location = new System.Drawing.Point(216, 137);
+            this.radioButtonNotWorking.Name = "radioButtonNotWorking";
+            this.radioButtonNotWorking.Size = new System.Drawing.Size(117, 21);
+            this.radioButtonNotWorking.TabIndex = 44;
+            this.radioButtonNotWorking.TabStop = true;
+            this.radioButtonNotWorking.Text = "Not Working";
+            this.radioButtonNotWorking.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.label5.Location = new System.Drawing.Point(6, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(283, 29);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Update Console Status";
+            // 
+            // RefreshBTN
+            // 
+            this.RefreshBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.RefreshBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.RefreshBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.RefreshBTN.FlatAppearance.BorderSize = 0;
+            this.RefreshBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RefreshBTN.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RefreshBTN.ForeColor = System.Drawing.Color.White;
+            this.RefreshBTN.Location = new System.Drawing.Point(1177, 448);
+            this.RefreshBTN.Name = "RefreshBTN";
+            this.RefreshBTN.Size = new System.Drawing.Size(91, 33);
+            this.RefreshBTN.TabIndex = 43;
+            this.RefreshBTN.Text = "Refresh";
+            this.RefreshBTN.UseVisualStyleBackColor = false;
+            this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.comboBoxRoomNumber2);
+            this.groupBox2.Controls.Add(this.radioButtonAvailable);
+            this.groupBox2.Controls.Add(this.radioButtonNotAvailable);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Location = new System.Drawing.Point(411, 479);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(415, 214);
+            this.groupBox2.TabIndex = 48;
+            this.groupBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.label8.Location = new System.Drawing.Point(9, 82);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(137, 24);
+            this.label8.TabIndex = 47;
+            this.label8.Text = "Room Number";
+            // 
+            // comboBoxRoomNumber2
+            // 
+            this.comboBoxRoomNumber2.FormattingEnabled = true;
+            this.comboBoxRoomNumber2.Location = new System.Drawing.Point(170, 82);
+            this.comboBoxRoomNumber2.Name = "comboBoxRoomNumber2";
+            this.comboBoxRoomNumber2.Size = new System.Drawing.Size(182, 24);
+            this.comboBoxRoomNumber2.TabIndex = 46;
+            // 
+            // radioButtonAvailable
+            // 
+            this.radioButtonAvailable.AutoSize = true;
+            this.radioButtonAvailable.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonAvailable.Location = new System.Drawing.Point(76, 137);
+            this.radioButtonAvailable.Name = "radioButtonAvailable";
+            this.radioButtonAvailable.Size = new System.Drawing.Size(89, 21);
+            this.radioButtonAvailable.TabIndex = 45;
+            this.radioButtonAvailable.TabStop = true;
+            this.radioButtonAvailable.Text = "Available";
+            this.radioButtonAvailable.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonNotAvailable
+            // 
+            this.radioButtonNotAvailable.AutoSize = true;
+            this.radioButtonNotAvailable.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonNotAvailable.Location = new System.Drawing.Point(202, 137);
+            this.radioButtonNotAvailable.Name = "radioButtonNotAvailable";
+            this.radioButtonNotAvailable.Size = new System.Drawing.Size(119, 21);
+            this.radioButtonNotAvailable.TabIndex = 44;
+            this.radioButtonNotAvailable.TabStop = true;
+            this.radioButtonNotAvailable.Text = "Not Available";
+            this.radioButtonNotAvailable.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.label9.Location = new System.Drawing.Point(6, 20);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(315, 29);
+            this.label9.TabIndex = 43;
+            this.label9.Text = "Update Room Availability";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(98, 171);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(192, 37);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Update Availability";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // EMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1463, 720);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.RefreshBTN);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.UpdateBTN);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -456,12 +517,27 @@
         private System.Windows.Forms.Label label6;
         //private Cyber_CafeDataSet cyber_CafeDataSet;
         //private Cyber_CafeDataSetTableAdapters.ConsoleTableAdapter consoleTableAdapter;
-        private System.Windows.Forms.RadioButton radioButtonWorking;
-        private System.Windows.Forms.RadioButton radioButtonNotWorking;
-        private System.Windows.Forms.ComboBox comboBoxRoomNumber;
+        //private System.Windows.Forms.RadioButton radioButtonWorking;
+        //private System.Windows.Forms.RadioButton radioButtonNotWorking;
+        //private System.Windows.Forms.ComboBox comboBoxRoomNumber;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButtonWorking;
+        private System.Windows.Forms.RadioButton radioButtonNotWorking;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxRoomNumber;
+        private System.Windows.Forms.Button RefreshBTN;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBoxRoomNumber2;
+        private System.Windows.Forms.RadioButton radioButtonAvailable;
+        private System.Windows.Forms.RadioButton radioButtonNotAvailable;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button4;
     }
 }
 
