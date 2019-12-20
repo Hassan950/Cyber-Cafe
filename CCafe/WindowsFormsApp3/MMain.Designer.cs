@@ -30,7 +30,6 @@
         {
             this.FoodBTN = new System.Windows.Forms.Button();
             this.UserNameLp = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TournmentsBTN = new System.Windows.Forms.Button();
             this.EditCyberBTN = new System.Windows.Forms.Button();
@@ -40,7 +39,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -69,28 +68,19 @@
             this.UserNameLp.AutoSize = true;
             this.UserNameLp.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.UserNameLp.Location = new System.Drawing.Point(111, 249);
+            this.UserNameLp.Location = new System.Drawing.Point(115, 141);
             this.UserNameLp.Name = "UserNameLp";
-            this.UserNameLp.Size = new System.Drawing.Size(193, 46);
+            this.UserNameLp.Size = new System.Drawing.Size(165, 46);
             this.UserNameLp.TabIndex = 6;
-            this.UserNameLp.Text = "Manager#";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(384, 205);
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
+            this.UserNameLp.Text = "Manager";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.TournmentsBTN);
             this.panel1.Controls.Add(this.EditCyberBTN);
             this.panel1.Controls.Add(this.ManageBTN);
-            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.UserNameLp);
             this.panel1.Controls.Add(this.FoodBTN);
@@ -183,11 +173,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1175, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(1035, 69);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(274, 635);
+            this.dataGridView1.Size = new System.Drawing.Size(416, 633);
             this.dataGridView1.TabIndex = 18;
             // 
             // label1
@@ -195,7 +185,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(1149, 14);
+            this.label1.Location = new System.Drawing.Point(1105, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 29);
             this.label1.TabIndex = 19;
@@ -206,11 +196,22 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
-            this.label3.Location = new System.Drawing.Point(661, 9);
+            this.label3.Location = new System.Drawing.Point(571, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 29);
             this.label3.TabIndex = 20;
             this.label3.Text = "Shifts statistics and report";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(197)))), ((int)(((byte)(80)))));
+            this.label4.Location = new System.Drawing.Point(115, 225);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 46);
+            this.label4.TabIndex = 24;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // MMain
             // 
@@ -226,7 +227,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.CMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -239,7 +239,6 @@
         #endregion
         private System.Windows.Forms.Button FoodBTN;
         private System.Windows.Forms.Label UserNameLp;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
@@ -249,6 +248,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

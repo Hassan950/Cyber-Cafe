@@ -82,6 +82,11 @@ namespace CCafe
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
 
+        public DataTable ViewAllFeedback()
+        {
+            string SPN = StoredProcedures.ViewAllFeedback;
+            return dbMan.ExecuteReader(SPN, null);
+        }
 
         public int SendFeedback(string msg, string type)
         {

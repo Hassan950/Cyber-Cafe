@@ -36,7 +36,14 @@ namespace CCafe
 
         private void CMain_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            label4.Text = Program.UserID.ToString();
+            DataTable dt = Program.ctrl.ViewAllFeedback(); //view after insertion
+            dataGridView1.DataSource = null;
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = dt;
+            dataGridView1.Refresh();
+ 
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -71,6 +78,11 @@ namespace CCafe
         {
             WindowHandler.mot.Show();
             this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -204,5 +204,10 @@ namespace CCafe
         {
 
         }
+
+        private void DataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
