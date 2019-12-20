@@ -382,7 +382,7 @@
             this.RefreshBTN.TabIndex = 43;
             this.RefreshBTN.Text = "Refresh";
             this.RefreshBTN.UseVisualStyleBackColor = false;
-            this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
+            //this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
             // 
             // groupBox2
             // 
@@ -467,12 +467,7 @@
             this.button4.TabIndex = 17;
             this.button4.Text = "Update Availability";
             this.button4.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
-=======
-            this.button4.Click += new System.EventHandler(this.button4_Click);
->>>>>>> parent of c701212... Merge branch 'master' of https://github.com/Hassan950/Cyber-Cafe
-            // 
-            // EMain
+
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

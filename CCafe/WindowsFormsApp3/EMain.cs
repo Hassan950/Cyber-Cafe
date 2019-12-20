@@ -117,14 +117,7 @@ namespace CCafe
             WindowHandler.controllerObj.TerminateConnection();
             Application.Exit();
         }
-<<<<<<< HEAD
-=======
 
-        private void RefreshBTN_Click(object sender, EventArgs e)
-        {
-            DataTable dt = WindowHandler.controllerObj.ViewAvailibleConsoles();
-            dataGridView1.DataSource = dt;
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -139,6 +132,6 @@ namespace CCafe
             }
 
         }
->>>>>>> parent of c701212... Merge branch 'master' of https://github.com/Hassan950/Cyber-Cafe
+
     }
 }
