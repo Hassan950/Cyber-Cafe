@@ -41,5 +41,7 @@ namespace CCafe
         public static string ModifyFoodStock = "ModifyFoodStock";
         public static string ModifyGameStock = "ModifyGameStock";
         public static string ViewAllFeedback = "ViewAllFeedback";
+        public static string MakeReservationEmployee = "MakeReservationEmployee";
+        public static string ViewCustomerID = "ViewCustomerID";
     }
 }

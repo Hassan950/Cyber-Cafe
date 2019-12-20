@@ -23,6 +23,23 @@ namespace CCafe
             comboBoxRoomNumber.DataSource = dt2;
             comboBoxRoomNumber.DisplayMember = "number";
             comboBoxRoomNumber.ValueMember = "number";
+
+            DataTable dt3 = WindowHandler.controllerObj.ViewAvailibleConsoles();
+            comboBoxRoomNumber2.DataSource = dt3;
+            comboBoxRoomNumber2.DisplayMember = "room_no";
+            comboBoxRoomNumber2.ValueMember = "room_no";
+
+            DataTable dt4 = WindowHandler.controllerObj.ViewGames();
+            comboBoxGameName.DataSource = dt4;
+            comboBoxGameName.DisplayMember = "name";
+            comboBoxGameName.ValueMember = "name";
+
+            DataTable dt5 = WindowHandler.controllerObj.ViewCustomerID();
+            comboBoxCustomerID.DataSource = dt5;
+            comboBoxCustomerID.DisplayMember = "ID";
+            comboBoxCustomerID.ValueMember = "ID";
+
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -119,19 +136,32 @@ namespace CCafe
         }
 
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (comboBoxRoomNumber2.SelectedValue == null || ((radioButtonAvailable.Checked == false && radioButtonNotAvailable.Checked == false)))
-            {
-                MessageBox.Show("Please Select All Fields To Update");
-                return;
-            }
-            else
-            {
 
-            }
+        private void button4_Click_1(object sender, EventArgs e)
+        {
 
         }
 
+        private void RefreshBTN_Click_1(object sender, EventArgs e)
+        {
+            DataTable dt1 = WindowHandler.controllerObj.ViewAvailibleConsoles();
+            dataGridView1.DataSource = dt1;
+            dataGridView1.Refresh();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string date = dateTimePicker1.Value.Date.ToString();
+            int roomNumber = Convert.ToInt16 ( comboBoxRoomNumber2.SelectedValue );
+            string gameName = comboBoxGameName.SelectedValue.ToString();
+            int customerID = Convert.ToInt16(comboBoxCustomerID.SelectedValue);
+            string startTime = StartTime.Value.ToString("HH:mm");
+            string endTime = EndTime.Value.ToString("HH:mm");
+
+            if (EndTime.Value <= StartTime.Value) throw new Exception("Start Time should be less than End Time");
+
+            WindowHandler.controllerObj.MakeReservationEmployee(date, roomNumber, gameName, customerID, startTime, endTime);
+            MessageBox.Show("Room Reserved Successfuly");
+        }
     }
 }
