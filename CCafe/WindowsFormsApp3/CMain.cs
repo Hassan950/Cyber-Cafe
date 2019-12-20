@@ -50,7 +50,11 @@ namespace CCafe
 
         private void CMain_Load(object sender, EventArgs e)
         {
-
+            label9.Hide();
+            label8.Hide();
+            label7.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -75,5 +79,42 @@ namespace CCafe
             WindowHandler.login.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label9.Show();
+            label8.Show();
+            label7.Show();
+            PasswordTB.Show();
+            RePasswordTB.Show();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (PasswordTB.Text.ToString() == RePasswordTB.Text.ToString())
+                {
+                    Program.ctrl.ChangePassword(Program.UserID,1, PasswordTB.Text.ToString());
+                    MessageBox.Show("Password Changed Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Please Check that the Passwords are the same");
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please Enter a Correct Password");
+            }
+            label9.Hide();
+            label8.Hide();
+            label7.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
+        }
+        
     }
 }

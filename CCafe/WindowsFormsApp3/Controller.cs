@@ -189,6 +189,16 @@ namespace CCafe
             return returnvalue;
         }
 
+        public int ChangePassword(int ID ,int type,string password)
+        {
+            string StoredProcedureName = StoredProcedures.ChangePassword;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@type", type);
+            Parameters.Add("@password", password);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
         public DataTable ViewSupply(string type)
         {
             string StoredProcedureName = StoredProcedures.ViewSupply;

@@ -46,6 +46,11 @@ namespace CCafe
         {
             // TODO: This line of code loads data into the 'cyber_CafeDataSet.Console' table. You can move, or remove it, as needed.
             //this.consoleTableAdapter.Fill(this.cyber_CafeDataSet.Console);
+            label5.Hide();
+            label8.Hide();
+            label7.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
 
         }
 
@@ -115,6 +120,63 @@ namespace CCafe
         {
             WindowHandler.controllerObj.TerminateConnection();
             Application.Exit();
+        }
+
+        private void PasswordTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RePasswordTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (PasswordTB.Text.ToString() == RePasswordTB.Text.ToString())
+                {
+                    Program.ctrl.ChangePassword(Program.UserID,2, PasswordTB.Text.ToString());
+                    MessageBox.Show("Password Changed Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Please Check that the Passwords are the same");
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please Enter a Correct Password");
+            }
+            label5.Hide();
+            label8.Hide();
+            label7.Hide();
+            PasswordTB.Hide();
+            RePasswordTB.Hide();
+        }
+        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label5.Show();
+            label8.Show();
+            label7.Show();
+            PasswordTB.Show();
+            RePasswordTB.Show();
         }
     }
 }
