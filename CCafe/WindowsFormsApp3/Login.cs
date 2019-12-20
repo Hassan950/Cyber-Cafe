@@ -49,7 +49,7 @@ namespace CCafe
                 {
                     Program.UserID = ID;
                     DataTable dt = WindowHandler.controllerObj.ViewAccounts(Usertype);
-                    Program.UserName = dt.Select($"ID = {ID}")[0].Field<string>("name");
+                    Program.UserName = dt.Select("ID = "+ID)[0].Field<string>("name");
                     WindowHandler.emain.Show();
                     this.Hide();
                     
@@ -59,7 +59,7 @@ namespace CCafe
                 {
                     Program.UserID = ID;
                     DataTable dt = WindowHandler.controllerObj.ViewAccounts(Usertype);
-                    Program.UserName = dt.Select($"ID = {ID}")[0].Field<string>("name");
+                    Program.UserName = dt.Select("ID = " + ID)[0].Field<string>("name");
                     Console.WriteLine(Program.UserName);
                     WindowHandler.cmain.Update();
                     WindowHandler.cmain.Show();
