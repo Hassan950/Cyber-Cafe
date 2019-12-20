@@ -112,5 +112,9 @@ namespace CCafe
             WindowHandler.login.Show();
             this.Hide();
         }
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -113,5 +113,9 @@ namespace CCafe
             WindowHandler.controllerObj.TerminateConnection();
             Application.Exit();
         }
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
