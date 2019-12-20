@@ -50,9 +50,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // UserNameLp
-            // 
+            //
             this.UserNameLp.AutoSize = true;
             this.UserNameLp.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
@@ -61,9 +61,9 @@
             this.UserNameLp.Size = new System.Drawing.Size(229, 46);
             this.UserNameLp.TabIndex = 6;
             this.UserNameLp.Text = "EMPLOYEE#";
-            // 
+            //
             // panel1
-            // 
+            //
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.GamesBTN);
             this.panel1.Controls.Add(this.label1);
@@ -74,9 +74,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(437, 720);
             this.panel1.TabIndex = 1;
-            // 
+            //
             // GamesBTN
-            // 
+            //
             this.GamesBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.GamesBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GamesBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -92,9 +92,9 @@
             this.GamesBTN.Text = "GAMES";
             this.GamesBTN.UseVisualStyleBackColor = false;
             this.GamesBTN.Click += new System.EventHandler(this.GamesBTN_Click);
-            // 
+            //
             // label1
-            // 
+            //
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Tahoma", 18F);
             this.label1.Location = new System.Drawing.Point(0, 501);
@@ -104,9 +104,9 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "FOOD AND DRINKS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
+            //
             // panel2
-            // 
+            //
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.HomeBtn);
             this.panel2.Location = new System.Drawing.Point(0, 333);
@@ -114,9 +114,9 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(437, 84);
             this.panel2.TabIndex = 14;
-            // 
+            //
             // HomeBtn
-            // 
+            //
             this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.HomeBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -132,9 +132,9 @@
             this.HomeBtn.Text = "HOME";
             this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
-            // 
+            //
             // RefreshBTN
-            // 
+            //
             this.RefreshBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
             this.RefreshBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.RefreshBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -149,9 +149,9 @@
             this.RefreshBTN.Text = "Refresh";
             this.RefreshBTN.UseVisualStyleBackColor = false;
             this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
-            // 
+            //
             // label3
-            // 
+            //
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
@@ -160,9 +160,9 @@
             this.label3.Size = new System.Drawing.Size(263, 36);
             this.label3.TabIndex = 25;
             this.label3.Text = "Food And Drinks";
-            // 
+            //
             // dataGridView1
-            // 
+            //
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(464, 111);
@@ -170,9 +170,9 @@
             this.dataGridView1.RowTemplate.Height = 26;
             this.dataGridView1.Size = new System.Drawing.Size(912, 306);
             this.dataGridView1.TabIndex = 24;
-            // 
+            //
             // label2
-            // 
+            //
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
@@ -181,17 +181,17 @@
             this.label2.Size = new System.Drawing.Size(216, 36);
             this.label2.TabIndex = 28;
             this.label2.Text = "Update Stock";
-            // 
+            //
             // comboBox1
-            // 
+            //
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(464, 558);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(233, 24);
             this.comboBox1.TabIndex = 29;
-            // 
+            //
             // UpdateBTN
-            // 
+            //
             this.UpdateBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
             this.UpdateBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.UpdateBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -206,17 +206,18 @@
             this.UpdateBTN.Text = "Update";
             this.UpdateBTN.UseVisualStyleBackColor = false;
             this.UpdateBTN.Click += new System.EventHandler(this.UpdateBTN_Click);
-            // 
+            //
             // numericUpDown1
-            // 
+            //
             this.numericUpDown1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.numericUpDown1.Location = new System.Drawing.Point(720, 558);
+            this.numericUpDown1.Location = new System.Drawing.Point(616, 559);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown1.Size = new System.Drawing.Size(74, 24);
             this.numericUpDown1.TabIndex = 31;
-            // 
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            //
             // panel3
-            // 
+            //
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
@@ -226,11 +227,11 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1463, 35);
             this.panel3.TabIndex = 41;
-            // 
+            //
             // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            //
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -248,11 +249,11 @@
             this.button2.Text = "Sign Out";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
+            //
             // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            //
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -270,9 +271,9 @@
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
+            //
             // EFood
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1463, 720);
@@ -320,4 +321,3 @@
         private System.Windows.Forms.Button button1;
     }
 }
-
