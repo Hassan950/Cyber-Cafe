@@ -71,11 +71,7 @@ namespace CCafe
 
         private void CMain_Load(object sender, EventArgs e)
         {
-            label9.Hide();
-            label8.Hide();
-            label7.Hide();
-            PasswordTB.Hide();
-            RePasswordTB.Hide();
+
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -183,14 +183,6 @@ namespace CCafe
             return dbMan.ExecuteNonQuery(StoredProcedureName,Parameters);
         }
 
-        public int InsertShiftLog(int ID)
-        {
-            string StoredProcedureName = StoredProcedures.InsertShiftLog;
-            Dictionary<string, object> Parameters = new Dictionary<string, object>();
-            Parameters.Add("@ID", ID);
-            return (int)dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters);
-        }
-
         public DataTable ViewAllTournaments()
         {
             string StoredProcedureName = StoredProcedures.View_All_Tournaments;
@@ -209,9 +201,15 @@ namespace CCafe
             return dbMan.ExecuteReader(StoredProcedureName, null);
         }
 
+        public DataTable ViewCustomerID()
+        {
+            string StoredProcedureName = StoredProcedures.ViewCustomerID;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
+
         public int UpdateConsoles(int roomNum,string condition)
         {
-            string StoredProcedureName = StoredProcedures.EditConsoles;
+            string StoredProcedureName = StoredProcedures.MaintainConsoles;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@room_no", roomNum);
             Parameters.Add("@condition", condition);
@@ -227,16 +225,6 @@ namespace CCafe
             Parameters.Add("@Usertype", UserType);
             int returnvalue = Convert.ToInt32(dbMan.ExecuteReturnScalar(StoredProcedureName, Parameters));
             return returnvalue;
-        }
-
-        public int ChangePassword(int ID ,int type,string password)
-        {
-            string StoredProcedureName = StoredProcedures.ChangePassword;
-            Dictionary<string, object> Parameters = new Dictionary<string, object>();
-            Parameters.Add("@ID", ID);
-            Parameters.Add("@type", type);
-            Parameters.Add("@password", password);
-            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
 
         public DataTable ViewSupply(string type)
@@ -285,6 +273,19 @@ namespace CCafe
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
 
+        public int MakeReservationEmployee(string date , int roomNumber , string gameName , int customerID , string start_time , string end_time)
+        {
+            string StoredProcedureName = StoredProcedures.MakeReservationEmployee;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@Date", date);
+            Parameters.Add("@room_no", roomNumber);
+            Parameters.Add("@game_name", gameName);
+            Parameters.Add("@CID", customerID);
+            Parameters.Add("@start_time", start_time);
+            Parameters.Add("@end_time", end_time);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
         public int ModifyFoodStock(string name , int stockNum)
         {
             string StoredProcedureName = StoredProcedures.ModifyFoodStock;
@@ -302,6 +303,16 @@ namespace CCafe
             Parameters.Add("@total_number", stockNum);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
+
+        public int PlaceFoodOrder(string fName , int quantity)
+        {
+            string StoredProcedureName = StoredProcedures.SellOrder;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@name", fName);
+            Parameters.Add("@quantity", quantity);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
 
     }
 }

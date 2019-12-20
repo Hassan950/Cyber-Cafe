@@ -22,6 +22,13 @@ namespace CCafe
             comboBox1.DisplayMember = "name";
             comboBox1.ValueMember = "name";
 
+            DataTable dt2 = WindowHandler.controllerObj.ViewFoodAndDrinks();
+            dataGridView1.DataSource = dt2;
+
+            comboBox2.DataSource = dt2;
+            comboBox2.DisplayMember = "name";
+            comboBox2.ValueMember = "name";
+
             numericUpDown1.Maximum = int.MaxValue;
         }
 
@@ -115,6 +122,21 @@ namespace CCafe
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string name = comboBox2.SelectedValue.ToString();
+            int value = Convert.ToInt16(numericUpDown2.Value);
+
+            if (comboBox2.SelectedValue == null)
+            {
+                MessageBox.Show("Please Select All Fields To Update");
+                return;
+            }
+
+            WindowHandler.controllerObj.PlaceFoodOrder(name, value);
+            MessageBox.Show("Ordered Placed Successfuly");
         }
     }
 }

@@ -23,6 +23,23 @@ namespace CCafe
             comboBoxRoomNumber.DataSource = dt2;
             comboBoxRoomNumber.DisplayMember = "number";
             comboBoxRoomNumber.ValueMember = "number";
+
+            DataTable dt3 = WindowHandler.controllerObj.ViewAvailibleConsoles();
+            comboBoxRoomNumber2.DataSource = dt3;
+            comboBoxRoomNumber2.DisplayMember = "room_no";
+            comboBoxRoomNumber2.ValueMember = "room_no";
+
+            DataTable dt4 = WindowHandler.controllerObj.ViewGames();
+            comboBoxGameName.DataSource = dt4;
+            comboBoxGameName.DisplayMember = "name";
+            comboBoxGameName.ValueMember = "name";
+
+            DataTable dt5 = WindowHandler.controllerObj.ViewCustomerID();
+            comboBoxCustomerID.DataSource = dt5;
+            comboBoxCustomerID.DisplayMember = "ID";
+            comboBoxCustomerID.ValueMember = "ID";
+
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -46,25 +63,6 @@ namespace CCafe
         {
             // TODO: This line of code loads data into the 'cyber_CafeDataSet.Console' table. You can move, or remove it, as needed.
             //this.consoleTableAdapter.Fill(this.cyber_CafeDataSet.Console);
-            try
-            {
-                int returnval = Program.ctrl.InsertShiftLog(Program.UserID);
-                if (returnval == 1)
-                    MessageBox.Show("Shift Inserted");
-                else
-                {
-                    MessageBox.Show("You Have Logged Before Today");
-                }
-            }
-            catch (Exception ex)
-            {
-            }
-
-            label5.Hide();
-            label8.Hide();
-            label7.Hide();
-            PasswordTB.Hide();
-            RePasswordTB.Hide();
 
         }
 
@@ -124,73 +122,46 @@ namespace CCafe
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void RefreshBTN_Click(object sender, EventArgs e)
         {
-            WindowHandler.login.Show();
-            this.Hide();
+            DataTable dt1 = WindowHandler.controllerObj.ViewAvailibleConsoles();
+            dataGridView1.DataSource = dt1;
+            dataGridView1.Refresh();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             WindowHandler.controllerObj.TerminateConnection();
             Application.Exit();
         }
 
-        private void PasswordTB_TextChanged(object sender, EventArgs e)
+
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void RefreshBTN_Click_1(object sender, EventArgs e)
         {
-
+            DataTable dt1 = WindowHandler.controllerObj.ViewAvailibleConsoles();
+            dataGridView1.DataSource = dt1;
+            dataGridView1.Refresh();
         }
 
-        private void RePasswordTB_TextChanged(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
+            string date = dateTimePicker1.Value.Date.ToString();
+            int roomNumber = Convert.ToInt16 ( comboBoxRoomNumber2.SelectedValue );
+            string gameName = comboBoxGameName.SelectedValue.ToString();
+            int customerID = Convert.ToInt16(comboBoxCustomerID.SelectedValue);
+            string startTime = StartTime.Value.ToString("HH:mm");
+            string endTime = EndTime.Value.ToString("HH:mm");
 
-        }
+            if (EndTime.Value <= StartTime.Value) throw new Exception("Start Time should be less than End Time");
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (PasswordTB.Text.ToString() == RePasswordTB.Text.ToString())
-                {
-                    Program.ctrl.ChangePassword(Program.UserID,2, PasswordTB.Text.ToString());
-                    MessageBox.Show("Password Changed Successfully");
-                }
-                else
-                {
-                    MessageBox.Show("Please Check that the Passwords are the same");
-                }
-
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show("Please Enter a Correct Password");
-            }
-            label5.Hide();
-            label8.Hide();
-            label7.Hide();
-            PasswordTB.Hide();
-            RePasswordTB.Hide();
-        }
-        
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            label5.Show();
-            label8.Show();
-            label7.Show();
-            PasswordTB.Show();
-            RePasswordTB.Show();
+            WindowHandler.controllerObj.MakeReservationEmployee(date, roomNumber, gameName, customerID, startTime, endTime);
+            MessageBox.Show("Room Reserved Successfuly");
         }
     }
 }
