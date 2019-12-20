@@ -29,6 +29,11 @@ namespace CCafe
             DataTable dt = WindowHandler.controllerObj.ViewGames();
             GameCB.DataSource = dt;
             GameCB.DisplayMember = "name";
+            GameCB.ValueMember = "name";
+            dt = WindowHandler.controllerObj.ViewRooms();
+            RoomCB.DataSource = dt;
+            RoomCB.DisplayMember = "number";
+            RoomCB.ValueMember = "number";
             UserNameLp.Text = Program.UserName;
         }
 
@@ -44,7 +49,9 @@ namespace CCafe
 
         private void ReserveBTN_Click(object sender, EventArgs e)
         {
-
+            string st = StartTime.Value.ToString("hh:mm:ss");
+            string et = EndTime.Value.ToString("hh:mm:ss");
+            WindowHandler.controllerObj.CustomerReserve(Convert.ToInt32(RoomCB.SelectedValue), GameCB.SelectedValue.ToString(), Program.UserID, st, et);
         }
 
         private void FeedBTN_Click(object sender, EventArgs e)

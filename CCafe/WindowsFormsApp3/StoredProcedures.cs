@@ -43,5 +43,8 @@ namespace CCafe
         public static string ViewAllFeedback = "ViewAllFeedback";
         public static string ChangePassword = "ChangePassword";
         public static string InsertShiftLog = "Insert_Shift_Log";
+        public static string MakeReservation = "MakeReservation";
+        public static string GetShift = "GetShift";
+        
     }
 }

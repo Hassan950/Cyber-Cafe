@@ -47,18 +47,18 @@
             this.FeedBTN = new System.Windows.Forms.Button();
             this.SubBTN = new System.Windows.Forms.Button();
             this.GameCB = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.RoomCB = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.UserNameLp = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // ReserveBTN
@@ -138,9 +138,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
             this.label1.Location = new System.Drawing.Point(840, 511);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 30);
+            this.label1.Size = new System.Drawing.Size(93, 30);
             this.label1.TabIndex = 19;
-            this.label1.Text = "ROOM/CONSOLE";
+            this.label1.Text = "ROOM";
             // 
             // label6
             // 
@@ -301,14 +301,14 @@
             this.GameCB.Size = new System.Drawing.Size(400, 31);
             this.GameCB.TabIndex = 20;
             // 
-            // comboBox1
+            // RoomCB
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(845, 548);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(400, 31);
-            this.comboBox1.TabIndex = 21;
+            this.RoomCB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoomCB.FormattingEnabled = true;
+            this.RoomCB.Location = new System.Drawing.Point(845, 548);
+            this.RoomCB.Name = "RoomCB";
+            this.RoomCB.Size = new System.Drawing.Size(400, 31);
+            this.RoomCB.TabIndex = 21;
             // 
             // panel3
             // 
@@ -403,15 +403,14 @@
             this.UserNameLp.Text = "CUSTOMER#";
             this.UserNameLp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // pictureBox2
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(845, 74);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(400, 400);
-            this.dataGridView1.TabIndex = 42;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(845, 74);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(400, 400);
+            this.pictureBox2.TabIndex = 42;
+            this.pictureBox2.TabStop = false;
             // 
             // CMain
             // 
@@ -419,9 +418,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.RoomCB);
             this.Controls.Add(this.GameCB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
@@ -442,7 +441,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,7 +462,7 @@
         private System.Windows.Forms.Button FeedBTN;
         private System.Windows.Forms.Button SubBTN;
         private System.Windows.Forms.ComboBox GameCB;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox RoomCB;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -474,7 +473,7 @@
         private System.Windows.Forms.TextBox PasswordTB;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label UserNameLp;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
