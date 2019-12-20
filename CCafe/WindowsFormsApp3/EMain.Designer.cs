@@ -467,6 +467,10 @@
             this.button4.TabIndex = 17;
             this.button4.Text = "Update Availability";
             this.button4.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+>>>>>>> parent of c701212... Merge branch 'master' of https://github.com/Hassan950/Cyber-Cafe
             // 
             // EMain
             // 

@@ -122,24 +122,8 @@ namespace CCafe
 
         private void label7_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (PasswordTB.Text.ToString() == RePasswordTB.Text.ToString())
-                {
-                    Program.ctrl.ChangePassword(Program.UserID,1, PasswordTB.Text.ToString());
-                    MessageBox.Show("Password Changed Successfully");
-                }
-                else
-                {
-                    MessageBox.Show("Please Check that the Passwords are the same");
-                }
 
-            }
 
-            catch (Exception ex)
-            {
-                MessageBox.Show("Please Enter a Correct Password");
-            }
             label5.Hide();
             label6.Hide();
             label7.Hide();
