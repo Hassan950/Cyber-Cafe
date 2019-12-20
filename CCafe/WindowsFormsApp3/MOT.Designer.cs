@@ -264,7 +264,7 @@
             this.DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.NullValue = null;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SeaShell;
@@ -274,7 +274,7 @@
             this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trajan Pro", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -293,6 +293,7 @@
             this.DataGrid.RowTemplate.Height = 26;
             this.DataGrid.Size = new System.Drawing.Size(811, 221);
             this.DataGrid.TabIndex = 37;
+            this.DataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGrid_CellContentClick);
             // 
             // TournNameCB
             // 

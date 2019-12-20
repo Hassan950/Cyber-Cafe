@@ -32,23 +32,25 @@ namespace CCafe
 
                 else if (Usertype == 1)
                 {
+                    Program.UserID = ID;
                     WindowHandler.mmain.Show();
                     this.Hide();
-                    Program.UserID = ID;
+                    
                 }
 
                 else if (Usertype == 2)
                 {
+                    Program.UserID = ID;
                     WindowHandler.emain.Show();
                     this.Hide();
-                    Program.UserID = ID;
+                    
                 }
 
                 else if (Usertype == 3)
                 {
+                    Program.UserID = ID;
                     WindowHandler.cmain.Show();
                     this.Hide();
-                    Program.UserID = ID;
                 }
             }
             catch (FormatException)

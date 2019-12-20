@@ -289,5 +289,19 @@ values
 ('Tournamnet1','2019-12-06',55555,'2019-12-07'),
 ('Tournamnet1','2019-12-06',66666,'2019-12-07')
 
+insert into Feedback
+values
+('2019-12-06',33333,'Test','feedback'),
+('2019-12-07',33333,'Test','feedback'),
+('2019-12-08',33333,'Test','feedback'),
+('2019-12-09',33333,'Test','feedback'),
+('2019-12-06',44444,'Test','request'),
+('2019-12-07',44444,'Test','request'),
+('2019-12-08',44444,'Test','request'),
+('2019-12-09',44444,'Test','request'),
+('2019-12-06',55555,'Test','request'),
+('2019-12-08',55555,'Test','request'),
+('2019-12-09',55555,'Test','request')
+
 alter table Console
 ALTER COLUMN condition bool;
