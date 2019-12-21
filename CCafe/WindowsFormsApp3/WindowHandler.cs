@@ -22,6 +22,7 @@ namespace CCafe
         public static MManage mManage;
         public static MCyper mcyper;
         public static MOT mot;
+        public static ReserveReceipt rreceipt;
 
         public static void Intialaize()
         {
@@ -39,6 +40,7 @@ namespace CCafe
             mManage = new MManage();
             mcyper = new MCyper();
             mot = new MOT();
+            rreceipt = new ReserveReceipt();
         }
     }
 }

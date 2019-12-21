@@ -223,5 +223,10 @@ namespace CCafe
             WindowHandler.login.Show();
             this.Hide();
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            WindowHandler.rreceipt.Show();
+        }
     }
 }

@@ -33,6 +33,7 @@
             this.Label1 = new System.Windows.Forms.Label();
             this.AddTourn = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +77,7 @@
             this.AddTourn.TabIndex = 58;
             this.AddTourn.Text = "Print";
             this.AddTourn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AddTourn.Click += new System.EventHandler(this.AddTourn_Click);
+            this.AddTourn.Click += new System.EventHandler(this.Print_click);
             // 
             // label2
             // 
@@ -91,6 +92,28 @@
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button3.Location = new System.Drawing.Point(771, -1);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(27, 35);
+            this.button3.TabIndex = 60;
+            this.button3.Text = "X";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // ReserveReceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,6 +121,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(796, 565);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.AddTourn);
             this.Controls.Add(this.Label1);
@@ -107,7 +131,6 @@
             this.MinimizeBox = false;
             this.Name = "ReserveReceipt";
             this.ShowIcon = false;
-            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -121,5 +144,6 @@
         private System.Windows.Forms.Label Label1;
         private System.Windows.Forms.Label AddTourn;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button3;
     }
 }

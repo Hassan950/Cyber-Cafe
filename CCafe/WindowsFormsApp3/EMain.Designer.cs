@@ -72,6 +72,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -130,6 +131,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.RePasswordTB);
@@ -147,7 +149,7 @@
             // 
             // label15
             // 
-            this.label15.BackColor = System.Drawing.Color.Gold;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(229, 260);
@@ -657,6 +659,19 @@
             this.label8.TabIndex = 48;
             this.label8.Text = "Make Reservation";
             // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(108, 626);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(221, 50);
+            this.label18.TabIndex = 73;
+            this.label18.Text = "Receipts";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
             // EMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -738,6 +753,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox PasswordTB;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label18;
     }
 }
 
