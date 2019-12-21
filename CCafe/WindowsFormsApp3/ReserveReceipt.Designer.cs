@@ -120,7 +120,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Trajan Pro", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(207, 520);
+            this.numericUpDown1.Location = new System.Drawing.Point(235, 520);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             10,
             0,
