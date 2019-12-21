@@ -55,12 +55,7 @@ namespace CCafe
             return dbMan.ExecuteReader(SPN, null);
         }
 
-        public DataTable ViewConsoleName()
-        {
-            string SPN = StoredProcedures.ViewConsoleName;
-            return dbMan.ExecuteReader(SPN, null);
-        }
-
+        
         public DataTable ViewRoomNumber()
         {
             string SPN = StoredProcedures.ViewRoomNumber;
