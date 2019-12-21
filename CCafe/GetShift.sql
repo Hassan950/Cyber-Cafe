@@ -27,6 +27,6 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	SELECT Employee.ID from Employee where Employee.start_time <= @stime and Employee.end_time >= @stime
+	RETURN (SELECT Employee.ID from Employee where Employee.start_time <= @stime and Employee.end_time >= @stime)
 END
 GO

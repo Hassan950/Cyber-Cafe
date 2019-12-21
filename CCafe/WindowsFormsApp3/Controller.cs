@@ -21,30 +21,28 @@ namespace CCafe
         }
         public int CustomerReserve(int rno , string gname,int CID,string stime,string etime)
         {
-            /*@EID int,
-	@Date date,
-	@room_no int,
-	@game_name varchar(20),
-	@CID int,
-	@start_time time,
-	@end_time time*/
             string SPN = StoredProcedures.GetShift;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@stime", stime);
             int EID =  (int)dbMan.ExecuteReturnScalar(SPN, Parameters);
-            Console.WriteLine(EID);
+           
             Parameters.Clear();
-            Parameters.Add("@start_time", stime);
-            Parameters.Add("@end_time", etime);
-            Parameters.Add("@Date", System.DateTime.Today.ToString("yyyy-MM-dd"));
-            Parameters.Add("@room_no", rno);
+            Parameters.Add("@start_time", stime);      
+            Parameters.Add("@end_time", etime);       
+            Parameters.Add("@Date", System.DateTime.Today.ToString("yyyy-MM-dd"));           
+            Parameters.Add("@room_no", rno); 
             Parameters.Add("@CID", CID);
-            Parameters.Add("@EID", EID);
+            Parameters.Add("@EID", 11111);    
             Parameters.Add("@game_name", gname);
+           /* Console.WriteLine(stime);
+            Console.WriteLine(etime);
+            Console.WriteLine(System.DateTime.Today.ToString("yyyy-MM-dd"));
+            Console.WriteLine(rno);
+            Console.WriteLine(CID);
+            Console.WriteLine(EID);
+            Console.WriteLine(gname);*/
             SPN = StoredProcedures.MakeReservation;
             return dbMan.ExecuteNonQuery(SPN, Parameters);
-
-
         }
         public DataTable ViewRooms()
         {

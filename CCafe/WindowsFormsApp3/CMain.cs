@@ -24,7 +24,6 @@ namespace CCafe
 
         public new void Update()
         {
-            Console.WriteLine(Program.UserName);
             Loc = UserNameLp.Location;
             DataTable dt = WindowHandler.controllerObj.ViewGames();
             GameCB.DataSource = dt;
@@ -51,7 +50,14 @@ namespace CCafe
         {
             string st = StartTime.Value.ToString("hh:mm:ss");
             string et = EndTime.Value.ToString("hh:mm:ss");
-            WindowHandler.controllerObj.CustomerReserve(Convert.ToInt32(RoomCB.SelectedValue), GameCB.SelectedValue.ToString(), Program.UserID, st, et);
+            int r = WindowHandler.controllerObj.CustomerReserve(Convert.ToInt32(RoomCB.SelectedValue), GameCB.SelectedValue.ToString(), Program.UserID, st, et);
+            Console.WriteLine(r);
+            if (r == -5)
+                MessageBox.Show("Already Reserved, Choose Another Time");
+            else
+            {
+                MessageBox.Show("Reservation Made");
+            }
         }
 
         private void FeedBTN_Click(object sender, EventArgs e)
