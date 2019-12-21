@@ -15,6 +15,10 @@ namespace CCafe
         public EFood()
         {
             InitializeComponent();
+            Update();
+        }
+        public new void Update()
+        {
             DataTable dt = WindowHandler.controllerObj.ViewFoodAndDrinks();
             dataGridView1.DataSource = dt;
 
@@ -30,9 +34,10 @@ namespace CCafe
             comboBox2.ValueMember = "name";
 
             numericUpDown1.Maximum = int.MaxValue;
+            UserNameLp.Text = Program.UserName;
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+            private void panel2_Paint(object sender, PaintEventArgs e)
         {
             //panel1.BackColor = Color.FromArgb(35, 135, 200);
         }
@@ -71,12 +76,14 @@ namespace CCafe
 
         private void GamesBTN_Click(object sender, EventArgs e)
         {
+            WindowHandler.egames.Update();
             WindowHandler.egames.Show();
             this.Hide();
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
+            WindowHandler.emain.Update();
             WindowHandler.emain.Show();
             this.Hide();
         }
@@ -116,6 +123,7 @@ namespace CCafe
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            WindowHandler.login.Update();
             WindowHandler.login.Show();
             this.Hide();
         }

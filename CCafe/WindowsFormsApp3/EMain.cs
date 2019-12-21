@@ -15,6 +15,14 @@ namespace CCafe
         public EMain()
         {
             InitializeComponent();
+            Loc = UserNameLp.Location;
+        }
+        bool changePass = false;
+        Point Loc;
+        public new void Update()
+        {
+           
+            UserNameLp.Text = Program.UserName;
             DataTable dt1 = WindowHandler.controllerObj.ViewAvailibleConsoles();
             dataGridView1.DataSource = dt1;
             dataGridView1.Refresh();
@@ -38,8 +46,6 @@ namespace CCafe
             comboBoxCustomerID.DataSource = dt5;
             comboBoxCustomerID.DisplayMember = "ID";
             comboBoxCustomerID.ValueMember = "ID";
-
-
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -55,6 +61,7 @@ namespace CCafe
 
         private void GamesBTN_Click(object sender, EventArgs e)
         {
+            WindowHandler.egames.Update();
             WindowHandler.egames.Show();
             this.Hide();
         }
@@ -91,6 +98,7 @@ namespace CCafe
 
         private void FoodBTN_Click(object sender, EventArgs e)
         {
+            WindowHandler.efood.Update();
             WindowHandler.efood.Show();
             this.Hide();
         }
@@ -196,11 +204,27 @@ namespace CCafe
 
         private void button5_Click(object sender, EventArgs e)
         {
-            label15.Show();
-            label16.Show();
-            label17.Show();
-            PasswordTB.Show();
-            RePasswordTB.Show();
+            if (!changePass)
+            {
+                label15.Show();
+                label16.Show();
+                label17.Show();
+                PasswordTB.Show();
+                RePasswordTB.Show();
+                changePass = !changePass;
+
+                UserNameLp.Location = new Point(0, 74);
+            }
+            else
+            {
+                label15.Hide();
+                label16.Hide();
+                label17.Hide();
+                PasswordTB.Hide();
+                RePasswordTB.Hide();
+                changePass = !changePass;
+                UserNameLp.Location = Loc;
+            }
         }
 
         private void label15_Click(object sender, EventArgs e)
@@ -232,6 +256,7 @@ namespace CCafe
 
         private void button2_Click(object sender, EventArgs e)
         {
+            WindowHandler.login.Update();
             WindowHandler.login.Show();
             this.Hide();
         }
