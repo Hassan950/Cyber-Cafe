@@ -59,10 +59,14 @@ namespace CCafe
             label3.Text = "Edit Tournament";
             label10.Text = "Status";
             label6.Text = "Particpants";
+            label8.Show();
+            label9.Show();
+            textBox1.Show();
+            textBox2.Show();
             label11.Hide();
             dateTimePicker1.Hide();
-
-
+            TournNameCB.DataSource = Program.ctrl.ViewAllTournaments();
+            TournNameCB.DisplayMember = "name";
         }
 
         private void OfferSelect_Click(object sender, EventArgs e)
@@ -78,6 +82,10 @@ namespace CCafe
             label10.Text = "Type";
             label6.Text = "Discount";
             label11.Show();
+            label8.Hide();
+            label9.Hide();
+            textBox1.Hide();
+            textBox2.Hide();
             dateTimePicker1.Show();
             TournNameCB.DataSource = Program.ctrl.ViewAllOffers();
             TournNameCB.DisplayMember = "name";
@@ -101,6 +109,10 @@ namespace CCafe
             label3.Text = "Status";
             label6.Text = "Particpants";
             label11.Hide();
+            label8.Show();
+            label9.Show();
+            textBox1.Show();
+            textBox2.Show();
             dateTimePicker1.Hide();
         }
 
@@ -120,7 +132,7 @@ namespace CCafe
             {
                 try
                 {
-                    Program.ctrl.AddTournaments(TournNameTB.Text.ToString(), StartDatePicker.Value.ToShortDateString(), StatusNewTB.Text.ToString(), Convert.ToInt32(ParticNumNew.Value));
+                    Program.ctrl.AddTournaments(TournNameTB.Text.ToString(), StartDatePicker.Value.ToShortDateString(), StatusNewTB.Text.ToString(), Convert.ToInt32(ParticNumNew.Value),textBox1.Text.ToString(),Convert.ToInt32(textBox2.Text));
                 }
                 catch (Exception ex)
                 {
@@ -160,7 +172,7 @@ namespace CCafe
             {
                 try
                 {
-                    Program.ctrl.AddTournaments(TournNameCB.Text.ToString(), StartDatePicker.Value.ToShortDateString(), StatusNewTB.Text.ToString(), Convert.ToInt32(ParticNumNew.Value));
+                    Program.ctrl.AddTournaments(TournNameCB.Text.ToString(), StartDatePicker.Value.ToShortDateString(), StatusNewTB.Text.ToString(), Convert.ToInt32(ParticNumNew.Value),textBox1.Text.ToString(),Convert.ToInt32(textBox2.Text));
                 }
                 catch (Exception ex)
                 {
@@ -224,6 +236,21 @@ namespace CCafe
         {
             WindowHandler.login.Show();
             this.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
        

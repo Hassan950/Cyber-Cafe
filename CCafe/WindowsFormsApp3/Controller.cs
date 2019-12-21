@@ -81,7 +81,7 @@ namespace CCafe
             return dbMan.ExecuteReader(SPN, null);
         }
 
-        public int AddTournaments(string name, string date, string status, int participants)
+        public int AddTournaments(string name, string date, string status, int participants,string gamename,int roomno)
         {
             string StoredProcedureName = StoredProcedures.EditTourn;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
@@ -89,6 +89,8 @@ namespace CCafe
             Parameters.Add("@date", date);
             Parameters.Add("@status", status);
             Parameters.Add("@comp_no", participants);
+            Parameters.Add("@game_name", gamename);
+            Parameters.Add("@room_no", roomno);
 
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
