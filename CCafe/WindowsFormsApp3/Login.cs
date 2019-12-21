@@ -41,6 +41,7 @@ namespace CCafe
                 else if (Usertype == 1)
                 {
                     Program.UserID = ID;
+                    WindowHandler.mmain.Update();
                     WindowHandler.mmain.Show();
                     this.Hide();
                     
@@ -51,6 +52,7 @@ namespace CCafe
                     Program.UserID = ID;
                     DataTable dt = WindowHandler.controllerObj.ViewAccounts(Usertype);
                     Program.UserName = dt.Select("ID = "+ID)[0].Field<string>("name");
+                    WindowHandler.emain.Update();
                     WindowHandler.emain.Show();
                     this.Hide();
                     
