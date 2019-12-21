@@ -53,14 +53,17 @@
             // 
             // UserNameLp
             // 
-            this.UserNameLp.AutoSize = true;
+            this.UserNameLp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.UserNameLp.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(230)))), ((int)(((byte)(164)))));
-            this.UserNameLp.Location = new System.Drawing.Point(68, 255);
+            this.UserNameLp.Location = new System.Drawing.Point(0, 244);
             this.UserNameLp.Name = "UserNameLp";
-            this.UserNameLp.Size = new System.Drawing.Size(211, 45);
+            this.UserNameLp.Size = new System.Drawing.Size(382, 45);
             this.UserNameLp.TabIndex = 6;
             this.UserNameLp.Text = "EMPLOYEE";
+            this.UserNameLp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -140,6 +143,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(412, 111);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 26;
             this.dataGridView1.Size = new System.Drawing.Size(798, 306);
             this.dataGridView1.TabIndex = 2;
@@ -295,7 +299,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.CMain_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
