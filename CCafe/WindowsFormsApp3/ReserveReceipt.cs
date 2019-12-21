@@ -35,7 +35,7 @@ namespace CCafe
                 DataGridViewRow dt = dataGridView1.SelectedRows[0];
 
                 r.employeeid = dt.Cells[0].Value.ToString();
-                r.date = dt.Cells[1].Value.ToString();
+                r.date = DateTime.Now.ToShortDateString();
                 r.room_no = dt.Cells[2].Value.ToString();
                 r.gamename = dt.Cells[3].Value.ToString();
                 r.customerid = dt.Cells[4].Value.ToString();
