@@ -172,7 +172,7 @@ namespace CCafe
             string date = dateTimePicker1.Value.Date.ToString();
             int roomNumber = Convert.ToInt16 ( comboBoxRoomNumber2.SelectedValue );
             string gameName = comboBoxGameName.SelectedValue.ToString();
-            int customerID = Convert.ToInt16(comboBoxCustomerID.SelectedValue);
+            int customerID = Convert.ToInt32(comboBoxCustomerID.SelectedValue);
             string startTime = StartTime.Value.ToString("HH:mm");
             string endTime = EndTime.Value.ToString("HH:mm");
 
