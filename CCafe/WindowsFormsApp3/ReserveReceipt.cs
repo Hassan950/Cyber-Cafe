@@ -41,11 +41,14 @@ namespace CCafe
                 r.customerid = dt.Cells[4].Value.ToString();
                 r.starttime = dt.Cells[5].Value.ToString();
                 r.endtime = dt.Cells[6].Value.ToString();
-
-                r.MoneyPerHour = "15";
+                r.MoneyPerHour = numericUpDown1.Value.ToString();
                 r.Tax = "0.14";
                 r.TimeSpent =( (Convert.ToDateTime(dt.Cells[6].Value.ToString()).Subtract(Convert.ToDateTime(dt.Cells[5].Value.ToString() ))).TotalMinutes/60.0).ToString();
-                r.Discount = "0";
+                DataTable tempdiscount = Program.ctrl.GetDiscount(Convert.ToInt32(r.customerid)) ;
+                if (tempdiscount != null)
+                    r.Discount = tempdiscount.Rows[0][0].ToString();
+                else { r.Discount = "0"; }
+
                 r.TotalMoney = ((Convert.ToInt32(r.TimeSpent) * Convert.ToInt32(r.MoneyPerHour)) * (1.14) - Convert.ToInt32(r.Discount)).ToString();
 
                 reciept = new Reciept(r);

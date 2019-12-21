@@ -50,6 +50,7 @@ namespace CCafe
         public static string ViewConsoles = "ViewConsoles";
         public static string EditRooms = "EditRooms";
         public static string ViewReservation = "ViewReservation";
+        public static string GetDiscount = "GetDiscount";
 
     }
 }

@@ -260,6 +260,14 @@ namespace CCafe
             return dbMan.ExecuteReader(StoredProcedureName, Parameters);
         }
 
+        public DataTable GetDiscount(int id)
+        {
+            string StoredProcedureName = StoredProcedures.GetDiscount;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", id);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+
         public int InsertEmployee(int ID, string name, int salary, string start_time, string end_time)
         {
             string StoredProcedureName = StoredProcedures.HireEmp;
