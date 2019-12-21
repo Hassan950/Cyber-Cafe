@@ -52,8 +52,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.ReportReservation1 = new CCafe.ReportReservation();
+            this.ReportReservation2 = new CCafe.ReportReservation();
+            this.crystalReportViewer2 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.ReportReservation3 = new CCafe.ReportReservation();
+            this.crystalOpenFileDialog1 = new CrystalDecisions.Shared.Interop.CrystalOpenFileDialog();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ManagerReport1 = new CCafe.ManagerReport();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -398,16 +402,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // crystalReportViewer2
+            // 
+            this.crystalReportViewer2.ActiveViewIndex = 0;
+            this.crystalReportViewer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer2.Location = new System.Drawing.Point(414, 421);
+            this.crystalReportViewer2.Name = "crystalReportViewer2";
+            this.crystalReportViewer2.ReportSource = this.ReportReservation1;
+            this.crystalReportViewer2.Size = new System.Drawing.Size(472, 242);
+            this.crystalReportViewer2.TabIndex = 42;
+            // 
+            // crystalOpenFileDialog1
+            // 
+            this.crystalOpenFileDialog1.FileName = "crystalOpenFileDialog1";
+            // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(437, 108);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(414, 121);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.ManagerReport1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(463, 597);
-            this.crystalReportViewer1.TabIndex = 41;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(472, 255);
+            this.crystalReportViewer1.TabIndex = 43;
             // 
             // MMain
             // 
@@ -415,6 +433,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 750);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Controls.Add(this.crystalReportViewer2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
@@ -457,8 +476,13 @@
         private System.Windows.Forms.TextBox PasswordTB;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button3;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private ManagerReport ManagerReport1;
+        private ReportReservation ReportReservation1;
+        private ReportReservation ReportReservation2;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer2;
+        private ReportReservation ReportReservation3;
+        private CrystalDecisions.Shared.Interop.CrystalOpenFileDialog crystalOpenFileDialog1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }
 

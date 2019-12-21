@@ -194,6 +194,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportReservation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportReservation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ReserveReceipt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,10 @@
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReportReservation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportReservation.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReserveReceipt.resx">
       <DependentUpon>ReserveReceipt.cs</DependentUpon>
     </EmbeddedResource>
