@@ -32,6 +32,11 @@
             this.FoodBTN = new System.Windows.Forms.Button();
             this.UserNameLp = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.RePasswordTB = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.PasswordTB = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -41,6 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -66,12 +72,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.RePasswordTB = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.PasswordTB = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -144,6 +144,63 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(437, 720);
             this.panel1.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.Gold;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(229, 260);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(100, 50);
+            this.label15.TabIndex = 72;
+            this.label15.Text = "Change Password";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(66, 207);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(97, 30);
+            this.label16.TabIndex = 71;
+            this.label16.Text = "Retype";
+            // 
+            // RePasswordTB
+            // 
+            this.RePasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RePasswordTB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RePasswordTB.Location = new System.Drawing.Point(188, 211);
+            this.RePasswordTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.RePasswordTB.Name = "RePasswordTB";
+            this.RePasswordTB.PasswordChar = '*';
+            this.RePasswordTB.Size = new System.Drawing.Size(192, 32);
+            this.RePasswordTB.TabIndex = 69;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(41, 167);
+            this.label17.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(122, 30);
+            this.label17.TabIndex = 70;
+            this.label17.Text = "Password";
+            // 
+            // PasswordTB
+            // 
+            this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PasswordTB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTB.Location = new System.Drawing.Point(188, 169);
+            this.PasswordTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.PasswordTB.Name = "PasswordTB";
+            this.PasswordTB.PasswordChar = '*';
+            this.PasswordTB.Size = new System.Drawing.Size(192, 32);
+            this.PasswordTB.TabIndex = 68;
             // 
             // panel2
             // 
@@ -255,6 +312,28 @@
             this.panel3.Size = new System.Drawing.Size(1463, 35);
             this.panel3.TabIndex = 41;
             // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button5.Location = new System.Drawing.Point(1067, 0);
+            this.button5.Margin = new System.Windows.Forms.Padding(0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(167, 35);
+            this.button5.TabIndex = 73;
+            this.button5.Text = "Change Password";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -347,6 +426,7 @@
             // 
             // comboBoxRoomNumber
             // 
+            this.comboBoxRoomNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRoomNumber.FormattingEnabled = true;
             this.comboBoxRoomNumber.Location = new System.Drawing.Point(191, 86);
             this.comboBoxRoomNumber.Name = "comboBoxRoomNumber";
@@ -490,6 +570,7 @@
             // 
             // comboBoxCustomerID
             // 
+            this.comboBoxCustomerID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCustomerID.FormattingEnabled = true;
             this.comboBoxCustomerID.Location = new System.Drawing.Point(208, 151);
             this.comboBoxCustomerID.Name = "comboBoxCustomerID";
@@ -509,6 +590,7 @@
             // 
             // comboBoxGameName
             // 
+            this.comboBoxGameName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGameName.FormattingEnabled = true;
             this.comboBoxGameName.Location = new System.Drawing.Point(208, 121);
             this.comboBoxGameName.Name = "comboBoxGameName";
@@ -528,6 +610,7 @@
             // 
             // comboBoxRoomNumber2
             // 
+            this.comboBoxRoomNumber2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRoomNumber2.FormattingEnabled = true;
             this.comboBoxRoomNumber2.Location = new System.Drawing.Point(208, 89);
             this.comboBoxRoomNumber2.Name = "comboBoxRoomNumber2";
@@ -573,85 +656,6 @@
             this.label8.Size = new System.Drawing.Size(225, 29);
             this.label8.TabIndex = 48;
             this.label8.Text = "Make Reservation";
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.Gold;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(229, 260);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 50);
-            this.label15.TabIndex = 72;
-            this.label15.Text = "Change Password";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(66, 207);
-            this.label16.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 30);
-            this.label16.TabIndex = 71;
-            this.label16.Text = "Retype";
-            // 
-            // RePasswordTB
-            // 
-            this.RePasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RePasswordTB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RePasswordTB.Location = new System.Drawing.Point(188, 211);
-            this.RePasswordTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.RePasswordTB.Name = "RePasswordTB";
-            this.RePasswordTB.PasswordChar = '*';
-            this.RePasswordTB.Size = new System.Drawing.Size(192, 32);
-            this.RePasswordTB.TabIndex = 69;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(41, 167);
-            this.label17.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(122, 30);
-            this.label17.TabIndex = 70;
-            this.label17.Text = "Password";
-            // 
-            // PasswordTB
-            // 
-            this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTB.Location = new System.Drawing.Point(188, 169);
-            this.PasswordTB.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.PasswordChar = '*';
-            this.PasswordTB.Size = new System.Drawing.Size(192, 32);
-            this.PasswordTB.TabIndex = 68;
-            // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button5.Location = new System.Drawing.Point(1067, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(167, 35);
-            this.button5.TabIndex = 73;
-            this.button5.Text = "Change Password";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // EMain
             // 

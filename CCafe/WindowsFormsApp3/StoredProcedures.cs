@@ -47,5 +47,10 @@ namespace CCafe
         public static string GetShift = "GetShift";
         public static string MakeReservationEmployee = "MakeReservationEmployee";
         public static string ViewCustomerID = "ViewCustomerID";
+        public static string ViewConsoles = "ViewConsoles";
+        public static string EditRooms = "EditRooms";
+
+
+        
     }
 }

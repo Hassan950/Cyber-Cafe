@@ -330,6 +330,38 @@ namespace CCafe
             Parameters.Add("@password", password);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
+        public DataTable ViewConsoles()
+        {
+            string StoredProcedureName = StoredProcedures.ViewConsoles;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
+        public int EditConsoles(int room_no, string name, string condition)
+        {
+            string StoredProcedureName = StoredProcedures.EditConsoles;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@room_no", room_no);
+            Parameters.Add("@name", name);
+            Parameters.Add("@condition", condition);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+        public int EditGames(string name, int total_number)
+        {
+            string StoredProcedureName = StoredProcedures.EditGames;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@name", name);
+            Parameters.Add("@total_number", total_number);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
 
+
+        public int EditRooms(int number, string type, bool available)
+        {
+            string StoredProcedureName = StoredProcedures.EditRooms;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@number", number);
+            Parameters.Add("@type", type);
+            Parameters.Add("@available", available);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
     }
 }

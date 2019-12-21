@@ -15,6 +15,7 @@ namespace CCafe
         public Login()
         {
             InitializeComponent();
+            this.AcceptButton = SignInBTN;
             
         }
         public new void Update()

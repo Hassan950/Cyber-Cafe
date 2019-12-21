@@ -369,11 +369,11 @@
             // NameBox
             // 
             this.NameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NameBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameBox.Font = new System.Drawing.Font("Century Gothic", 11.7F);
             this.NameBox.Location = new System.Drawing.Point(96, 65);
             this.NameBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(192, 32);
+            this.NameBox.Size = new System.Drawing.Size(192, 31);
             this.NameBox.TabIndex = 24;
             // 
             // panel3
