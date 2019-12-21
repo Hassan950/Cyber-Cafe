@@ -169,7 +169,7 @@ namespace CCafe
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string date = dateTimePicker1.Value.Date.ToString();
+            string date = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             int roomNumber = Convert.ToInt16(comboBoxRoomNumber2.SelectedValue);
             string gameName = comboBoxGameName.SelectedValue.ToString();
             int customerID = Convert.ToInt32(comboBoxCustomerID.SelectedValue);
