@@ -34,15 +34,8 @@ namespace CCafe
             Parameters.Add("@CID", CID);
             Parameters.Add("@EID", 11111);    
             Parameters.Add("@game_name", gname);
-           /* Console.WriteLine(stime);
-            Console.WriteLine(etime);
-            Console.WriteLine(System.DateTime.Today.ToString("yyyy-MM-dd"));
-            Console.WriteLine(rno);
-            Console.WriteLine(CID);
-            Console.WriteLine(EID);
-            Console.WriteLine(gname);*/
             SPN = StoredProcedures.MakeReservation;
-            return dbMan.ExecuteNonQuery(SPN, Parameters);
+            return (int)dbMan.ExecuteReturnScalar(SPN, Parameters);
         }
         public DataTable ViewRooms()
         {

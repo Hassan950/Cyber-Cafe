@@ -48,16 +48,28 @@ namespace CCafe
 
         private void ReserveBTN_Click(object sender, EventArgs e)
         {
-            string st = StartTime.Value.ToString("hh:mm:ss");
-            string et = EndTime.Value.ToString("hh:mm:ss");
-            int r = WindowHandler.controllerObj.CustomerReserve(Convert.ToInt32(RoomCB.SelectedValue), GameCB.SelectedValue.ToString(), Program.UserID, st, et);
-            Console.WriteLine(r);
-            if (r == -5)
-                MessageBox.Show("Already Reserved, Choose Another Time");
-            else
+            if (StartTime.Value < EndTime.Value)
             {
-                MessageBox.Show("Reservation Made");
+                string st = StartTime.Value.ToString("HH:mm:ss");
+                string et = EndTime.Value.ToString("HH:mm:ss");
+                int r = WindowHandler.controllerObj.CustomerReserve(Convert.ToInt32(RoomCB.SelectedValue), GameCB.SelectedValue.ToString(), Program.UserID, st, et);
+                Console.WriteLine(r);
+                switch (r)
+                {
+                    case -1:
+                        MessageBox.Show("Already Reserved, Choose Another Time");
+                        break;
+                    case 1:
+                        MessageBox.Show("Reservation Made");
+                        break;
+                    case 0:
+                        MessageBox.Show("This Shift Hasn't Started Yet");
+                        break;
+                }
             }
+            else
+                MessageBox.Show("Please Insert a Valid Time");
+
         }
 
         private void FeedBTN_Click(object sender, EventArgs e)

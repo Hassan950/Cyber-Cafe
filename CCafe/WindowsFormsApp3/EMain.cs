@@ -102,7 +102,7 @@ namespace CCafe
 
         private void UpdateBTN_Click(object sender, EventArgs e)
         {
-            if ( comboBoxRoomNumber.SelectedValue == null || ((radioButtonWorking.Checked == false && radioButtonNotWorking.Checked == false)))
+            if (comboBoxRoomNumber.SelectedValue == null || ((radioButtonWorking.Checked == false && radioButtonNotWorking.Checked == false)))
             {
                 MessageBox.Show("Please Select All Fields To Update");
                 return;
@@ -170,18 +170,30 @@ namespace CCafe
         private void button4_Click(object sender, EventArgs e)
         {
             string date = dateTimePicker1.Value.Date.ToString();
-            int roomNumber = Convert.ToInt16 ( comboBoxRoomNumber2.SelectedValue );
+            int roomNumber = Convert.ToInt16(comboBoxRoomNumber2.SelectedValue);
             string gameName = comboBoxGameName.SelectedValue.ToString();
-            int customerID = Convert.ToInt16(comboBoxCustomerID.SelectedValue);
+            int customerID = Convert.ToInt32(comboBoxCustomerID.SelectedValue);
             string startTime = StartTime.Value.ToString("HH:mm");
             string endTime = EndTime.Value.ToString("HH:mm");
 
-            if (EndTime.Value <= StartTime.Value) throw new Exception("Start Time should be less than End Time");
+            if (EndTime.Value <= StartTime.Value)
+            {
+                MessageBox.Show("Start Time should be less than End Time");
+                return;
+            }
 
-            WindowHandler.controllerObj.MakeReservationEmployee(date, roomNumber, gameName, customerID, startTime, endTime);
-            MessageBox.Show("Room Reserved Successfuly");
+            int success = WindowHandler.controllerObj.MakeReservationEmployee(date, roomNumber, gameName, customerID, startTime, endTime);
+            if (success == 1)
+            {
+                MessageBox.Show("Room Reserved Successfuly");
+            }
+            else
+            {
+                MessageBox.Show("Room Reservation Failed");
+
+            }
         }
-        
+
         private void button5_Click(object sender, EventArgs e)
         {
             label15.Show();
