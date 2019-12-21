@@ -352,7 +352,7 @@
             // StartTime
             // 
             this.StartTime.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.StartTime.CustomFormat = "tt mm:hh";
+            this.StartTime.CustomFormat = "hh:mm tt";
             this.StartTime.Font = new System.Drawing.Font("Tahoma", 12F);
             this.StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.StartTime.Location = new System.Drawing.Point(157, 118);
@@ -385,7 +385,7 @@
             // EndTime
             // 
             this.EndTime.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(200)))));
-            this.EndTime.CustomFormat = "tt mm:hh";
+            this.EndTime.CustomFormat = "hh:mm tt";
             this.EndTime.Font = new System.Drawing.Font("Tahoma", 12F);
             this.EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.EndTime.Location = new System.Drawing.Point(157, 173);
