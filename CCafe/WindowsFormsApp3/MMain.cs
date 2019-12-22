@@ -148,5 +148,29 @@ namespace CCafe
             PasswordTB.Hide();
             RePasswordTB.Hide();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            stats stat = new stats();
+            stat.Show();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            stats2 stat = new stats2();
+            stat.Show();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            stats3 stat = new stats3();
+            stat.Show();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            stats4 stat = new stats4();
+            stat.Show();
+        }
     }
 }
